@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AleksMercer/Uni-Projects-Showcase/static/css/main.17c1b13e.css",
-    "main.js": "/AleksMercer/Uni-Projects-Showcase/static/js/main.fce7d965.js",
+    "main.css": "/AleksMercer/Uni-Projects-Showcase/static/css/main.90806321.css",
+    "main.js": "/AleksMercer/Uni-Projects-Showcase/static/js/main.291887bf.js",
     "static/media/ITMO_black-2.png": "/AleksMercer/Uni-Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
     "static/media/Folder.svg": "/AleksMercer/Uni-Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
     "index.html": "/AleksMercer/Uni-Projects-Showcase/index.html",
-    "main.17c1b13e.css.map": "/AleksMercer/Uni-Projects-Showcase/static/css/main.17c1b13e.css.map",
-    "main.fce7d965.js.map": "/AleksMercer/Uni-Projects-Showcase/static/js/main.fce7d965.js.map"
+    "main.90806321.css.map": "/AleksMercer/Uni-Projects-Showcase/static/css/main.90806321.css.map",
+    "main.291887bf.js.map": "/AleksMercer/Uni-Projects-Showcase/static/js/main.291887bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.17c1b13e.css",
-    "static/js/main.fce7d965.js"
+    "static/css/main.90806321.css",
+    "static/js/main.291887bf.js"
   ]
 }
