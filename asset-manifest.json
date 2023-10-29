@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AleksMercer/Uni-Projects-Showcase/static/css/main.90806321.css",
-    "main.js": "/AleksMercer/Uni-Projects-Showcase/static/js/main.291887bf.js",
-    "static/media/ITMO_black-2.png": "/AleksMercer/Uni-Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
-    "static/media/Folder.svg": "/AleksMercer/Uni-Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
-    "index.html": "/AleksMercer/Uni-Projects-Showcase/index.html",
-    "main.90806321.css.map": "/AleksMercer/Uni-Projects-Showcase/static/css/main.90806321.css.map",
-    "main.291887bf.js.map": "/AleksMercer/Uni-Projects-Showcase/static/js/main.291887bf.js.map"
+    "main.css": "/Uni-Projects-Showcase/static/css/main.5d2f8983.css",
+    "main.js": "/Uni-Projects-Showcase/static/js/main.a82a9756.js",
+    "static/media/ITMO_black-2.png": "/Uni-Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
+    "static/media/Folder.svg": "/Uni-Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
+    "index.html": "/Uni-Projects-Showcase/index.html",
+    "main.5d2f8983.css.map": "/Uni-Projects-Showcase/static/css/main.5d2f8983.css.map",
+    "main.a82a9756.js.map": "/Uni-Projects-Showcase/static/js/main.a82a9756.js.map"
   },
   "entrypoints": [
-    "static/css/main.90806321.css",
-    "static/js/main.291887bf.js"
+    "static/css/main.5d2f8983.css",
+    "static/js/main.a82a9756.js"
   ]
 }
