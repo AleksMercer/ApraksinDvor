@@ -1,160 +1,30 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-import folder from './media/Folder.svg'
+import FolderCell from './components/FolderCell';
 
 function Mainpage() {
+  
+  // #region : Object with projects info
 
-
+  const DesignSystem = {
+    urlpath: 'ApraksinDvor',
+    projectname: '"Apraksin dvor" design system',
+    description: 'The "Apraksin Dvor" rebranding design system contains core elements including typography, components, principles, etc. to establish a new vision.',
+    date: '01.11.2023 - ...'
+  };
+  
+  // #endregion
 
   return (
     <div className='mainpage'>
 
       <header className='mainpage__header'>
-        <span>University Projects Showcase</span>
+        <span>U<span className='mobile-off'>niversity</span> P<span className='mobile-off'>rojects</span> S<span className='mobile-off'>howcase</span></span>
       </header>
 
       <span className='line-bottom'></span>
 
       <main className='mainpage__main'>
-
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
-        <div className='folder-cell' >
-          
-          <img className='folder-cell__svg'
-          draggable='false'
-          src={folder}
-          alt='Folder' />
-    
-          <div className='folder-cell__description'>
-    
-            <h5>Project name</h5>
-    
-            <div className='description'>
-              <h5>Description:</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi vel, nobis illum nesciunt omnis doloribus. Eveniet quisquam, quas eum deleniti blanditiis vel et hic itaque consectetur odio quasi molestias!</p>
-            </div>
-    
-            <div className='date'>
-              <h5>Date:</h5>
-              <p>12.12.2000 - 12.15.2000</p>
-            </div>
-    
-          </div>
-        </div>
+       
+        <FolderCell urlpath={DesignSystem.urlpath} projectname={DesignSystem.projectname} description={DesignSystem.description}  date={DesignSystem.date} />
 
       </main>
 
@@ -163,5 +33,3 @@ function Mainpage() {
 }
 
 export default Mainpage
-
-/* <Link to="/ProjectFirst" className='button'>Переход к проекту 1</Link> */

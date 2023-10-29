@@ -13,7 +13,7 @@ import store from './store'
 
 /* Components import */
 import Mainpage from './mainpage/Mainpage'
-import ProjectFirst from './projects/project_first/ProjectFirst'
+import ApraksinDvor from './projects/ApraksinDvor/ApraksinDvor'
 
 
 const root = ReactDOM.createRoot(
@@ -29,9 +29,9 @@ root.render(
  
         <Routes>
 
-          <Route path="/"  element={<Mainpage />} />
+          <Route path="/Uni-Projects-Showcase"               element={<Mainpage />} />
 
-          <Route path="/ProjectFirst"  element={<ProjectFirst />} />
+          <Route path="/Uni-Projects-Showcase/ApraksinDvor"  element={<ApraksinDvor />} />
 
         </Routes>
         

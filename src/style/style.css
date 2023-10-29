@@ -188,6 +188,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .mainpage__main .folder-cell__description h5 {
   font-weight: bold;
+  padding-bottom: 0.5vh;
 }
 .mainpage__main .folder-cell:hover {
   border: solid 1px white;
@@ -199,4 +200,60 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .mainpage ::-webkit-scrollbar-thumb {
   width: 2px;
   background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .mainpage__header {
+    font-size: 8vh;
+    text-align: center;
+    margin: 6vh 0 6vh 0;
+  }
+  .mainpage__header .mobile-off {
+    display: none;
+  }
+  .mainpage__main {
+    display: grid;
+    grid-template: auto/1fr;
+  }
+  .mainpage__main .folder-cell {
+    display: grid;
+    grid-template: auto/35% 65%;
+  }
+  .mainpage__main .folder-cell__svg {
+    padding-left: 1vh;
+  }
+  .mainpage__main .folder-cell__description {
+    padding: 3vh 0 3vh 3vh;
+  }
+}
+@media (max-width: 600px) {
+  .mainpage__header {
+    font-size: 8vh;
+    text-align: center;
+    margin: 6vh 0 6vh 0;
+  }
+  .mainpage__header .mobile-off {
+    display: none;
+  }
+  .mainpage__main {
+    display: grid;
+    grid-template: auto/1fr;
+  }
+  .mainpage__main .folder-cell {
+    display: grid;
+    grid-template: auto 1fr/1fr;
+  }
+  .mainpage__main .folder-cell__svg {
+    padding: 0 3vh 0 3vh;
+  }
+  .mainpage__main .folder-cell__description {
+    display: grid;
+    grid-template: auto/1fr;
+    padding: 0 1vh 0 1vh;
+    font-size: 1.75vh;
+  }
+  .mainpage__main .folder-cell__description h5 {
+    font-weight: bold;
+    padding-bottom: 0.5vh;
+  }
 }

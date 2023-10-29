@@ -61,6 +61,7 @@
     
         h5 {
           font-weight: bold;
+          padding-bottom: 0.5vh;
         }
       }
     }
@@ -78,5 +79,78 @@
   ::-webkit-scrollbar-thumb {
     width: 2px;
     background-color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .mainpage {
+
+    &__header {
+      font-size: 8vh;
+      text-align: center;
+  
+      margin: 6vh 0 6vh 0;
+
+      .mobile-off {
+        display: none;
+      }
+    }
+  
+    &__main { // folders with project
+      @include grid_template(auto / 1fr);
+  
+      .folder-cell {
+        @include grid_template(auto / 35% 65%);
+    
+        &__svg {
+          padding-left: 1vh;
+        }
+  
+        &__description {
+          padding: 3vh 0 3vh 3vh;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .mainpage {
+  
+    &__header {
+      font-size: 8vh;
+      text-align: center;
+      margin: 6vh 0 6vh 0;
+
+      .mobile-off {
+        display: none;
+      }
+    }
+  
+    &__main { // folders with project
+
+      @include grid_template(auto / 1fr);
+  
+      .folder-cell {
+        @include grid_template(auto 1fr / 1fr);
+    
+        &__svg {
+          padding: 0 3vh 0 3vh;
+        }
+  
+        &__description {
+          @include grid_template(auto / 1fr);
+          padding: 0 1vh 0 1vh;
+          font-size: 1.75vh;
+
+          h5 {
+            font-weight: bold;
+            padding-bottom: 0.5vh;
+          }
+        }
+      }
+    }
   }
 }
