@@ -111,8 +111,6 @@ a:link, a:visited, a:hover {
   -webkit-tap-highlight-color: transparent;
 }
 
-/*==========Var==========Start*/
-/*==========Var==========End*/
 /*==========Mixin==========Start*/
 /*==========Mixin==========End*/
 html, body, #root {
@@ -257,3 +255,8 @@ body * > img, body * > button, body h1, body h2, body h3 {
     padding-bottom: 0.5vh;
   }
 }
+/*==========Var========== Start*/
+/*==========Var========== End*/
+/*==========Mixin========== Start*/
+/*==========Mixin========== End*/
+/*  */

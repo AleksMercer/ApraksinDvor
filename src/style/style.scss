@@ -3,7 +3,7 @@
 /* - Common settings - */
 
 @import "./scss/reset";
-@import "./scss/vars";
+@import "./scss/mixin";
 @import "./scss/common";
 
 /* ------------------- */
@@ -12,5 +12,5 @@
 @import "../mainpage/mainpage";
 
 // import 'ApraksinDvor' style
-@import "../projects/ApraksinDvor/style/apraksin-dvor-style";
+@import "../projects/apraksindvor/style/aprashka";
 

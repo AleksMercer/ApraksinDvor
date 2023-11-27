@@ -1,0 +1,25 @@
+/*==========Var========== Start*/
+
+// Colors
+
+$proboval-clr: rgb(166,255,0);
+
+
+// Fonts - Size
+
+$title-font: 175%;          
+
+/*==========Var========== End*/
+
+
+
+/*==========Mixin========== Start*/
+
+  @mixin textellipsis() { 
+    //@include textellipsis();
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }        
+
+/*==========Mixin========== End*/
