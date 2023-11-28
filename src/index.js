@@ -33,16 +33,14 @@ root.render(
  
         <Routes>
 
-          <Route path="/Uni-Projects-Showcase"           element={<Mainpage />} />
-          <Route path="/Uni-Projects-Showcase/Aprashka"  element={<Aprashka />} />
+          <Route path="/Projects-Showcase" element={<Mainpage />} />
 
+          <Route path="/Projects-Showcase/Aprashka"  element={<Aprashka />}> 
 
-          {/* Aprashka router */}
-
-          <Route path="/" element={ <Aprashka />}>
             <Route index element={ <First /> }/>
-            <Route path="/second" element={ <Second /> }/>
-            <Route path="/third" element={ <Third /> }/>
+            <Route path="second" element={ <Second /> }/>
+            <Route path="third" element={ <Third /> }/>
+
           </Route>
 
         </Routes>

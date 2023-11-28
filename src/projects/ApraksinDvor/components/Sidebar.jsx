@@ -8,9 +8,9 @@ function Sidebar() {
   return (
     <nav className='aprashka-main__sidebar'>
 
-      <NavLink to="/">First</NavLink> <br/>
-      <NavLink to="/second">Second</NavLink> <br/>
-      <NavLink to="/third">Third</NavLink> <br/>
+      <NavLink to=".">First</NavLink> <br/>
+      <NavLink to="second">Second</NavLink> <br/>
+      <NavLink to="third">Third</NavLink> <br/>
 
     </nav>
   )

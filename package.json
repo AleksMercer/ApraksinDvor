@@ -2,7 +2,7 @@
   "name": "unips",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Uni-Projects-Showcase/",
+  "homepage": "https://github.com/Projects-Showcase",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",

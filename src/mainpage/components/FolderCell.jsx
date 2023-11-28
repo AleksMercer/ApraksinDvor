@@ -8,7 +8,7 @@ function FolderCell(props) {
   const projectname = props.projectname
   const description = props.description
   const date = props.date
-
+  console.log(urlpath)
   return (
     <Link to={urlpath}>
 
