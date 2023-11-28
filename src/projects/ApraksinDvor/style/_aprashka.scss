@@ -1,1 +1,20 @@
 @import "./style_components/aprashka-vars"; /*  */
+@import "./style_components/nav-bar"; /*  */
+
+
+.aprashka-main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  @include grid_template(1fr / auto 1fr);
+
+  &__sidebar {
+    width: 350px;
+    border: 1px solid black;
+  }
+
+  &__wrapper {
+
+  }
+}

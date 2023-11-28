@@ -5,7 +5,7 @@ function Mainpage() {
   // #region : Object with projects info
 
   const DesignSystem = {
-    urlpath: 'ApraksinDvor',
+    urlpath: 'Aprashka',
     projectname: '"Apraksin dvor" design system',
     description: 'The "Apraksin Dvor" rebranding design system contains core elements including typography, components, principles, etc. to establish a new vision.',
     date: '01.11.2023 - ...'
