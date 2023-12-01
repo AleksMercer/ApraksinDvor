@@ -13,12 +13,13 @@ import store from './store'
 
 /* Components import */
 import Mainpage from './mainpage/Mainpage'
+import Error404 from './mainpage/Error404'
 import Aprashka from './projects/apraksindvor/Aprashka'
 
 /* Aprashka components */
-import First from './projects/apraksindvor/components/First'
-import Second from './projects/apraksindvor/components/Second'
-import Third from './projects/apraksindvor/components/Third'
+import AboutProject from './projects/apraksindvor/components/AboutProject'
+import AboutStyle from './projects/apraksindvor/components/AboutStyle'
+import AboutSystem from './projects/apraksindvor/components/AboutSystem'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
@@ -33,13 +34,14 @@ root.render(
  
         <Routes>
 
+          <Route path='*' element={<Error404 />} />
           <Route path="/Projects-Showcase" element={<Mainpage />} />
 
           <Route path="/Projects-Showcase/Aprashka"  element={<Aprashka />}> 
 
-            <Route index element={ <First /> }/>
-            <Route path="second" element={ <Second /> }/>
-            <Route path="third" element={ <Third /> }/>
+            <Route index element={ <AboutProject /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutSystem" element={ <AboutSystem /> }/>
 
           </Route>
 

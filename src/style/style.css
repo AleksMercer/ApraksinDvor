@@ -1,5 +1,6 @@
 /* - Common settings - */
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -265,10 +266,49 @@ body * > img, body * > button, body h1, body h2, body h3 {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
   display: grid;
   grid-template: 1fr/auto 1fr;
 }
+.aprashka-main #component-pages {
+  height: 100%;
+}
 .aprashka-main__sidebar {
-  width: 350px;
-  border: 1px solid black;
+  width: 312px;
+  background-color: #E1EBF0;
+}
+.aprashka-main__sidebar .aprashka-logo {
+  height: 180px;
+  width: 100%;
+  padding-left: 60px;
+  display: grid;
+}
+.aprashka-main__sidebar .aprashka-logo img {
+  height: 84px;
+  width: 70px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: red;
+}
+.aprashka-main__sidebar .aprashka-sidebar {
+  display: grid;
+  grid-template: 1fr/auto;
+}
+.aprashka-main__sidebar .aprashka-sidebar a {
+  display: grid;
+  grid-template: 1;
+  width: 100%;
+  height: 63px;
+  padding-left: 60px;
+}
+.aprashka-main__sidebar .aprashka-sidebar a span {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.aprashka-main__sidebar .aprashka-sidebar a.active, .aprashka-main__sidebar .aprashka-sidebar a.active:hover {
+  background-color: #058C50;
+}
+.aprashka-main__sidebar .aprashka-sidebar a:hover {
+  background-color: #9BD2B9;
 }
