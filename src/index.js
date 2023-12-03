@@ -40,8 +40,23 @@ root.render(
           <Route path="/Projects-Showcase/Aprashka"  element={<Aprashka />}> 
 
             <Route index element={ <AboutProject /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
             <Route path="AboutSystem" element={ <AboutSystem /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+            <Route path="AboutStyle" element={ <AboutStyle /> }/>
 
           </Route>
 

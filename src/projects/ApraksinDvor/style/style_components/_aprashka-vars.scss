@@ -1,37 +1,52 @@
-/*==========Var========== Start*/
-
 // Colors
 
 $white: #ffffff;
 $black: #0A2832;
 
-$gray-1: #3C4646;
-$gray-2: #738287;
-$gray-3: #87969B;
+$gray-0: #F2F6F9;
+$gray-1: #E1EBF0;
+$gray-2: #D7E1E6;
+$gray-3: #C8D2D7;
 $gray-4: #AFBEC3;
-$gray-5: #C8D2D7;
-$gray-6: #D7E1E6;
-$gray-7: #E1EBF0;
+$gray-5: #8C9BA0;
+$gray-6: #738287;
+$gray-7: #37464B;
 
-$green-1: #058C50;
-$green-2: #9BD2B9;
+$blue-1: #D9EEF9;
+$blue-2: #B4DDF3;
+$blue-3: #82C5EB;
+$blue-pressed: #0178BA;
+$blue-hover: #44A9E1;
+$blue-main: #058CD7;
 
-$pink-1: #FFA5C3;
-$pink-1: #FFDCE6;
+$green-1: #E6F3ED;
+$green-2: #CDE8DC;
+$green-3: #8ECBB0;
+$green-pressed: #047040;
+$green-hover: #37A373;
+$green-main: #058C50;
 
-$yellow-1: #FFBE14;
-$yellow-2: #FFE6A0;
+$pink-1: #FFF1F6;
+$pink-2: #FFE4ED;
+$pink-3: #FFC9DB;
+$pink-pressed: #EF8AAC;
+$pink-hover: #FFB7CF;
+$pink-main: #FFA5C3;
 
-$orange-1: #FF5F28;
-$orange-2: #FFBEAA;
+$orange-1: #FFEFE9;
+$orange-2: #FFCFBF;
+$orange-3: #FF9F7E;
+$orange-pressed: #E84A13;
+$orange-hover: #FF7F53;
+$orange-main: #FF5F28;
 
-$blue-1: #058CD7;
-$blue-2: #98D2F0;
+$yellow-1: #FFF5DC;
+$yellow-2: #FFEBB9;
+$yellow-2: #FFDF89;
+$yellow-main: #FFBE14;
 
 
 // Fonts - Size
-
-$title-font: 175%;  
 
 $h1-font: 60px;
 $h2-font: 48px;
@@ -40,20 +55,16 @@ $h4-font: 28px;
 
 $default-font: 20px;
 
-
-
-
-/*==========Var========== End*/
-
+$regular: 400;
+$medium: 500;
+$semibold: 600;
 
 
 /*==========Mixin========== Start*/
 
   @mixin textellipsis() { 
     //@include textellipsis();
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
   }        
 
 /*==========Mixin========== End*/

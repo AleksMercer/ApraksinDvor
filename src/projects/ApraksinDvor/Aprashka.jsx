@@ -19,12 +19,12 @@ function Aprashka() {
 
         <main className='aprashka-main'>
 
-          <Sidebar />
+          <section className='aprashka-main__sidebar'>
+            <Sidebar />
+          </section>
 
           <section className='aprashka-main__wrapper'>
-
             <Outlet />
-
           </section>
         
         </main>
