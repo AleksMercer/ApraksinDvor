@@ -7,15 +7,59 @@
   width: 100%;
   overflow: hidden;
 
-  @include grid_template(1fr / 312px 1fr);
+  @include grid_template(100vh / 312px 1fr);
 
   font-family: 'Inter', sans-serif;
   font-size: $default-font;
   font-weight: $regular;
   color: $black;
 
+  .loadscreen { // loading effect
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgb(255, 255, 255); // color of pattern
+  
+    display: grid;
+    place-items: center;
+  
+    .loading-effect{
+
+      svg {
+        animation: effect 0.5s ease infinite;
+        
+        @keyframes effect {
+          0% {
+            transform: rotate(0deg);
+            fill: $pink-hover;
+          }
+
+          25% {
+            fill: $blue-hover;
+          }
+
+          50% {
+            fill: $green-hover;
+          }
+
+          75% {
+            fill: $yellow-2;
+          }
+      
+          100% {
+            transform: rotate(180deg);
+            fill: $orange-hover;
+          }
+        }
+      }
+    }
+  }
+
   &__sidebar {
     @include grid_template(auto 1fr / 1fr);
+
     background-color: $gray-1;
 
     $padding-left: 48px; //var
@@ -41,8 +85,8 @@
       @include grid_template(auto / 1fr);
       align-content: start;
 
-      overflow-y: auto;
-              
+      overflow-x: hidden;    
+   
       .mainlink {
         @include grid_template(1fr / 1fr);
         align-items: center;
@@ -193,13 +237,14 @@
       }
     }
 
-    // .sidebar::-webkit-scrollbar {
-    //   width: 0px;
-    // }
+    .sidebar::-webkit-scrollbar {
+      width: 0px;
+    }
 
   }
 
   &__wrapper {
     height: 100%;
+    padding: 5%;
   }
 }

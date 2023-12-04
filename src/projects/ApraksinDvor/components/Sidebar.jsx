@@ -34,11 +34,11 @@ function Sidebar() {
           </div>
 
           <nav className={`accordion__links ${firstSwitch ? 'menu-open' : 'menu-close'}`}>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Цветовая палитра</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Модульная сетка</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Типографика</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Иконки</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Фирменный стиль</NavLink>
+            <NavLink to="Palette" className={"secondarylink"}>Цветовая палитра</NavLink>
+            <NavLink to="Gridlines" className={"secondarylink"}>Модульная сетка</NavLink>
+            <NavLink to="Typography" className={"secondarylink"}>Типографика</NavLink>
+            <NavLink to="Icons" className={"secondarylink"}>Иконки</NavLink>
+            <NavLink to="Formstyle" className={"secondarylink"}>Фирменный стиль</NavLink>
           </nav>
         </div> 
 
@@ -54,17 +54,17 @@ function Sidebar() {
           </div>
 
           <nav className={`accordion__links ${secondSwitch ? 'menu-open' : 'menu-close'}`}>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Breadcrumbs</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Button</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Card</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Checkbox</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Divider</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Loading</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Modal</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Popover</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Radio button</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Switch button</NavLink>
-            <NavLink to="AboutStyle" className={"secondarylink"}>Text input</NavLink>
+            <NavLink to="Breadcrumbs" className={"secondarylink"}>Breadcrumbs</NavLink>
+            <NavLink to="Buttons" className={"secondarylink"}>Buttons</NavLink>
+            <NavLink to="Cards" className={"secondarylink"}>Cards</NavLink>
+            <NavLink to="Checkbox" className={"secondarylink"}>Checkbox</NavLink>
+            <NavLink to="Divider" className={"secondarylink"}>Divider</NavLink>
+            <NavLink to="Loading" className={"secondarylink"}>Loading</NavLink>
+            <NavLink to="Modal" className={"secondarylink"}>Modal</NavLink>
+            <NavLink to="Popover" className={"secondarylink"}>Popover</NavLink>
+            <NavLink to="RadioButtons" className={"secondarylink"}>Radio buttons</NavLink>
+            <NavLink to="SwitchButtons" className={"secondarylink"}>Switch buttons</NavLink>
+            <NavLink to="TextInput" className={"secondarylink"}>Text input</NavLink>
           </nav>
         </div>
 

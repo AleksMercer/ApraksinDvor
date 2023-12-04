@@ -264,11 +264,66 @@ body * > img, body * > button, body h1, body h2, body h3 {
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template: 1fr/312px 1fr;
+  grid-template: 100vh/312px 1fr;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #0A2832;
+}
+.aprashka-main .loadscreen {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+}
+.aprashka-main .loadscreen .loading-effect svg {
+  -webkit-animation: effect 0.5s ease infinite;
+          animation: effect 0.5s ease infinite;
+}
+@-webkit-keyframes effect {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    fill: #FFB7CF;
+  }
+  25% {
+    fill: #44A9E1;
+  }
+  50% {
+    fill: #37A373;
+  }
+  75% {
+    fill: #FFDF89;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #FF7F53;
+  }
+}
+@keyframes effect {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    fill: #FFB7CF;
+  }
+  25% {
+    fill: #44A9E1;
+  }
+  50% {
+    fill: #37A373;
+  }
+  75% {
+    fill: #FFDF89;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #FF7F53;
+  }
 }
 .aprashka-main__sidebar {
   display: grid;
@@ -299,7 +354,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
   grid-template: auto/1fr;
   -ms-flex-line-pack: start;
       align-content: start;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 .aprashka-main__sidebar .sidebar .mainlink {
   display: grid;
@@ -498,6 +553,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__sidebar .sidebar .mainlink:active, .aprashka-main__sidebar .sidebar .secondarylink:active {
   background-color: #82C5EB;
 }
+.aprashka-main__sidebar .sidebar::-webkit-scrollbar {
+  width: 0px;
+}
 .aprashka-main__wrapper {
   height: 100%;
+  padding: 5%;
 }

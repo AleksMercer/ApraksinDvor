@@ -16,10 +16,33 @@ import Mainpage from './mainpage/Mainpage'
 import Error404 from './mainpage/Error404'
 import Aprashka from './projects/apraksindvor/Aprashka'
 
-/* Aprashka components */
-import AboutProject from './projects/apraksindvor/components/AboutProject'
-import AboutStyle from './projects/apraksindvor/components/AboutStyle'
-import AboutSystem from './projects/apraksindvor/components/AboutSystem'
+// #region : Aprashka component
+
+  /* Main routes */
+  import AboutProject from './projects/apraksindvor/components/AboutProject'
+  import AboutSystem from './projects/apraksindvor/components/AboutSystem'
+
+  /* Accordion1 routes */
+  import Formstyle from './projects/apraksindvor/components/accordion1/Formstyle'
+  import Gridlines from './projects/apraksindvor/components/accordion1/Gridlines'
+  import Icons from './projects/apraksindvor/components/accordion1/Icons'
+  import Palette from './projects/apraksindvor/components/accordion1/Palette'
+  import Typography from './projects/apraksindvor/components/accordion1/Typography'
+
+  /* Accordion2 routes */
+  import Breadcrumbs from './projects/apraksindvor/components/accordion2/Breadcrumbs'
+  import Buttons from './projects/apraksindvor/components/accordion2/Buttons'
+  import Cards from './projects/apraksindvor/components/accordion2/Cards'
+  import Checkbox from './projects/apraksindvor/components/accordion2/Checkbox'
+  import Divider from './projects/apraksindvor/components/accordion2/Divider'
+  import Loading from './projects/apraksindvor/components/accordion2/Loading'
+  import Modal from './projects/apraksindvor/components/accordion2/Modal'
+  import Popover from './projects/apraksindvor/components/accordion2/Popover'
+  import RadioButtons from './projects/apraksindvor/components/accordion2/RadioButtons'
+  import SwitchButtons from './projects/apraksindvor/components/accordion2/SwitchButtons'
+  import TextInput from './projects/apraksindvor/components/accordion2/TextInput'
+
+// #endregion
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
@@ -41,22 +64,26 @@ root.render(
 
             <Route index element={ <AboutProject /> }/>
             <Route path="AboutSystem" element={ <AboutSystem /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
-            <Route path="AboutStyle" element={ <AboutStyle /> }/>
+
+            {/* Accordion1 routes */}
+              <Route path="Palette" element={ <Palette /> }/>
+              <Route path="Gridlines" element={ <Gridlines /> }/>
+              <Route path="Typography" element={ <Typography /> }/>
+              <Route path="Icons" element={ <Icons /> }/>
+              <Route path="Formstyle" element={ <Formstyle /> }/>
+
+            {/* Accordion2 routes */}
+              <Route path="Breadcrumbs" element={ <Breadcrumbs /> }/>
+              <Route path="Buttons" element={ <Buttons /> }/>
+              <Route path="Cards" element={ <Cards /> }/>
+              <Route path="Checkbox" element={ <Checkbox /> }/>
+              <Route path="Divider" element={ <Divider /> }/>
+              <Route path="Loading" element={ <Loading /> }/>
+              <Route path="Modal" element={ <Modal /> }/>
+              <Route path="Popover" element={ <Popover /> }/>
+              <Route path="RadioButtons" element={ <RadioButtons /> }/>
+              <Route path="SwitchButtons" element={ <SwitchButtons /> }/>
+              <Route path="TextInput" element={ <TextInput /> }/>
 
           </Route>
 
