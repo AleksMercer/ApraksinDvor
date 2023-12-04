@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.8fbe6bf1.css",
-    "main.js": "/Projects-Showcase/static/js/main.5080955f.js",
+    "main.css": "/Projects-Showcase/static/css/main.953e3134.css",
+    "main.js": "/Projects-Showcase/static/js/main.71504315.js",
     "static/media/ITMO_black-2.png": "/Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
+    "static/media/logo_black.svg": "/Projects-Showcase/static/media/logo_black.27e42b00ced6603b5a4138f1eaf275f2.svg",
     "static/media/Folder.svg": "/Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
     "index.html": "/Projects-Showcase/index.html",
-    "main.8fbe6bf1.css.map": "/Projects-Showcase/static/css/main.8fbe6bf1.css.map",
-    "main.5080955f.js.map": "/Projects-Showcase/static/js/main.5080955f.js.map"
+    "main.953e3134.css.map": "/Projects-Showcase/static/css/main.953e3134.css.map",
+    "main.71504315.js.map": "/Projects-Showcase/static/js/main.71504315.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fbe6bf1.css",
-    "static/js/main.5080955f.js"
+    "static/css/main.953e3134.css",
+    "static/js/main.71504315.js"
   ]
 }
