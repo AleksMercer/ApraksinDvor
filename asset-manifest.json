@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.953e3134.css",
-    "main.js": "/Projects-Showcase/static/js/main.71504315.js",
+    "main.css": "/Projects-Showcase/static/css/main.4815f897.css",
+    "main.js": "/Projects-Showcase/static/js/main.0fadab5a.js",
+    "static/media/Inter-SemiBold.ttf": "/Projects-Showcase/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
+    "static/media/Inter-Medium.ttf": "/Projects-Showcase/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
+    "static/media/Inter-ExtraLight.ttf": "/Projects-Showcase/static/media/Inter-ExtraLight.fbcf1d9ad9d7bac9f6de.ttf",
+    "static/media/Inter-Regular.ttf": "/Projects-Showcase/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/old_logo.png": "/Projects-Showcase/static/media/old_logo.1119cc6920a7f8bac6f8.png",
     "static/media/ITMO_black-2.png": "/Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
     "static/media/logo_black.svg": "/Projects-Showcase/static/media/logo_black.27e42b00ced6603b5a4138f1eaf275f2.svg",
     "static/media/Folder.svg": "/Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
     "index.html": "/Projects-Showcase/index.html",
-    "main.953e3134.css.map": "/Projects-Showcase/static/css/main.953e3134.css.map",
-    "main.71504315.js.map": "/Projects-Showcase/static/js/main.71504315.js.map"
+    "main.4815f897.css.map": "/Projects-Showcase/static/css/main.4815f897.css.map",
+    "main.0fadab5a.js.map": "/Projects-Showcase/static/js/main.0fadab5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.953e3134.css",
-    "static/js/main.71504315.js"
+    "static/css/main.4815f897.css",
+    "static/js/main.0fadab5a.js"
   ]
 }
