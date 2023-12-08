@@ -24,10 +24,10 @@ import Aprashka from './projects/apraksindvor/Aprashka'
 
   /* Accordion1 routes */
   import Formstyle from './projects/apraksindvor/components/accordion1/Formstyle'
-  import Gridlines from './projects/apraksindvor/components/accordion1/Gridlines'
-  import Icons from './projects/apraksindvor/components/accordion1/Icons'
   import Palette from './projects/apraksindvor/components/accordion1/Palette'
   import Typography from './projects/apraksindvor/components/accordion1/Typography'
+  import Gridlines from './projects/apraksindvor/components/accordion1/Gridlines'
+  import Graphic from './projects/apraksindvor/components/accordion1/Graphic'
 
   /* Accordion2 routes */
   import Breadcrumbs from './projects/apraksindvor/components/accordion2/Breadcrumbs'
@@ -66,11 +66,11 @@ root.render(
             <Route path="AboutSystem" element={ <AboutSystem /> }/>
 
             {/* Accordion1 routes */}
-              <Route path="Palette" element={ <Palette /> }/>
-              <Route path="Gridlines" element={ <Gridlines /> }/>
-              <Route path="Typography" element={ <Typography /> }/>
-              <Route path="Icons" element={ <Icons /> }/>
               <Route path="Formstyle" element={ <Formstyle /> }/>
+              <Route path="Palette" element={ <Palette /> }/>
+              <Route path="Typography" element={ <Typography /> }/>
+              <Route path="Gridlines" element={ <Gridlines /> }/>
+              <Route path="Graphic" element={ <Graphic /> }/>
 
             {/* Accordion2 routes */}
               <Route path="Breadcrumbs" element={ <Breadcrumbs /> }/>

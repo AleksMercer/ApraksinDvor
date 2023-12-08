@@ -1,0 +1,149 @@
+.aprashka-main__wrapper {
+  @include grid_template(930px 1000px repeat(3, auto) / auto);
+  row-gap: 100px;
+  overflow-x: hidden;
+  
+  .work-block, .team-block, .footer {
+    width: 1128px;
+    margin-left: 128px;
+  }
+
+  .welcome-block {
+    @include grid_template(auto 1fr auto / 1fr);
+    overflow: hidden;
+
+    &__sun {
+      position: relative;
+      width: 1128px;
+
+      svg, img {
+        position: absolute;
+        transition: 0.2s linear;
+      }
+
+      .sunpic {
+        z-index: -1;
+        top: -127px;
+        right: -378px;
+
+        animation: effect 8s linear infinite;
+      }
+      .sunpic.false {
+        opacity: 0;
+        
+      }
+      
+      img {
+        z-index: -2;
+        top: -127px;
+        right: -378px;
+
+        animation: effect 10s linear infinite;
+      }
+      img.checked {
+        opacity: 0;
+      }
+
+      @keyframes effect {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .light {
+        z-index: -3;
+        top: 0px;
+        right: -1373px;
+      }
+      .light.false {
+        opacity: 0;
+        top: 150px;
+        right: -125px;
+        height: 0px;
+        width: 0px
+      }
+    }
+
+    &__slogan {
+      @include grid_template(40px / auto 1fr);
+      align-items: center;
+      margin: 48px 0 0 128px;
+      width: 1128px;
+      user-select: none;
+
+      * {transition: 0.2s linear;}
+
+      svg.checked {
+        fill: $orange-main;
+      }
+      svg.false {
+        fill: $black;
+      }
+
+      span {
+        padding: 1px 0 0 18px;
+        font-weight: $extralight;
+        font-size: 40px;
+        color: $orange-main;
+      }
+
+      span.false {
+        opacity: 0;
+      }
+    }
+
+    &__idea {
+      @include grid_template(auto / auto 360px);
+      column-gap: 16px;
+      justify-items: end;
+      margin: 0 0 20px 128px;
+      width: 1128px;
+
+      input {
+        accent-color: $orange-main;
+        height: 24px;
+        width: 24px;
+        margin-top: 5px;
+      }
+
+
+      p {
+        line-height: 28px;
+
+        span {
+          color: $gray-5;
+        }
+      }
+    }
+
+    &__system {
+      @include grid_template(auto auto / 1fr);
+      gap: 25px;
+      margin: 0 0 48px 128px;
+      width: 1128px;
+
+      h1 {
+        font-size: $h1-font;
+        font-weight: $extralight;
+        line-height: 76px;
+
+        span {
+          color: $green-main;
+          font-weight: $semibold;
+        }
+      }
+    }
+  }
+
+  .work-block {
+    
+  }
+}
+
+.aprashka-main__wrapper::-webkit-scrollbar {
+  width: 0px;
+}

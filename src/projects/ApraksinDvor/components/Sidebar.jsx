@@ -34,11 +34,11 @@ function Sidebar() {
           </div>
 
           <nav className={`accordion__links ${firstSwitch ? 'menu-open' : 'menu-close'}`}>
-            <NavLink to="Palette" className={"secondarylink"}>Цветовая палитра</NavLink>
-            <NavLink to="Gridlines" className={"secondarylink"}>Модульная сетка</NavLink>
-            <NavLink to="Typography" className={"secondarylink"}>Типографика</NavLink>
-            <NavLink to="Icons" className={"secondarylink"}>Иконки</NavLink>
             <NavLink to="Formstyle" className={"secondarylink"}>Фирменный стиль</NavLink>
+            <NavLink to="Palette" className={"secondarylink"}>Цветовая палитра</NavLink>
+            <NavLink to="Typography" className={"secondarylink"}>Типографика</NavLink>
+            <NavLink to="Gridlines" className={"secondarylink"}>Модульная сетка</NavLink>
+            <NavLink to="Graphic" className={"secondarylink"}>Графика</NavLink>
           </nav>
         </div> 
 
