@@ -1,6 +1,8 @@
 .aprashka-main__wrapper {
-  @include grid_template(930px 1000px repeat(3, auto) / auto);
-  row-gap: 100px;
+  @include headers();
+
+  @include grid_template(clamp(800px, 100vh, 1080px) repeat(4, auto) / auto);
+  row-gap: 140px;
   overflow-x: hidden;
   
   .work-block, .team-block, .footer {
@@ -24,19 +26,18 @@
       .sunpic {
         z-index: -1;
         top: -127px;
-        right: -378px;
+        left: 1006px;
 
         animation: effect 8s linear infinite;
       }
       .sunpic.false {
         opacity: 0;
-        
       }
       
       img {
         z-index: -2;
         top: -127px;
-        right: -378px;
+        left: 1006px;
 
         animation: effect 10s linear infinite;
       }
@@ -57,12 +58,12 @@
       .light {
         z-index: -3;
         top: 0px;
-        right: -1373px;
+        left: -410px;
       }
       .light.false {
         opacity: 0;
         top: 150px;
-        right: -125px;
+        left: 1250px;
         height: 0px;
         width: 0px
       }
@@ -127,7 +128,6 @@
       width: 1128px;
 
       h1 {
-        font-size: $h1-font;
         font-weight: $extralight;
         line-height: 76px;
 
@@ -140,7 +140,47 @@
   }
 
   .work-block {
-    
+    @include grid_template(repeat(4, auto) / 1fr);
+    row-gap: 180px;
+
+    &__start {
+      @include grid_template(auto 1fr / 1fr);
+
+      h2 {
+        color: $black;
+        font-weight: $semibold;
+      }
+
+      .start {
+        @include grid_template(auto / repeat(3, 1fr));
+        justify-content: space-between;
+        
+        &__recommendation {
+          
+        }
+
+        &__style {
+
+        }
+
+        &__components {
+
+        }
+      }
+    }
+
+    &__hello {
+
+    }
+
+    &__concept {
+
+    }
+
+    &__goal {
+
+    }
+
   }
 }
 

@@ -17,7 +17,7 @@ function Mainpage() {
     <div className='mainpage'>
 
       <header className='mainpage__header'>
-        <span>U<span className='mobile-off'>niversity</span> P<span className='mobile-off'>rojects</span> S<span className='mobile-off'>howcase</span></span>
+        <h1>U<span className='mobile-off'>niversity</span> P<span className='mobile-off'>rojects</span> S<span className='mobile-off'>howcase</span></h1>
       </header>
 
       <span className='line-bottom'></span>

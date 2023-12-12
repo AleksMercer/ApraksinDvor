@@ -24,9 +24,9 @@
     .loading-effect{
 
       svg {
-        animation: effect 0.75s ease infinite;
+        animation: loading 0.75s ease infinite;
         
-        @keyframes effect {
+        @keyframes loading {
           0% {
             transform: rotate(0deg);
             fill: $pink-hover;

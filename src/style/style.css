@@ -301,10 +301,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
   place-items: center;
 }
 .aprashka-main .loadscreen .loading-effect svg {
-  -webkit-animation: effect 0.75s ease infinite;
-          animation: effect 0.75s ease infinite;
+  -webkit-animation: loading 0.75s ease infinite;
+          animation: loading 0.75s ease infinite;
 }
-@-webkit-keyframes effect {
+@-webkit-keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -325,7 +325,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
     fill: #FF7F53;
   }
 }
-@keyframes effect {
+@keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -585,9 +585,21 @@ body * > img, body * > button, body h1, body h2, body h3 {
 
 .aprashka-main__wrapper {
   display: grid;
-  grid-template: 930px 1000px repeat(3, auto)/auto;
-  row-gap: 100px;
+  grid-template: clamp(800px, 100vh, 1080px) repeat(4, auto)/auto;
+  row-gap: 140px;
   overflow-x: hidden;
+}
+.aprashka-main__wrapper * > h1 {
+  font-size: 60px;
+}
+.aprashka-main__wrapper * > h2 {
+  font-size: 48px;
+}
+.aprashka-main__wrapper * > h3 {
+  font-size: 36px;
+}
+.aprashka-main__wrapper * > h4 {
+  font-size: 28px;
 }
 .aprashka-main__wrapper .work-block, .aprashka-main__wrapper .team-block, .aprashka-main__wrapper .footer {
   width: 1128px;
@@ -610,7 +622,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper .welcome-block__sun .sunpic {
   z-index: -1;
   top: -127px;
-  right: -378px;
+  left: 1006px;
   -webkit-animation: effect 8s linear infinite;
           animation: effect 8s linear infinite;
 }
@@ -620,12 +632,22 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper .welcome-block__sun img {
   z-index: -2;
   top: -127px;
-  right: -378px;
+  left: 1006px;
   -webkit-animation: effect 10s linear infinite;
           animation: effect 10s linear infinite;
 }
 .aprashka-main__wrapper .welcome-block__sun img.checked {
   opacity: 0;
+}
+@-webkit-keyframes effect {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 @keyframes effect {
   0% {
@@ -640,12 +662,12 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper .welcome-block__sun .light {
   z-index: -3;
   top: 0px;
-  right: -1373px;
+  left: -410px;
 }
 .aprashka-main__wrapper .welcome-block__sun .light.false {
   opacity: 0;
   top: 150px;
-  right: -125px;
+  left: 1250px;
   height: 0px;
   width: 0px;
 }
@@ -711,13 +733,32 @@ body * > img, body * > button, body h1, body h2, body h3 {
   width: 1128px;
 }
 .aprashka-main__wrapper .welcome-block__system h1 {
-  font-size: 60px;
   font-weight: 200;
   line-height: 76px;
 }
 .aprashka-main__wrapper .welcome-block__system h1 span {
   color: #058C50;
   font-weight: 600;
+}
+.aprashka-main__wrapper .work-block {
+  display: grid;
+  grid-template: repeat(4, auto)/1fr;
+  row-gap: 180px;
+}
+.aprashka-main__wrapper .work-block__start {
+  display: grid;
+  grid-template: auto 1fr/1fr;
+}
+.aprashka-main__wrapper .work-block__start h2 {
+  color: #0A2832;
+  font-weight: 600;
+}
+.aprashka-main__wrapper .work-block__start .start {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .aprashka-main__wrapper::-webkit-scrollbar {
   width: 0px;

@@ -48,10 +48,12 @@ $yellow-main: #FFBE14;
 
 // Fonts - Size
 
+//check mixin
 $h1-font: 60px;
 $h2-font: 48px;
 $h3-font: 36px;
 $h4-font: 28px;
+
 
 $default-font: 20px;
 $small-font: 16px;
@@ -67,6 +69,22 @@ $semibold: 600;
   @mixin textellipsis() { 
     //@include textellipsis();
 
+  }   
+
+  @mixin headers() { 
+    //@include headers();
+    * > h1 {
+      font-size: 60px;
+    }
+    * > h2 {
+      font-size: 48px;
+    }
+    * > h3 {
+      font-size: 36px;
+    }
+    * > h4 {
+      font-size: 28px;
+    }
   }        
 
 /*==========Mixin========== End*/
