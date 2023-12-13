@@ -1,4 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
+
+// #region : photos import
 import oldlog from '../media/old_logo.png'
 import figma from '../media/figma.png'
 import github from '../media/github.png'
@@ -6,10 +10,32 @@ import Anna from '../media/Anna.webp'
 import Daniil from '../media/Daniil.webp'
 import Alex from '../media/Alex.webp'
 
+// #region : Lottie
+import lottieSquare from '../media/lottie/square.lottie'
+import lottieSwitch from '../media/lottie/switch.lottie'
+import lottieLogo from '../media/lottie/logo.lottie'
 
 function AboutProject() {
 
   const [isChecked, setIsChecked] = useState(true)
+
+  // #region : lottie
+
+  const lottieSquareRef = useRef(null)
+  const lottieSwitchRef = useRef(null)
+  const lottieLogoRef = useRef(null)
+
+  const handleMouseEnter = (lottie) => {
+    lottie.current.setDirection(1)
+    lottie.current.play()
+  };
+
+  const handleMouseLeave = (lottie) => {
+    lottie.current.setDirection(-1)
+    lottie.current.play()
+  };
+
+  // #endregion
 
   return (
     <>
@@ -75,7 +101,14 @@ function AboutProject() {
 
             <nav>
               <div>
-                <div>1</div>
+                <div className='lottie-animation'>
+                  <DotLottiePlayer
+                    src={lottieLogo}
+                    lottieRef={lottieSquareRef}
+                    onMouseEnter={() => handleMouseEnter(lottieSquareRef)}
+                    onMouseLeave={() => handleMouseLeave(lottieSquareRef)}
+                  />
+                </div>
                 <h4 className='color-blue'>Рекомендации
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#058CD7"/>
@@ -84,7 +117,14 @@ function AboutProject() {
               </div>
 
               <div>
-                <div>2</div>
+                <div className='lottie-animation'>
+                  <DotLottiePlayer
+                    src={lottieSquare}
+                    lottieRef={lottieSwitchRef}
+                    onMouseEnter={() => handleMouseEnter(lottieSwitchRef)}
+                    onMouseLeave={() => handleMouseLeave(lottieSwitchRef)}
+                  />
+                </div>
                 <h4 className='color-green'>Стили
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#058C50"/>
@@ -93,7 +133,14 @@ function AboutProject() {
               </div>
 
               <div>
-                <div>3</div>
+                <div className='lottie-animation'>
+                  <DotLottiePlayer
+                    src={lottieSwitch}
+                    lottieRef={lottieLogoRef}
+                    onMouseEnter={() => handleMouseEnter(lottieLogoRef)}
+                    onMouseLeave={() => handleMouseLeave(lottieLogoRef)}
+                  />
+                </div>
                 <h4 className='color-orange'>Компоненты
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#FF5F28"/>
@@ -136,6 +183,7 @@ function AboutProject() {
           <div className='color-blue'>
             <div>
               <img src={Daniil} alt="Daniil" />
+              <svg className='one' width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6049 0.53125L39.1783 11.2739L65.8308 14.2572L55.0882 38.8306L52.1049 65.4832L27.5314 54.7405L0.878906 51.7572L11.6215 27.1838L14.6049 0.53125Z" fill="#FF5F28"/></svg>
             </div>
             <h4>Сопов Даниил</h4>
             <p>дизайнер</p>
@@ -144,6 +192,7 @@ function AboutProject() {
           <div className='color-green'>
             <div>
               <img src={Anna} alt="Anna" />
+              <svg className='two' width="59" height="56" viewBox="0 0 59 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.1241 55.4504L29.4057 36.7145L19.6857 55.5383L10.2113 50.0465L21.785 32.2295L0.568187 33.3441L0.54929 22.3931L21.7112 23.3872L10.3446 5.60286L19.7567 0.168797L29.4751 18.9047L39.1952 0.0809247L48.6695 5.57275L37.0959 23.3897L58.3127 22.2752L58.3315 33.2261L37.1696 32.232L48.5362 50.0164L39.1241 55.4504Z" fill="#FFBE14"/></svg>
             </div>
             <h4>Солдатова Анна</h4>
             <p>дизайнер</p>
@@ -152,6 +201,23 @@ function AboutProject() {
           <div className='color-orange'>
             <div>
               <img src={Alex} alt="Alex" />
+              <svg className='three' width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_384_1716)">
+                <mask id="mask0_384_1716" maskUnits="userSpaceOnUse" x="0" y="0" width="93" height="93">
+                <rect x="0.738159" y="34.2383" width="67" height="67" transform="rotate(-30 0.738159 34.2383)" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_384_1716)">
+                <rect x="17.9274" y="54.2904" width="7.7" height="57.28" transform="rotate(-120 17.9274 54.2904)" fill="#058C50" stroke="#058C50"/>
+                <rect x="29.3176" y="74.019" width="7.7" height="57.28" transform="rotate(-120 29.3176 74.019)" fill="#058C50" stroke="#058C50"/>
+                <rect x="19.1778" y="1.22262" width="7.7001" height="101.501" transform="rotate(-15 19.1778 1.22262)" fill="#058C50" stroke="#058C50"/>
+                <rect x="41.1819" y="-4.67289" width="7.7001" height="101.501" transform="rotate(-15 41.1819 -4.67289)" fill="#058C50" stroke="#058C50"/>
+                </g>
+                </g>
+                <defs>
+                <clipPath id="clip0_384_1716">
+                <rect width="67" height="67" fill="white" transform="translate(0.738281 34.2383) rotate(-30)"/>
+                </clipPath></defs>
+              </svg>
             </div>
             <h4>Калагаев Александр</h4>
             <p>разработчик</p>
