@@ -14,8 +14,7 @@ function Mainpage() {
   // #endregion
 
   return (
-    <div className='mainpage'>
-
+    <>
       <header className='mainpage__header'>
         <h1>U<span className='mobile-off'>niversity</span> P<span className='mobile-off'>rojects</span> S<span className='mobile-off'>howcase</span></h1>
       </header>
@@ -27,8 +26,7 @@ function Mainpage() {
         <FolderCell urlpath={DesignSystem.urlpath} projectname={DesignSystem.projectname} description={DesignSystem.description}  date={DesignSystem.date} />
 
       </main>
-
-    </div>
+    </>
   )
 }
 
