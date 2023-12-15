@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
 
 /* main import */
 
@@ -37,40 +36,39 @@ import { useDispatch, useSelector } from 'react-redux'
 
 /*---------------------------------------------------------------------------------------------*/
 
-/* redux - store imports */
-import { selectMainClass } from './store' // selectors import
-import { mainClassSwap } from './store' // reducers import
 
 function MainRouter() {
 
   const location = useLocation()
-  const dispatch = useDispatch()
-  const mainClassState = useSelector(selectMainClass)
+  const [mainClass, setMainClass] = useState('')
 
-  useEffect(() => {
+  useEffect(() => { // swap title, favicon and className
 
-    switch (location.pathname) {
+    const defaultPath = '/Projects-Showcase'
+    const path = location.pathname
 
-      case '/Projects-Showcase':
-        document.title = 'Projects Showcase'
-        document.querySelector("link[rel='icon']").href = './icons/favicon.ico'
-        dispatch(mainClassSwap('mainpage'))
-        break
+    switch (true) {
 
-      case '/Projects-Showcase/Aprashka':
+      case path.startsWith(defaultPath + '/Aprashka'):
         document.title = 'Apraksin Dvor'
         document.querySelector("link[rel='icon']").href = './icons/apraksindvor.ico'
-        dispatch(mainClassSwap('aprashka-main'))
+        setMainClass('aprashka-main')
         break
 
-      default: document.title = 'Projects Showcase'
+      case path.startsWith(defaultPath):
+        document.title = 'Projects Showcase'
+        document.querySelector("link[rel='icon']").href = './icons/favicon.ico'
+        setMainClass('mainpage')
+        break
+
+      default: console.log('default value from MainRouter switch')
     }
 
   }, [location])
 
   return (
 
-    <main className={mainClassState}>
+    <main className={mainClass}>
 
       <Routes>
         <Route path='*' element={<Error404 />} />

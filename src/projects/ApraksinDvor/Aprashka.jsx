@@ -1,48 +1,63 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 /* React Router */
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
-/* Redux Tool-Kit */
-import { Provider } from 'react-redux'
-import store from './aprashka-store'
-
-// #region : Components Import
-
+/* Components */
 import Sidebar from './components/Sidebar'
-
-// #endregion
+import LoadScreen from './components/tinycomp/LoadScreen'
 
 function Aprashka() {
+  
+  // #region : add class name to wrapper
 
-  const [isLoading, setIsLoading] = useState(true)
+  const location = useLocation()
 
-  setTimeout(() => setIsLoading(false), 750)
+  const [className, setClassName] = useState('')
+
+  const getClassName = (pathclass) => { //get a new class name from current path
+    const lastIndex = pathclass.lastIndexOf('/')
+    const newClassName = pathclass.slice(lastIndex + 1).toLowerCase()
+
+    return newClassName
+  }
+
+  useEffect(() => { // swap title, favicon and className
+
+    let path = location.pathname
+    let newName = getClassName(path)
+
+    switch (true) {
+
+      case path.startsWith('/Projects-Showcase/Aprashka/'):
+        setClassName(newName)
+        break
+
+      case path.startsWith('/Projects-Showcase/Aprashka'):
+        setClassName('aboutproject')
+        break
+
+      default: console.log('default value from Aprashka switch')
+    }
+
+  }, [location])
+
+  // #endregion
 
   return (
-    <Provider store={store}> {/* React Tool-Kit */}
-
-      { isLoading && 
-        <div className='loadscreen'>
-          <div className='loading-effect'>
-            <svg width="250" height="250" viewBox="0 0 258 254" xmlns="http://www.w3.org/2000/svg">
-              <g fill='current'>
-                <path d="M148.067 253.823L121.513 165.264L64.3346 238.356L28.035 206.996L92.3704 139.749L0.147461 127.25L8.99302 80.1035L99.2609 101.632L64.8378 15.8252L109.776 0.110085L136.33 88.6693L193.508 15.5776L229.808 46.9369L165.472 114.184L257.695 126.683L248.85 173.83L158.582 152.301L193.005 238.108L148.067 253.823Z"/>
-              </g>
-            </svg>
-          </div>
-        </div> 
-      }
+    <> {/* React Tool-Kit */}
+      
+      <LoadScreen />
 
       <section className='aprashka-main__sidebar'>
         <Sidebar />
       </section>
 
-      <section className='aprashka-main__wrapper'>
+      <section className={`aprashka-main__wrapper ${className}`}>
         <Outlet />
       </section>
       
-    </Provider>
+    </>
   )
 }
 

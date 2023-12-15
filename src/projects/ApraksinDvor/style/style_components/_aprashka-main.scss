@@ -245,4 +245,8 @@
     width: 100%;
     overflow: auto;
   }
+  
+  &__wrapper::-webkit-scrollbar {
+    width: 0px;
+  }
 }

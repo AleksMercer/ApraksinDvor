@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+
 import { DotLottiePlayer } from '@dotlottie/react-player';
 
 // #region : photos import
@@ -27,12 +28,12 @@ function AboutProject() {
   const handleMouseEnter = (lottie) => {
     lottie.current.setDirection(1)
     lottie.current.play()
-  };
+  }
 
   const handleMouseLeave = (lottie) => {
     lottie.current.setDirection(-1)
     lottie.current.play()
-  };
+  }
 
   // #endregion
 
@@ -52,7 +53,7 @@ function AboutProject() {
       
         <div className='welcome-block__slogan' >
           <svg className={`${isChecked && 'checked'}`} width="183" height="31" fill="current" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M64.764 0c-7.046 0-12.642 6.886-12.642 15.442 0 8.556 5.7 15.442 12.642 15.442 7.046 0 12.642-6.886 12.642-15.442C77.406 6.886 71.81 0 64.764 0zm0 26.71c-4.663 0-8.497-5.008-8.497-11.268 0-6.26 3.834-11.268 8.497-11.268s8.497 5.008 8.497 11.268c0 6.26-3.834 11.269-8.497 11.269z"/><path d="M164.97.835v29.214H183v-4.173h-13.885v-8.347H183v-4.174h-13.885V5.008H183V.835h-18.03zM105.488 25.876h-8.393V.835H92.95v25.04h-8.186V.836h-4.145v29.214h29.014V.835h-4.145v25.04zM133.261.835v29.214h-4.145V5.01h-5.388l-7.047 25.04h-4.145l8.29-29.214h12.435zM0 .835v29.214h4.145V5.01h16.58v25.04h4.144V.835H0z" /><path fillRule="evenodd" clipRule="evenodd" d="M41.241.835c4.663.313 8.497 4.382 8.394 9.495 0 5.216-3.938 9.39-8.912 9.39H33.16v10.33h-4.145V.834H41.24zM33.16 15.65h7.046c2.798 0 5.078-2.4 5.078-5.322 0-2.921-2.28-5.32-5.078-5.32h-7.046V15.65zM136.369 15.442C136.369 6.886 141.965 0 149.011 0c7.047 0 12.642 6.886 12.642 15.442 0 8.556-5.699 15.442-12.642 15.442s-12.642-6.886-12.642-15.442zm4.145 0c0 6.26 3.834 11.269 8.497 11.269 4.767 0 8.497-5.009 8.497-11.269s-3.834-11.268-8.497-11.268-8.497 5.008-8.497 11.268z"/></svg>
-          <span className={`${isChecked && 'checked'}`}>В СОВРЕМЕННОМ СВЕТЕ</span>
+          <span className={`${!isChecked && 'checked'}`}>В СОВРЕМЕННОМ СВЕТЕ</span>
         </div>
 
         <div className='welcome-block__idea'>
