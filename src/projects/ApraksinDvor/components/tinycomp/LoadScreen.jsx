@@ -1,9 +1,9 @@
 import React, { useState }from 'react'
 
 function LoadScreen() {
-    // Loading screen
-    const [isLoading, setIsLoading] = useState(true)
-    setTimeout(() => setIsLoading(false), 750)
+
+  const [isLoading, setIsLoading] = useState(true)
+  setTimeout(() => setIsLoading(false), 750)
 
   return (
     <>

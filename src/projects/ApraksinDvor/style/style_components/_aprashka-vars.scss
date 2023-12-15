@@ -66,13 +66,23 @@ $semibold: 600;
 
 /*==========Mixin========== Start*/
 
-  @mixin textellipsis() { 
-    //@include textellipsis();
+  @mixin template-values() { 
+    //@include template-values();
+    @include grid_template(auto / 1128px);
+    row-gap: 140px;
+    margin: 80px 0px 80px 128px;
 
+    .gray-container {
+      @include grid_center(1fr / 1fr);
+      background-color: $gray-0;
+    }
   }   
 
-  @mixin headers() { 
-    //@include headers();
+  @mixin text() { 
+    //@include text();
+    font-family: Inter;
+    color: $black;
+
     * > h1 {
       font-size: 60px;
     }
@@ -86,6 +96,11 @@ $semibold: 600;
     * > h4 {
       font-size: 28px;
       font-weight: $medium;
+    }
+    * > p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: $regular;
     }
   }        
 

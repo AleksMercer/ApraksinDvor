@@ -15,14 +15,22 @@
   grid-template: $template;
 }
 
+@mixin grid_align_center($template) { 
+//@include grid_align_center($template);
+// Грид сетка с вертикальным выравниванием и прижимом к левой стороне
+
+  display: grid;
+  grid-template: $template;
+  align-items: center;
+}
+
 @mixin grid_center($template) {
 //@include grid_center($template);
 //Выравнит вертикально и горизонтально
 
   display: grid;
   grid-template: $template;
-  align-items: center;
-  text-align: center;
+  place-items: center;
 }
 
 @mixin grid_items( $j-items, $a-items) { 
