@@ -94,14 +94,14 @@
 
           @keyframes menu-1-open {
             0% {
-              transform: translateY(-200px);
+              transform: translateY(-240px); //1 element = 40px
               height: 0px;
               color: #0a283200;
             }
 
             100% {
               transform: translateY(0px);
-              height: 200px;
+              height: 240px; //here
               color: $black;
             }
           }
@@ -113,12 +113,12 @@
           @keyframes menu-1-close {
             0% {
               transform: translateY(0px);
-              height: 200px;
+              height: 240px; //here
               color: $black;
             }
 
             100% {
-              transform: translateY(-200px);
+              transform: translateY(-240px); //here
               height: 0px;
               color: #0a283200;
             }
@@ -138,14 +138,14 @@
 
           @keyframes menu-2-open {
             0% {
-              transform: translateY(-440px); //1 element = 40px
+              transform: translateY(-480px); //1 element = 40px
               height: 0px;
               color: #0a283200;
             }
 
             100% {
               transform: translateY(0px);
-              height: 440px;
+              height: 480px;
               color: $black;
             }
           }
@@ -157,12 +157,12 @@
           @keyframes menu-2-close {
             0% {
               transform: translateY(0px);
-              height: 440px;
+              height: 480px;
               color: $black;
             }
 
             100% {
-              transform: translateY(-440px);
+              transform: translateY(-480px);
               height: 0px;
               color: #0a283200;
             }
@@ -235,7 +235,31 @@
       }
     }
   }
-  
+  .download-button {
+    height: 64px;
+    width: 198px;
+
+    @include grid_template(1fr / auto auto);
+    align-items: center;
+    column-gap: 12px;
+
+    background-color: $blue-main;
+    color: white;
+    font-size: $default-font;
+    font-weight: $medium;
+    transition: 0.2s linear;
+
+    svg {
+      justify-self: end;
+    }
+  }
+
+  .download-button:hover {
+    background-color: $green-main;
+    transition: 0.2s linear;
+
+  }
+
   .footer {
     @include grid_align_center(1fr / repeat(3, 1fr));
     justify-content: space-between;

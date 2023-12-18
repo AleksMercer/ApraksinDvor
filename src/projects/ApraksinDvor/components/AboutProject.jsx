@@ -99,7 +99,7 @@ function AboutProject() {
             <h2>Начать работать</h2>
 
             <nav>
-              <div>
+              <div className='rec'>
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieLogo}
@@ -109,13 +109,13 @@ function AboutProject() {
                   />
                 </div>
                 <h4 className='color-blue'>Рекомендации
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#058CD7"/>
+                  <svg className='color-blue' width="32" height="32" viewBox="0 0 32 32" fill="current"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
               </div>
 
-              <div>
+              <div className='style'>
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieSquare}
@@ -125,13 +125,13 @@ function AboutProject() {
                   />
                 </div>
                 <h4 className='color-green'>Стили
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#058C50"/>
+                  <svg className='color-green' width="32" height="32" viewBox="0 0 32 32" fill="current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
               </div>
 
-              <div>
+              <div className='comp'>
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieSwitch}
@@ -141,8 +141,8 @@ function AboutProject() {
                   />
                 </div>
                 <h4 className='color-orange'>Компоненты
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" fill="#FF5F28"/>
+                  <svg className='color-orange' width="32" height="32" viewBox="0 0 32 32" fill="current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
               </div>

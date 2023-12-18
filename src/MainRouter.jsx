@@ -15,24 +15,26 @@ import { Route, Routes, useLocation } from 'react-router-dom'
   import AboutSystem from './projects/apraksindvor/components/AboutSystem'
 
 /* Accordion1 routes */
-  import Formstyle from './projects/apraksindvor/components/accordion1/Formstyle'
-  import Palette from './projects/apraksindvor/components/accordion1/Palette'
+  import Logotype from './projects/apraksindvor/components/accordion1/Logotype'
+  import ColorPalette from './projects/apraksindvor/components/accordion1/ColorPalette'
   import Typography from './projects/apraksindvor/components/accordion1/Typography'
-  import Gridlines from './projects/apraksindvor/components/accordion1/Gridlines'
+  import GridAndIndent from './projects/apraksindvor/components/accordion1/GridAndIndent'
   import Graphic from './projects/apraksindvor/components/accordion1/Graphic'
+  import Icons from './projects/apraksindvor/components/accordion1/Icons'
 
 /* Accordion2 routes */
   import Breadcrumbs from './projects/apraksindvor/components/accordion2/Breadcrumbs'
-  import Buttons from './projects/apraksindvor/components/accordion2/Buttons'
-  import Cards from './projects/apraksindvor/components/accordion2/Cards'
+  import Button from './projects/apraksindvor/components/accordion2/Button'
+  import Card from './projects/apraksindvor/components/accordion2/Card'
   import Checkbox from './projects/apraksindvor/components/accordion2/Checkbox'
   import Divider from './projects/apraksindvor/components/accordion2/Divider'
   import Loading from './projects/apraksindvor/components/accordion2/Loading'
   import Modal from './projects/apraksindvor/components/accordion2/Modal'
-  import Popover from './projects/apraksindvor/components/accordion2/Popover'
-  import RadioButtons from './projects/apraksindvor/components/accordion2/RadioButtons'
-  import SwitchButtons from './projects/apraksindvor/components/accordion2/SwitchButtons'
+  import Tooltip from './projects/apraksindvor/components/accordion2/Tooltip'
+  import RadioButton from './projects/apraksindvor/components/accordion2/RadioButton'
+  import SwitchButton from './projects/apraksindvor/components/accordion2/SwitchButton'
   import TextInput from './projects/apraksindvor/components/accordion2/TextInput'
+  import Search from './projects/apraksindvor/components/accordion2/Search'
 
 /*---------------------------------------------------------------------------------------------*/
 
@@ -80,24 +82,26 @@ function MainRouter() {
           <Route path="AboutSystem"   element={ <AboutSystem /> }/>
 
           {/* Accordion1 routes */}
-          <Route path="Formstyle"     element={ <Formstyle /> }/>
-          <Route path="Palette"       element={ <Palette /> }/>
+          <Route path="Logotype"      element={ <Logotype /> }/>
+          <Route path="ColorPalette"  element={ <ColorPalette /> }/>
           <Route path="Typography"    element={ <Typography /> }/>
-          <Route path="Gridlines"     element={ <Gridlines /> }/>
+          <Route path="GridAndIndent" element={ <GridAndIndent /> }/>
           <Route path="Graphic"       element={ <Graphic /> }/>
+          <Route path="Icons"         element={ <Icons /> }/>
 
           {/* Accordion2 routes */}
           <Route path="Breadcrumbs"   element={ <Breadcrumbs /> }/>
-          <Route path="Buttons"       element={ <Buttons /> }/>
-          <Route path="Cards"         element={ <Cards /> }/>
+          <Route path="Button"        element={ <Button /> }/>
+          <Route path="Card"          element={ <Card /> }/>
           <Route path="Checkbox"      element={ <Checkbox /> }/>
           <Route path="Divider"       element={ <Divider /> }/>
           <Route path="Loading"       element={ <Loading /> }/>
           <Route path="Modal"         element={ <Modal /> }/>
-          <Route path="Popover"       element={ <Popover /> }/>
-          <Route path="RadioButtons"  element={ <RadioButtons /> }/>
-          <Route path="SwitchButtons" element={ <SwitchButtons /> }/>
+          <Route path="Tooltip"       element={ <Tooltip /> }/>
+          <Route path="RadioButton"   element={ <RadioButton /> }/>
+          <Route path="SwitchButton"  element={ <SwitchButton /> }/>
           <Route path="TextInput"     element={ <TextInput /> }/>
+          <Route path="Search"        element={ <Search /> }/>
 
         </Route>
       </Routes>

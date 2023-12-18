@@ -34,11 +34,12 @@ function Sidebar() {
           </div>
 
           <nav className={`accordion__links ${firstSwitch ? 'menu-open' : 'menu-close'}`}>
-            <NavLink to="Formstyle" className={"secondarylink"}>Фирменный стиль</NavLink>
-            <NavLink to="Palette" className={"secondarylink"}>Цветовая палитра</NavLink>
-            <NavLink to="Typography" className={"secondarylink"}>Типографика</NavLink>
-            <NavLink to="Gridlines" className={"secondarylink"}>Модульная сетка</NavLink>
-            <NavLink to="Graphic" className={"secondarylink"}>Графика</NavLink>
+            <NavLink to="Logotype"      className={"secondarylink"}>Логотип</NavLink>
+            <NavLink to="ColorPalette"  className={"secondarylink"}>Цветовая палитра</NavLink>
+            <NavLink to="Typography"    className={"secondarylink"}>Типографика</NavLink>
+            <NavLink to="GridAndIndent" className={"secondarylink"}>Сетка и отступы</NavLink>
+            <NavLink to="Graphic"       className={"secondarylink"}>Графика</NavLink>
+            <NavLink to="Icons"         className={"secondarylink"}>Иконки</NavLink>
           </nav>
         </div> 
 
@@ -54,17 +55,18 @@ function Sidebar() {
           </div>
 
           <nav className={`accordion__links ${secondSwitch ? 'menu-open' : 'menu-close'}`}>
-            <NavLink to="Breadcrumbs" className={"secondarylink"}>Breadcrumbs</NavLink>
-            <NavLink to="Buttons" className={"secondarylink"}>Buttons</NavLink>
-            <NavLink to="Cards" className={"secondarylink"}>Cards</NavLink>
-            <NavLink to="Checkbox" className={"secondarylink"}>Checkbox</NavLink>
-            <NavLink to="Divider" className={"secondarylink"}>Divider</NavLink>
-            <NavLink to="Loading" className={"secondarylink"}>Loading</NavLink>
-            <NavLink to="Modal" className={"secondarylink"}>Modal</NavLink>
-            <NavLink to="Popover" className={"secondarylink"}>Popover</NavLink>
-            <NavLink to="RadioButtons" className={"secondarylink"}>Radio buttons</NavLink>
-            <NavLink to="SwitchButtons" className={"secondarylink"}>Switch buttons</NavLink>
-            <NavLink to="TextInput" className={"secondarylink"}>Text input</NavLink>
+            <NavLink to="Breadcrumbs"   className={"secondarylink"}>Breadcrumbs</NavLink>
+            <NavLink to="Button"        className={"secondarylink"}>Button</NavLink>
+            <NavLink to="Card"          className={"secondarylink"}>Card</NavLink>
+            <NavLink to="Checkbox"      className={"secondarylink"}>Checkbox</NavLink>
+            <NavLink to="Divider"       className={"secondarylink"}>Divider</NavLink>
+            <NavLink to="Loading"       className={"secondarylink"}>Loading</NavLink>
+            <NavLink to="Modal"         className={"secondarylink"}>Modal</NavLink>
+            <NavLink to="Tooltip"       className={"secondarylink"}>Tooltip</NavLink>
+            <NavLink to="RadioButton"   className={"secondarylink"}>Radio button</NavLink>
+            <NavLink to="SwitchButton"  className={"secondarylink"}>Switch button</NavLink>
+            <NavLink to="TextInput"     className={"secondarylink"}>Text input</NavLink>
+            <NavLink to="Search"        className={"secondarylink"}>Search</NavLink>
           </nav>
         </div>
 

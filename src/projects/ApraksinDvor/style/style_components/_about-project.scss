@@ -2,16 +2,6 @@
   @include grid_template(clamp(800px, 100vh, 1080px) repeat(4, auto) / auto);
   row-gap: 140px;
   overflow-x: hidden;
-  
-  .color-blue , .color-blue > * {
-    color: $blue-main;
-  }
-  .color-green, .color-green > * {
-    color: $green-main;
-  }
-  .color-orange, .color-orange > * {
-    color: $orange-main;
-  }
 
   .work-block, .team-block, .footer {
     width: 1128px;
@@ -37,7 +27,7 @@
         animation: effect 8s linear infinite;
         transition: opacity 0.2s linear;
       }
-
+    
       .sunpic.false {
         opacity: 0;
       }
@@ -182,6 +172,22 @@
           }
         }
       }
+      
+      .rec:hover, .style:hover, .comp:hover {
+
+        .color-blue {
+          color: $blue-main;
+          * {fill: $blue-main;}
+        }
+        .color-green {
+          color: $green-main;
+          * {fill: $green-main;}
+        }
+        .color-orange {
+          color: $orange-main;
+          * {fill: $orange-main;}
+        }
+      }
     }
 
     &__card {
@@ -192,6 +198,16 @@
       p {
         color: $black;
         line-height: 28px;
+      }
+
+      .color-blue {
+        color: $blue-main;
+      }
+      .color-green {
+        color: $green-main;
+      }
+      .color-orange {
+        color: $orange-main;
       }
     }
   }
@@ -324,6 +340,16 @@
         p {
           line-height: 28px; 
         }
+      }
+
+      .color-blue {
+        color: $blue-main;
+      }
+      .color-green {
+        color: $green-main;
+      }
+      .color-orange {
+        color: $orange-main;
       }
     }
   }
