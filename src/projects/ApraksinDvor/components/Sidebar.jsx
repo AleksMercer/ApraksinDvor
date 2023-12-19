@@ -20,7 +20,7 @@ function Sidebar() {
       <nav className='sidebar'>
 
         <NavLink to="." end className={"mainlink"}>О проекте</NavLink>
-        <NavLink to="AboutSystem" className={"mainlink"}>О дизайн системе</NavLink> 
+        <NavLink to="AboutSystem" className={"mainlink"}>О дизайн-системе</NavLink> 
 
         <div className='accordion accfirst'>
           <div 

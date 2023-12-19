@@ -4,7 +4,47 @@
   overflow: hidden;
 
   @include grid_template(100vh / 312px 1fr);
-  @include text();
+
+  // #region : TEXT VARS start
+    font-family: Inter;
+    color: $black;
+
+    * > h1 {
+      font-size: 56px;
+      line-height: 64px;
+      font-weight: $medium;
+      user-select: none;
+    }
+    * > h2 {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: $medium;
+      user-select: none;
+    }
+    * > h3 {
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: $medium;
+      user-select: none;
+    }
+    * > h4 {
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: $medium;
+      user-select: none;
+    }
+    * > h5 {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: $medium;
+      user-select: none;
+    }
+    * > p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: $regular;
+    }
+  // #endregion TEXT VARS end
 
   &__sidebar {
     @include grid_template(auto 1fr / 1fr);
@@ -189,6 +229,41 @@
     
     &::-webkit-scrollbar {
       width: 0px;
+    }
+
+    &:not(.aboutproject) {
+      @include grid_template(auto / 1128px);
+      row-gap: 140px;
+      padding: 80px 0px 0px 128px;
+      
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      // section {
+      //   &.rows, *.rows { // для section с сеткой по строкам
+      //     @include grid_template(auto / 1fr);
+      //     row-gap: 32px;
+      //   }
+
+      //   &.columns, *.columns { // для section и блоков с разделенияем на две колонки
+      //     @include grid_template(1fr / 1fr 1fr);
+      //     column-gap: 24px;
+      //   }
+
+      //   *.text { // для ограничения ширины текстовых блоков
+      //     width: 768px; // 744 - 768
+      //   }
+
+      //   *.text-grid { // для построения текста, разделенного gap
+      //     @include grid_template(auto / 1fr);
+      //     row-gap: 24px;
+      //   }
+      // }
+
+      .gray-container {
+        @include grid_center(1fr / 1fr);
+        background-color: $gray-0;
+      }
     }
   }
 

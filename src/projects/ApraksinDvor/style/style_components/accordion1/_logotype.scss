@@ -1,4 +1,116 @@
 .aprashka-main__wrapper.logotype { 
-  @include template-values();
+  
+  .logo-description {
+    @include rows();
 
+    p {
+      @include text()
+    }
+  }
+
+  .logo-main {
+    @include rows();
+
+    &__mid-block {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+
+  .logo-build {
+    @include rows();
+
+    p {
+      @include text()
+    }
+
+    &__pic {
+      @include columns();
+    }
+  }
+
+  .logo-safeandsize {
+    @include rows();
+
+    &__name, &__text, &__pic {
+      @include columns();
+    }
+
+    &__pic {
+      height: $gray-container-big;
+    }
+  }
+  
+  .logo-horizontal {
+    @include rows();
+    p {
+      @include text()
+    }
+
+    div {
+      padding: 100px 0 100px 0;
+      @include grid_template(auto / 1fr);
+      row-gap: 80px;
+    }
+  }
+
+  .logo-short {
+    @include rows();
+    p {
+      @include text()
+    }
+    div {
+      padding: 80px 100px 80px 100px;
+      @include grid_template(1fr / 1fr auto 1fr);
+      column-gap: 100px;
+    }
+  }
+
+  .logo-partner {
+    @include rows();
+
+    &__pics {
+      @include columns();
+
+      div {
+        height: $gray-container-big;
+      }
+    }
+
+    p {
+      @include text()
+    }
+  }
+
+  .logo-colors {
+    @include rows();
+    p {
+      @include text()
+    }
+  }
+
+  .logo-wrong {
+    @include rows();
+
+    &__different-var {
+      @include grid_template(1fr / 1fr 1fr 1fr);
+      column-gap: 24px;
+      
+      &-example {
+        @include grid_template(1fr auto / 1fr);
+        row-gap: 16px;
+
+        div {
+          height: $gray-container-small;
+        }
+
+        p {
+          font-size: $biggest-than-default;
+        }
+      }
+    }
+  }
 }

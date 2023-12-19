@@ -3,9 +3,7 @@ import React from 'react'
 import Button from '../tinycomp/DownloadButton'
 import Footer from '../tinycomp/Footer'
 
-
 /* Pic import start */
-
   import aprashkaLogoBluePink from '../../media/accordion1/logotype/aprashka-logo-blue-pink.svg'
   import defaultLogo from '../../media/accordion1/logotype/default-logo.svg'
   import horizontalLogoMinSize from '../../media/accordion1/logotype/horizontal-logo-min-size.svg'
@@ -27,7 +25,6 @@ import Footer from '../tinycomp/Footer'
   import wrongLogo4 from '../../media/accordion1/logotype/wrong-logo-4.svg'
   import wrongLogo5 from '../../media/accordion1/logotype/wrong-logo-5.svg'
   import wrongLogo6 from '../../media/accordion1/logotype/wrong-logo-6.svg'
-
 /* Pic import end */
 
 
@@ -58,10 +55,9 @@ function Logotype() {
             <p>Допускается масштабирование логотипа для разных носителей без изменения его пропорций, с учетом охранного поля и минимального размера.</p>
             <p>Как правило, достаточно разместить один логотип на одном носителе, но для решения отдельных задач можно использовать логотип несколько раз.</p>
           </div>
-
-          <Button picture={defaultLogo} />
         </div>
 
+        <Button picture={defaultLogo} />
       </section>
 
       <section className='logo-build'>
@@ -74,17 +70,21 @@ function Logotype() {
       </section>
 
       <section className='logo-safeandsize'>
-        <div className='logo-safeandsize__safe'>
+
+        <div className='logo-safeandsize__name'>
           <h2>Охранное поле</h2>
-          <p>Охранное поле логотипа - это минимальное пустое пространство вокруг логотипа, которое необходимо соблюдать при размещении логотипа на различных носителях. Охранное поле равно высоте букв.</p>
-          <div className='gray-container'>
-            <img src={logoSafeZone}  alt="logo safe zone" />
-          </div>
+          <h2>Минимальный размер</h2>
         </div>
 
-        <div className='logo-safeandsize__size'>
-          <h2>Минимальный размер</h2>
+        <div className='logo-safeandsize__text'>
+          <p>Охранное поле логотипа - это минимальное пустое пространство вокруг логотипа, которое необходимо соблюдать при размещении логотипа на различных носителях. Охранное поле равно высоте букв.</p>
           <p>Минимальный размер логотипа - это тот наименьший размер, при котором логотип сохраняет узнаваемость и читаемость. Не рекомендуется использовать значения ниже установленных.</p>
+        </div>
+
+        <div className='logo-safeandsize__pic'>
+          <div className='gray-container'>
+            <img src={logoSafeZone}  alt="logo safe zone" />
+          </div>          
           <div className='gray-container'>
             <img src={logoMinSize}  alt="logo min size" />
           </div>
@@ -120,9 +120,14 @@ function Logotype() {
       <section className='logo-partner'>
         <h2>С логотипами партнеров</h2>
         <p>Возможно два варианта размещения нескольких логотипов рядом: по горизонтали и по вертикали. При этом рекомендуемое расстояние между логотипами равно удвоенной высоте букв. Используйте выравнивание по центру. Соблюдайте охранные поля логотипов. Учитывайте визуальный вес каждого логотипа при определении их размеров относительно друг друга.</p>
-        <div className='gray-container'>
-          <img src={partnerLogo1}  alt="logo horizontal" />
-          <img src={partnerLogo2}  alt="logo vertical" />
+        
+        <div className="logo-partner__pics">
+          <div className='gray-container'>
+            <img src={partnerLogo1}  alt="logo horizontal" />
+          </div>
+          <div className='gray-container'>
+            <img src={partnerLogo2}  alt="logo vertical" />
+          </div>
         </div>
       </section>
 
@@ -130,50 +135,53 @@ function Logotype() {
         <h2>Цветовые варианты</h2>
         <p>Приоритетными вариантами являются черный логотип на белом фоне и его инверсия. При этом допускаются различные варианты размещения логотипа на цветном фоне, когда это необходимо для решения технических или творческих задач.</p>
         <img src={logoColors}  alt="different logos" />
-
       </section>
 
       <section className='logo-wrong'>
         <h2>Неправильное использование</h2>
 
-        <div className='different-var'>
+        <div className='logo-wrong__different-var'>
 
-          <div className='different-var__example'>
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo1}  alt="one of the options of logo" />
             </div>
             <p>Не изменяйте логотип</p>
           </div>
 
-          <div className='different-var__example'>
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo2}  alt="one of the options of logo" />
             </div>
             <p>Не деформируйте форму</p>
           </div>
 
-          <div className='different-var__example'>
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo3}  alt="one of the options of logo" />
             </div>
             <p>Не поворачивайте</p>
           </div>
 
-          <div className='different-var__example'>
+        </div>
+
+        <div className='logo-wrong__different-var'>
+
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo4}  alt="one of the options of logo" />
             </div>
             <p>Не добавляйте обводку</p>
           </div>
 
-          <div className='different-var__example'>
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo5}  alt="one of the options of logo" />
             </div>
             <p>Не добавляйте эффекты</p>
           </div>
 
-          <div className='different-var__example'>
+          <div className='logo-wrong__different-var-example'>
             <div className='gray-container'>
               <img src={wrongLogo6}  alt="one of the options of logo" />
             </div>
@@ -181,6 +189,7 @@ function Logotype() {
           </div>
 
         </div>
+
       </section>
 
       <Footer />
