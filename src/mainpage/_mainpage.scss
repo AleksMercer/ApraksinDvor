@@ -64,10 +64,10 @@
           padding-bottom: 0.5vh;
         }
       }
-    }
 
-    .folder-cell:hover {
-      border: solid 1px white;
+      &:hover {
+        border: solid 1px white;
+      }
     }
   }
 

@@ -176,21 +176,20 @@
       .mainlink:hover, .secondarylink:hover {
         background-color: $gray-0;
       }
-    }
-
-    .sidebar::-webkit-scrollbar {
-      width: 0px;
+      
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
     }
   }
 
   &__wrapper {
     height: 100%;
     width: 100%;
-    overflow: auto;
-  }
-  
-  &__wrapper::-webkit-scrollbar {
-    width: 0px;
+    
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
   }
 
   .loadscreen { // loading effect
@@ -235,6 +234,7 @@
       }
     }
   }
+  
   .download-button {
     height: 64px;
     width: 198px;
@@ -247,17 +247,19 @@
     color: white;
     font-size: $default-font;
     font-weight: $medium;
-    transition: 0.2s linear;
+    transition: .2s linear;
+    user-select: none;
 
     svg {
       justify-self: end;
     }
-  }
-
-  .download-button:hover {
-    background-color: $green-main;
-    transition: 0.2s linear;
-
+    
+    &:hover {
+      background-color: $blue-hover;
+    }
+    &:active {
+      background-color: $blue-pressed;
+    }
   }
 
   .footer {

@@ -293,26 +293,46 @@ body * > img, body * > button, body h1, body h2, body h3 {
   font-size: 56px;
   line-height: 64px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main * > h2 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main * > h3 {
   font-size: 36px;
   line-height: 48px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main * > h4 {
   font-size: 28px;
   line-height: 38px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main * > h5 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main * > p {
   font-size: 20px;
@@ -552,7 +572,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper {
   height: 100%;
   width: 100%;
-  overflow: auto;
 }
 .aprashka-main__wrapper::-webkit-scrollbar {
   width: 0px;
@@ -629,14 +648,19 @@ body * > img, body * > button, body h1, body h2, body h3 {
   font-weight: 500;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aprashka-main .download-button svg {
   justify-self: end;
 }
 .aprashka-main .download-button:hover {
-  background-color: #058C50;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  background-color: #44A9E1;
+}
+.aprashka-main .download-button:active {
+  background-color: #0178BA;
 }
 .aprashka-main .footer {
   display: grid;
@@ -865,23 +889,59 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .work-block__start nav div h4 svg {
   margin-left: 12px;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-blue {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-blue {
   color: #058CD7;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-blue * {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-blue * {
   fill: #058CD7;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-green {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-green {
   color: #058C50;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-green * {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-green * {
   fill: #058C50;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-orange {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-orange {
   color: #FF5F28;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start .rec:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start .style:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start .comp:hover .color-orange * {
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-orange * {
   fill: #FF5F28;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-blue {
+  color: #44A9E1;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-blue * {
+  fill: #44A9E1;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-green {
+  color: #37A373;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-green * {
+  fill: #37A373;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-orange {
+  color: #FF7F53;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-orange * {
+  fill: #FF7F53;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-blue {
+  color: #0178BA;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-blue * {
+  fill: #0178BA;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-green {
+  color: #047040;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-green * {
+  fill: #047040;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-orange {
+  color: #E84A13;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-orange * {
+  fill: #E84A13;
 }
 .aprashka-main__wrapper.aboutproject .work-block__card {
   display: grid;
@@ -1042,13 +1102,13 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .team-block__team div p {
   line-height: 28px;
 }
-.aprashka-main__wrapper.aboutproject .team-block__team .color-blue {
+.aprashka-main__wrapper.aboutproject .team-block__team div.color-blue {
   color: #058CD7;
 }
-.aprashka-main__wrapper.aboutproject .team-block__team .color-green {
+.aprashka-main__wrapper.aboutproject .team-block__team div.color-green {
   color: #058C50;
 }
-.aprashka-main__wrapper.aboutproject .team-block__team .color-orange {
+.aprashka-main__wrapper.aboutproject .team-block__team div.color-orange {
   color: #FF5F28;
 }
 
@@ -1056,8 +1116,9 @@ body * > img, body * > button, body h1, body h2, body h3 {
   display: grid;
   grid-template: auto/1128px;
   row-gap: 140px;
-  margin: 80px 0px 80px 128px;
+  padding: 80px 0px 80px 128px;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .aprashka-main__wrapper.aboutsystem .gray-container {
   display: grid;
@@ -1071,8 +1132,9 @@ body * > img, body * > button, body h1, body h2, body h3 {
   display: grid;
   grid-template: auto/1128px;
   row-gap: 140px;
-  margin: 80px 0px 80px 128px;
+  padding: 80px 0px 80px 128px;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .aprashka-main__wrapper.logotype .gray-container {
   display: grid;

@@ -54,16 +54,18 @@ $h2-font: 48px;
 $h3-font: 36px;
 $h4-font: 28px;
 
-
 $default-font: 20px;
 $small-font: 16px;
+
 
 $extralight: 200;
 $regular: 400;
 $medium: 500;
 $semibold: 600;
 
-$textweight: minmax(744px, 768px);
+
+$textweight-min: 744px;
+$textweight-max: 768px;
 
 
 /*==========Mixin========== Start*/
@@ -72,9 +74,10 @@ $textweight: minmax(744px, 768px);
   //@include template-values();
   @include grid_template(auto / 1128px);
   row-gap: 140px;
-  margin: 80px 0px 80px 128px;
+  padding: 80px 0px 80px 128px;
   
   overflow-x: hidden;
+  overflow-y: auto;
 
   .gray-container {
     @include grid_center(1fr / 1fr);
@@ -87,30 +90,36 @@ $textweight: minmax(744px, 768px);
   font-family: Inter;
   color: $black;
 
+
   * > h1 {
     font-size: 56px;
     line-height: 64px;
     font-weight: $medium;
+    user-select: none;
   }
   * > h2 {
     font-size: 48px;
     line-height: 56px;
     font-weight: $medium;
+    user-select: none;
   }
   * > h3 {
     font-size: 36px;
     line-height: 48px;
     font-weight: $medium;
+    user-select: none;
   }
   * > h4 {
     font-size: 28px;
     line-height: 38px;
     font-weight: $medium;
+    user-select: none;
   }
   * > h5 {
     font-size: 20px;
     line-height: 28px;
     font-weight: $medium;
+    user-select: none;
   }
   * > p {
     font-size: 20px;

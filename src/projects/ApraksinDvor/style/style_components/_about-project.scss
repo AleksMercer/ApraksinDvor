@@ -26,10 +26,10 @@
         left: 1006px;
         animation: effect 8s linear infinite;
         transition: opacity 0.2s linear;
-      }
-    
-      .sunpic.false {
-        opacity: 0;
+
+        &.false {
+          opacity: 0;
+        }
       }
       
       img {
@@ -38,11 +38,12 @@
         left: 1006px;
 
         animation: effect 10s linear infinite;
-      }
-      img.checked {
-        opacity: 0;
-      }
 
+        &.checked {
+          opacity: 0;
+        }
+      }
+ 
       @keyframes effect {
         0% {
           transform: rotate(0deg);
@@ -58,13 +59,14 @@
         top: 0px;
         left: -410px;
         transition: 0.2s linear;
-      }
-      .light.false {
-        opacity: 0;
-        top: 150px;
-        left: 1250px;
-        height: 0px;
-        width: 0px
+
+        &.false {
+          opacity: 0;
+          top: 150px;
+          left: 1250px;
+          height: 0px;
+          width: 0px
+        }
       }
     }
 
@@ -88,9 +90,10 @@
         font-weight: $extralight;
         font-size: 40px;
         color: $orange-main;
-      }
-      span.checked {
-        opacity: 0;
+
+        &.checked {
+          opacity: 0;
+        }
       }
     }
 
@@ -171,21 +174,50 @@
             }
           }
         }
-      }
-      
-      .rec:hover, .style:hover, .comp:hover {
 
-        .color-blue {
-          color: $blue-main;
-          * {fill: $blue-main;}
+        .rec, .style, .comp {
+          .color-blue {
+            color: $blue-main;
+            * {fill: $blue-main;}
+          }
+          .color-green {
+            color: $green-main;
+            * {fill: $green-main;}
+          }
+          .color-orange {
+            color: $orange-main;
+            * {fill: $orange-main;}
+          }
         }
-        .color-green {
-          color: $green-main;
-          * {fill: $green-main;}
+
+        .rec:hover, .style:hover, .comp:hover {
+          .color-blue {
+            color: $blue-hover;
+            * {fill: $blue-hover;}
+          }
+          .color-green {
+            color: $green-hover;
+            * {fill: $green-hover;}
+          }
+          .color-orange {
+            color: $orange-hover;
+            * {fill: $orange-hover;}
+          }
         }
-        .color-orange {
-          color: $orange-main;
-          * {fill: $orange-main;}
+
+        .rec:active, .style:active, .comp:active {
+          .color-blue {
+            color: $blue-pressed;
+            * {fill: $blue-pressed;}
+          }
+          .color-green {
+            color: $green-pressed;
+            * {fill: $green-pressed;}
+          }
+          .color-orange {
+            color: $orange-pressed;
+            * {fill: $orange-pressed;}
+          }
         }
       }
     }
@@ -278,58 +310,58 @@
             filter: opacity(0);
             height: 0px;
             width: 0px;
+
+            &.one {
+              top: 120px;
+              left: 120px;
+            }
+            &.two {
+              top: 120px;
+            }
+            &.three {
+              top: 120px;
+              right: 120px;
+              transform: rotate(-50deg);
+            }
           }
 
-          svg.one {
-            top: 120px;
-            left: 120px;
-          }
-          svg.two {
-            top: 120px;
-          }
-          svg.three {
-            top: 120px;
-            right: 120px;
-            transform: rotate(-50deg);
-          }
-        }
+          &:hover {
+  
+            img, svg {
+              transition: all 0.5s ease;
+            }
+  
+            img {
+              height: 360px;
+              width: 360px;
+              filter: grayscale(0);
+            }
+  
+            svg {
+              position: absolute;
+              filter: opacity(1);
 
-        div:hover {
-
-          img, svg {
-            transition: all 0.5s ease;
-          }
-
-          img {
-            height: 360px;
-            width: 360px;
-            filter: grayscale(0);
-          }
-
-          svg {
-            position: absolute;
-            filter: opacity(1);
-          }
-
-          svg.one {
-            top: 25px;
-            left: 25px;
-            height: 70px;
-            width: 70px;
-            transform: rotate(50deg);
-          }
-          svg.two {
-            top: 25px;
-            height: 55px;
-            width: 55px;
-            transform: rotate(50deg);
-          }
-          svg.three {
-            top: 5px;
-            right: 5px;
-            height: 90px;
-            width: 90px;
-            transform: rotate(0deg);
+              &.one {
+                top: 25px;
+                left: 25px;
+                height: 70px;
+                width: 70px;
+                transform: rotate(50deg);
+              }
+              &.two {
+                top: 25px;
+                height: 55px;
+                width: 55px;
+                transform: rotate(50deg);
+              }
+              &.three {
+                top: 5px;
+                right: 5px;
+                height: 90px;
+                width: 90px;
+                transform: rotate(0deg);
+              }
+            }
           }
         }
 
@@ -340,16 +372,16 @@
         p {
           line-height: 28px; 
         }
-      }
 
-      .color-blue {
-        color: $blue-main;
-      }
-      .color-green {
-        color: $green-main;
-      }
-      .color-orange {
-        color: $orange-main;
+        &.color-blue {
+          color: $blue-main;
+        }
+        &.color-green {
+          color: $green-main;
+        }
+        &.color-orange {
+          color: $orange-main;
+        }
       }
     }
   }
