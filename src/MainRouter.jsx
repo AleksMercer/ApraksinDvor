@@ -53,7 +53,7 @@ function MainRouter() {
 
       case path.startsWith(defaultPath + '/Aprashka'):
         document.title = 'Apraksin Dvor'
-        document.querySelector("link[rel='icon']").href = './icons/apraksindvor.ico'
+        document.querySelector("link[rel='icon']").href = './icons/small-logo.ico'
         setMainClass('aprashka-main')
         break
 

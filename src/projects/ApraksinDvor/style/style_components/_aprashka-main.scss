@@ -239,27 +239,6 @@
       overflow-x: hidden;
       overflow-y: auto;
 
-      // section {
-      //   &.rows, *.rows { // для section с сеткой по строкам
-      //     @include grid_template(auto / 1fr);
-      //     row-gap: 32px;
-      //   }
-
-      //   &.columns, *.columns { // для section и блоков с разделенияем на две колонки
-      //     @include grid_template(1fr / 1fr 1fr);
-      //     column-gap: 24px;
-      //   }
-
-      //   *.text { // для ограничения ширины текстовых блоков
-      //     width: 768px; // 744 - 768
-      //   }
-
-      //   *.text-grid { // для построения текста, разделенного gap
-      //     @include grid_template(auto / 1fr);
-      //     row-gap: 24px;
-      //   }
-      // }
-
       .gray-container {
         @include grid_center(1fr / 1fr);
         background-color: $gray-0;
