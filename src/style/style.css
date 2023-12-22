@@ -837,11 +837,30 @@ body * > img, body * > button, body h1, body h2, body h3 {
   margin: 0 0 20px 128px;
   width: 1128px;
 }
-.aprashka-main__wrapper.aboutproject .welcome-block__idea input {
-  accent-color: #FF5F28;
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox {
+  position: relative;
+  cursor: pointer;
   height: 24px;
   width: 24px;
-  margin-top: 5px;
+}
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.checked {
+  background-color: #FF5F28;
+}
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.checked:after {
+  content: "";
+  position: absolute;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  left: 9.5px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.unchecked {
+  border: 1.5px solid #8C9BA0;
 }
 .aprashka-main__wrapper.aboutproject .welcome-block__idea p {
   line-height: 28px;

@@ -104,11 +104,32 @@
       margin: 0 0 20px 128px;
       width: 1128px;
 
-      input {
-        accent-color: $orange-main;
+      .checkbox {
+        position: relative;
+        cursor: pointer;
         height: 24px;
         width: 24px;
-        margin-top: 5px;
+
+        &.checked {
+          background-color: $orange-main;
+
+          &:after {
+            content: "";
+            position: absolute;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            left: 9.5px;
+            top: 6px;
+            width: 5px;
+            height: 10px;
+  
+            transform: rotate(45deg);
+          }
+        }
+    
+        &.unchecked {
+          border: 1.5px solid $gray-5;
+        }
       }
 
 

@@ -56,20 +56,11 @@ function AboutProject() {
         </div>
 
         <div className='welcome-block__idea'>
-          { isChecked ?
-            <input 
-              type="checkbox" 
-              value={isChecked}
-              onChange={() => setIsChecked(!isChecked)}
-              checked
-            />
-            :
-            <input 
-              type="checkbox" 
-              value={isChecked}
-              onChange={() => setIsChecked(!isChecked)}
-            />
-          }
+          <div 
+            class={`checkbox ${isChecked ? 'checked' : 'unchecked'}`} 
+            onClick={() => setIsChecked(!isChecked)}>
+          </div>
+          
           <p>Полностью переосмыслить концепцию Апраксина двора <span>и создать дизайн-систему для дизайнеров и разработчиков.</span></p>
         </div>
 
