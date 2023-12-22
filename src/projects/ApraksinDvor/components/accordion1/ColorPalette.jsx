@@ -12,26 +12,26 @@ function ColorPalette() {
     <>  
       <section className='color-description'>
         <h1>Цветовая палитра</h1>
-        <p>У Апраксина двора яркая, современная цветовая палитра с отсылкой на ретро. Сочетание основных и вспомогательных цветов поддерживает характер бренда и увеличивает его узнаваемость, а дополнительные технические палитры позволяют дизайн-системе быть более гибкой.</p>
+        <p className='text-container'>У Апраксина двора яркая, современная цветовая палитра с отсылкой на ретро. Сочетание основных и вспомогательных цветов поддерживает характер бренда и увеличивает его узнаваемость, а дополнительные технические палитры позволяют дизайн-системе быть более гибкой.</p>
       </section>
 
       <section className='color-main'>
         <h2>Основные цвета</h2>
-        <p>Основные цвета являются приоритетными в использовании как при создании интерфейсов, так и на все носителях фирменного стиля. При этом каждый из основных цветов транслирует ценности бренда.</p>
+        <p className='text-container'>Основные цвета являются приоритетными в использовании как при создании интерфейсов, так и на все носителях фирменного стиля. При этом каждый из основных цветов транслирует ценности бренда.</p>
         <p>Зеленый — надежность и экологичность. <br />Голубой — доверие и легкость. <br />Оранжевый — энергичность и драйв.</p>
         <div className='color-main__colors'>
-          <div className='color-main__colors-green'>
-            <span>Green</span>
+          <div className='color-main__colors-green white-text'>
+            <span className='color-main__colors_fontsize'>Green</span>
             <p><span>HEX</span><span>#058C50</span></p>
             <p><span>RGB</span><span>5 / 140 / 80</span></p>
           </div>
-          <div className='color-main__colors-blue'>
-            <span>Green</span>
+          <div className='color-main__colors-blue white-text'>
+            <span className='color-main__colors_fontsize'>Blue</span>
             <p><span>HEX</span><span>#058CD7</span></p>
             <p><span>RGB</span><span>5 / 140 / 215</span></p>
           </div>
           <div className='color-main__colors-orange'>
-            <span>Green</span>
+            <span className='color-main__colors_fontsize'>Orange</span>
             <p><span>HEX</span><span>#FF5F28</span></p>
             <p><span>RGB</span><span>255 / 90 / 40</span></p>
           </div>
@@ -40,15 +40,15 @@ function ColorPalette() {
 
       <section className='color-additional'>
         <h2>Вспомогательные цвета</h2>
-        <p>Вспомогательные цвета всегда используются в дополнение к основным. Желтый и розовый облегчают основную палитру, символизируя собой позитив и дружелюбие.</p>
+        <p className='text-container'>Вспомогательные цвета всегда используются в дополнение к основным. Желтый и розовый облегчают основную палитру, символизируя собой позитив и дружелюбие.</p>
         <div className='color-additional__colors'>
-          <div className='color-additional__colors-green'>
-            <span>Green</span>
+          <div className='color-additional__colors-yellow'>
+            <p className='color-main__colors_fontsize'>Yellow</p>
             <p><span>HEX</span><span>#FFBE14</span></p>
             <p><span>RGB</span><span>255 / 190 / 20</span></p>
           </div>
-          <div className='color-additional__colors-blue'>
-            <span>Green</span>
+          <div className='color-additional__colors-pink'>
+            <p className='color-main__colors_fontsize'>Pink</p>
             <p><span>HEX</span><span>#FFA5C3</span></p>
             <p><span>RGB</span><span>255 / 165 / 195</span></p>
           </div>
@@ -57,28 +57,28 @@ function ColorPalette() {
 
       <section className='color-opacity'>
         <h2>Прозрачность</h2>
-        <p>Для основных и вспомогательных цветов есть 4 уровня прозрачности. Использование этих уровней позволяет делать разработку компонентов и продуктов более гибкой.</p>
+        <p className='text-container'>Для основных и вспомогательных цветов есть 4 уровня прозрачности. Использование этих уровней позволяет делать разработку компонентов и продуктов более гибкой.</p>
         <div className='color-opacity__color-grid'>
-          <div style={{backgroundColor: '#058C50'}}>Opacity 100</div>
-          <div style={{backgroundColor: '#8ECBB0'}}>Opacity 50</div>
-          <div style={{backgroundColor: '#CDE8DC'}}>Opacity 30</div>
-          <div style={{backgroundColor: '#E6F3ED'}}>Opacity 15</div>
-          <div style={{backgroundColor: '#058CD7'}}>Opacity 100</div>
-          <div style={{backgroundColor: '#82C5EB'}}>Opacity 50</div>
-          <div style={{backgroundColor: '#B4DDF3'}}>Opacity 30</div>
-          <div style={{backgroundColor: '#D9EEF9'}}>Opacity 15</div>
-          <div style={{backgroundColor: '#FF5F28'}}>Opacity 100</div>
-          <div style={{backgroundColor: '#FF9F7E'}}>Opacity 50</div>
-          <div style={{backgroundColor: '#FFCFBF'}}>Opacity 30</div>
-          <div style={{backgroundColor: '#FFEFE9'}}>Opacity 15</div>
-          <div style={{backgroundColor: '#FFBE14'}}>Opacity 100</div>
-          <div style={{backgroundColor: '#FFDF89'}}>Opacity 50</div>
-          <div style={{backgroundColor: '#FFEBB9'}}>Opacity 30</div>
-          <div style={{backgroundColor: '#FFF5DC'}}>Opacity 15</div>
-          <div style={{backgroundColor: '#FFA5C3'}}>Opacity 100</div>
-          <div style={{backgroundColor: '#FFC9DB'}}>Opacity 50</div>
-          <div style={{backgroundColor: '#FFE4ED'}}>Opacity 30</div>
-          <div style={{backgroundColor: '#FFF1F6'}}>Opacity 15</div>
+          <p style={{backgroundColor: '#058C50'}} className='white-text'><span>Opacity 100</span></p>
+          <p style={{backgroundColor: '#8ECBB0'}} c><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#CDE8DC'}}><span>Opacity 30</span></p>
+          <p style={{backgroundColor: '#E6F3ED'}}><span>Opacity 15</span></p>
+          <p style={{backgroundColor: '#058CD7'}} className='white-text'><span>Opacity 100</span></p>
+          <p style={{backgroundColor: '#82C5EB'}}><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#B4DDF3'}}><span>Opacity 30</span></p>
+          <p style={{backgroundColor: '#D9EEF9'}}><span>Opacity 15</span></p>
+          <p style={{backgroundColor: '#FF5F28'}}><span>Opacity 100</span></p>
+          <p style={{backgroundColor: '#FF9F7E'}}><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#FFCFBF'}}><span>Opacity 30</span></p>
+          <p style={{backgroundColor: '#FFEFE9'}}><span>Opacity 15</span></p>
+          <p style={{backgroundColor: '#FFBE14'}}><span>Opacity 100</span></p>
+          <p style={{backgroundColor: '#FFDF89'}}><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#FFEBB9'}}><span>Opacity 30</span></p>
+          <p style={{backgroundColor: '#FFF5DC'}}><span>Opacity 15</span></p>
+          <p style={{backgroundColor: '#FFA5C3'}}><span>Opacity 100</span></p>
+          <p style={{backgroundColor: '#FFC9DB'}}><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#FFE4ED'}}><span>Opacity 30</span></p>
+          <p style={{backgroundColor: '#FFF1F6'}}><span>Opacity 15</span></p>
         </div>
       </section>
 
@@ -86,16 +86,16 @@ function ColorPalette() {
         <h2>Палитра серого</h2>
         <div className='color-gray__block'>
           <div className='color-gray__block-gray'>
-            <div style={{backgroundColor: '#0A2832'}}>#0A2832</div>
-            <div style={{backgroundColor: '#37464B'}}>#37464B</div>
-            <div style={{backgroundColor: '#738287'}}>#738287</div>
-            <div style={{backgroundColor: '#8C9BA0'}}>#8C9BA0</div>
-            <div style={{backgroundColor: '#AFBEC3'}}>#AFBEC3</div>
-            <div style={{backgroundColor: '#C8D2D7'}}>#C8D2D7</div>
-            <div style={{backgroundColor: '#D7E1E6'}}>#D7E1E6</div>
-            <div style={{backgroundColor: '#E1EBF0'}}>#E1EBF0</div>
-            <div style={{backgroundColor: '#F2F6F9'}}>#F2F6F9</div>
-            <div style={{backgroundColor: '#FFFFFF'}}>#FFFFFF</div>
+            <p style={{backgroundColor: '#0A2832'}} className='white-text'><span>#0A2832</span></p>
+            <p style={{backgroundColor: '#37464B'}} className='white-text'><span>#37464B</span></p>
+            <p style={{backgroundColor: '#738287'}}><span>#738287</span></p>
+            <p style={{backgroundColor: '#8C9BA0'}}><span>#8C9BA0</span></p>
+            <p style={{backgroundColor: '#AFBEC3'}}><span>#AFBEC3</span></p>
+            <p style={{backgroundColor: '#C8D2D7'}}><span>#C8D2D7</span></p>
+            <p style={{backgroundColor: '#D7E1E6'}}><span>#D7E1E6</span></p>
+            <p style={{backgroundColor: '#E1EBF0'}}><span>#E1EBF0</span></p>
+            <p style={{backgroundColor: '#F2F6F9'}}><span>#F2F6F9</span></p>
+            <p style={{backgroundColor: '#FFFFFF'}}><span>#FFFFFF</span></p>
           </div>
           <div className='color-gray__block-text'>
             <p>Палитра серого содержит черный, белый и набор серых оттенков. Палитра серого смещена в сторону сине-зеленых оттенков, что придает уникальность фирменному стилю. </p>
@@ -106,7 +106,7 @@ function ColorPalette() {
 
       <section className='color-semantic'>
         <h2>Семантические цвета</h2>
-        <p>Семантические цвета в интерфейсе облегчают интуитивное восприятие элементов. Использование устоявшихся цветовых ассоциаций позволяет мгновенно выделять статусы, акцентировать важные объекты, упрощает навигацию и ускоряет общее понимание интерфейса.</p>
+        <p className='text-container'>Семантические цвета в интерфейсе облегчают интуитивное восприятие элементов. Использование устоявшихся цветовых ассоциаций позволяет мгновенно выделять статусы, акцентировать важные объекты, упрощает навигацию и ускоряет общее понимание интерфейса.</p>
         <div className='color-semantic__pic'>
           <div className='gray-container'>
             <svg xmlns="http://www.w3.org/2000/svg" width="195" height="192" viewBox="0 0 195 192" fill="none">
@@ -133,37 +133,37 @@ function ColorPalette() {
 
       <section className='color-state'>
         <h2>Цвета состояний</h2>
-        <p>Изменение цвета элементов интерфейса при переходе из одного состояния в другое дает пользователю важную обратную связь о результате совершенного действия. Стандартная схема изменения состояний объекта выглядит следующим образом:</p>
+        <p className='text-container'>Изменение цвета элементов интерфейса при переходе из одного состояния в другое дает пользователю важную обратную связь о результате совершенного действия. Стандартная схема изменения состояний объекта выглядит следующим образом:</p>
         <p>Hover: цвет становится светлее за счет прозрачности 80%<br />Pressed: цвет становится на один шаг темнее, чем в состоянии покоя<br /> Disabled: цвет становится светлее за счет прозрачности 50%</p>
         <div className='color-state__colors'>
-          <div style={{backgroundColor: '#D7E1E6'}}>Default</div>
-          <div style={{backgroundColor: '#D7E1E6'}}>Hover</div>
-          <div style={{backgroundColor: '#D7E1E6'}}>Pressed</div>
-          <div style={{backgroundColor: '#D7E1E6'}}>Disabled</div>
-          <div style={{backgroundColor: '#058C50'}}>#058C50</div>
-          <div style={{backgroundColor: '#37A373'}}>#37A373</div>
-          <div style={{backgroundColor: '#047040'}}>#047040</div>
-          <div style={{backgroundColor: '#8ECBB0'}}>#8ECBB0</div>
-          <div style={{backgroundColor: '#058CD7'}}>#058CD7</div>
-          <div style={{backgroundColor: '#44A9E1'}}>#44A9E1</div>
-          <div style={{backgroundColor: '#0178BA'}}>#0178BA</div>
-          <div style={{backgroundColor: '#82C5EB'}}>#82C5EB</div>
-          <div style={{backgroundColor: '#FF5F28'}}>#FF5F28</div>
-          <div style={{backgroundColor: '#FF7F53'}}>#FF7F53</div>
-          <div style={{backgroundColor: '#E84A13'}}>#E84A13</div>
-          <div style={{backgroundColor: '#FF9F7E'}}>#FF9F7E</div>
+          <p style={{backgroundColor: '#D7E1E6'}}><span>Default</span></p>
+          <p style={{backgroundColor: '#D7E1E6'}}><span>Hover</span></p>
+          <p style={{backgroundColor: '#D7E1E6'}}><span>Pressed</span></p>
+          <p style={{backgroundColor: '#D7E1E6'}}><span>Disabled</span></p>
+          <p style={{backgroundColor: '#058C50'}} className='white-text'><span>#058C50</span></p>
+          <p style={{backgroundColor: '#37A373'}} className='white-text'><span>#37A373</span></p>
+          <p style={{backgroundColor: '#047040'}} className='white-text'><span>#047040</span></p>
+          <p style={{backgroundColor: '#8ECBB0'}} className='white-text'><span>#8ECBB0</span></p>
+          <p style={{backgroundColor: '#058CD7'}} className='white-text'><span>#058CD7</span></p>
+          <p style={{backgroundColor: '#44A9E1'}} className='white-text'><span>#44A9E1</span></p>
+          <p style={{backgroundColor: '#0178BA'}} className='white-text'><span>#0178BA</span></p>
+          <p style={{backgroundColor: '#82C5EB'}} className='white-text'><span>#82C5EB</span></p>
+          <p style={{backgroundColor: '#FF5F28'}}><span>#FF5F28</span></p>
+          <p style={{backgroundColor: '#FF7F53'}}><span>#FF7F53</span></p>
+          <p style={{backgroundColor: '#E84A13'}}><span>#E84A13</span></p>
+          <p style={{backgroundColor: '#FF9F7E'}}><span>#FF9F7E</span></p>
         </div>
       </section>
 
       <section className='color-interface'>
         <h2>Цвета в интерфейсе</h2>
-        <p>При создании интерфейсов следует руководствоваться следующими отношениями при использовании цветов: 60% — палитра серого, 30% — основные цвета, 10% - второстепенные цвета. </p>
+        <p className='text-container'>При создании интерфейсов следует руководствоваться следующими отношениями при использовании цветов: 60% — палитра серого, 30% — основные цвета, 10% - второстепенные цвета. </p>
         <img src={colorInterface}  alt="color interface" />
       </section>
 
       <section className='color-contrast'>
         <h2>Цветовой контраст</h2>
-        <p>Принципы контрастности в нашей дизайн-системе основаны на стандартах WCAG 2.0. Для основного текста минимально необходим уровень AA, означающий, что коэффициент контрастности должен быть не менее 4,5. Для крупного декоративного текста, заголовков и решения разного уровня творческих задач допустим уровень AA+ с коэффициент контрастности не менее 3.0. Следуя этим рекомендациям, мы обеспечиваем доступность и качественный пользовательский опыт.</p>
+        <p className='text-container'>Принципы контрастности в нашей дизайн-системе основаны на стандартах WCAG 2.0. Для основного текста минимально необходим уровень AA, означающий, что коэффициент контрастности должен быть не менее 4,5. Для крупного декоративного текста, заголовков и решения разного уровня творческих задач допустим уровень AA+ с коэффициент контрастности не менее 3.0. Следуя этим рекомендациям, мы обеспечиваем доступность и качественный пользовательский опыт.</p>
       </section>
 
       <Footer />

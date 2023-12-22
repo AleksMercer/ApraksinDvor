@@ -1262,4 +1262,141 @@ body * > img, body * > button, body h1, body h2, body h3 {
   font-size: 24px;
 }
 
+.aprashka-main__wrapper.colorpalette .white-text {
+  color: white;
+}
+.aprashka-main__wrapper.colorpalette .text-container {
+  width: 768px;
+}
+.aprashka-main__wrapper.colorpalette .color-description, .aprashka-main__wrapper.colorpalette .color-interface, .aprashka-main__wrapper.colorpalette .color-contrast {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-main, .aprashka-main__wrapper.colorpalette .color-additional {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors, .aprashka-main__wrapper.colorpalette .color-additional__colors {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors div, .aprashka-main__wrapper.colorpalette .color-additional__colors div {
+  height: 360px;
+  padding: 32px;
+  display: grid;
+  grid-template: repeat(3, auto)/auto;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  row-gap: 16px;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors div *, .aprashka-main__wrapper.colorpalette .color-additional__colors div * {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors div p, .aprashka-main__wrapper.colorpalette .color-additional__colors div p {
+  display: grid;
+  grid-template: 1fr/auto 1fr;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors_fontsize, .aprashka-main__wrapper.colorpalette .color-additional__colors_fontsize {
+  font-size: 36px;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors-green, .aprashka-main__wrapper.colorpalette .color-additional__colors-green {
+  background-color: #058C50;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors-blue, .aprashka-main__wrapper.colorpalette .color-additional__colors-blue {
+  background-color: #058CD7;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors-orange, .aprashka-main__wrapper.colorpalette .color-additional__colors-orange {
+  background-color: #FF5F28;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors-yellow, .aprashka-main__wrapper.colorpalette .color-additional__colors-yellow {
+  background-color: #FFBE14;
+}
+.aprashka-main__wrapper.colorpalette .color-main__colors-pink, .aprashka-main__wrapper.colorpalette .color-additional__colors-pink {
+  background-color: #FFA5C3;
+}
+.aprashka-main__wrapper.colorpalette .color-opacity {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-opacity__color-grid {
+  display: grid;
+  grid-template: repeat(5, 100px)/repeat(4, 1fr);
+}
+.aprashka-main__wrapper.colorpalette .color-opacity__color-grid p {
+  display: grid;
+  grid-template: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-gray {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-gray__block {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-gray__block-gray {
+  display: grid;
+  grid-template: repeat(5, 100px)/repeat(2, 1fr);
+}
+.aprashka-main__wrapper.colorpalette .color-gray__block-gray p {
+  display: grid;
+  grid-template: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-gray__block-text {
+  align-self: start;
+  display: grid;
+  grid-template: auto auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-semantic {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-semantic__pic, .aprashka-main__wrapper.colorpalette .color-semantic__text {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-semantic__pic {
+  height: 360px;
+}
+.aprashka-main__wrapper.colorpalette .color-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.colorpalette .color-state__colors {
+  display: grid;
+  grid-template: repeat(4, 100px)/repeat(4, 1fr);
+}
+.aprashka-main__wrapper.colorpalette .color-state__colors p {
+  display: grid;
+  grid-template: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 32px;
+}
+
 /* Accordion 2 */

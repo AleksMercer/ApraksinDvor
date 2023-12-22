@@ -1,3 +1,124 @@
 .aprashka-main__wrapper.colorpalette { 
 
+  .white-text {color: white;}
+  .text-container {@include text();}
+
+  .color-description, .color-interface, .color-contrast {
+    @include rows();
+  }
+
+  .color-main, .color-additional {
+    @include rows();
+
+    &__colors {
+      @include grid_template(1fr / repeat(3, 1fr));
+      column-gap: 24px;
+      
+      div {
+        height: $gray-container-small;
+        padding: 32px;
+        @include grid_template(repeat(3, auto) / auto);
+        align-content: end;
+        row-gap: 16px;
+
+        * {
+          font-weight: $medium;
+        }
+
+        p {
+          @include grid_template(1fr / auto 1fr);
+          column-gap: 16px;
+        }
+      }
+
+      &_fontsize {
+        font-size: $h3-font;
+      }
+      
+      &-green {
+        background-color: $green-main;
+      }
+
+      &-blue {
+        background-color: $blue-main;
+      }
+
+      &-orange {        
+        background-color: $orange-main;
+      }
+
+      &-yellow {        
+        background-color: $yellow-main;
+      }
+
+      &-pink {        
+        background-color: $pink-main;
+      }
+    }
+  }
+
+  .color-opacity {
+    @include rows();
+
+    &__color-grid {
+      @include grid_template(repeat(5, 100px) / repeat(4, 1fr));
+
+      p {
+        @include grid_template(1fr / 1fr);
+        align-content: center;
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .color-gray {
+    @include rows();
+
+    &__block {
+      @include columns();
+
+      &-gray {
+        @include grid_template(repeat(5, 100px) / repeat(2, 1fr));
+
+        p {
+          @include grid_template(1fr / 1fr);
+          align-content: center;
+          padding-left: 32px;
+        }
+      }
+
+      &-text {
+        align-self: start;
+        @include grid_template(auto auto / 1fr);
+        row-gap: 24px;
+      }
+    }
+  }
+
+  .color-semantic {
+    @include rows();
+
+    &__pic, &__text  {
+      @include grid_template(1fr / repeat(3, 1fr));
+      column-gap: 24px;
+    }
+
+    &__pic {
+      height: $gray-container-small;
+    }
+  }
+
+  .color-state {
+    @include rows();
+
+    &__colors {
+      @include grid_template(repeat(4, 100px) / repeat(4, 1fr));
+
+      p {
+        @include grid_template(1fr / 1fr);
+        align-content: center;
+        padding-left: 32px;
+      }
+    }
+  }
 }
