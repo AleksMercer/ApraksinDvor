@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.f08af826.css",
-    "main.js": "/Projects-Showcase/static/js/main.4aa77908.js",
+    "main.css": "/Projects-Showcase/static/css/main.e4f29b1c.css",
+    "main.js": "/Projects-Showcase/static/js/main.c9e9fbf7.js",
     "static/js/862.bfc1e594.chunk.js": "/Projects-Showcase/static/js/862.bfc1e594.chunk.js",
     "static/js/160.743b81da.chunk.js": "/Projects-Showcase/static/js/160.743b81da.chunk.js",
     "static/js/956.5a835e54.chunk.js": "/Projects-Showcase/static/js/956.5a835e54.chunk.js",
@@ -32,6 +32,7 @@
     "static/media/partner-logo-1.svg": "/Projects-Showcase/static/media/partner-logo-1.7aeb31d127e117d7faf74d657996ca50.svg",
     "static/media/partner-logo-2.svg": "/Projects-Showcase/static/media/partner-logo-2.60af5aaa471a717eeede56ba2b7a3d84.svg",
     "static/media/small-logo-safe-zone.svg": "/Projects-Showcase/static/media/small-logo-safe-zone.cc6bee861ef6e0150e21793377be69ff.svg",
+    "static/media/full to short logo.lottie": "/Projects-Showcase/static/media/full to short logo.563ea8806bcdd7f35aa0.lottie",
     "static/media/logo.lottie": "/Projects-Showcase/static/media/logo.df2c8d25989cda9a8d16.lottie",
     "static/media/logo-safe-zone.svg": "/Projects-Showcase/static/media/logo-safe-zone.5927c34e736ce977fb9de76ac3416dd5.svg",
     "static/media/wrong-logo-3.svg": "/Projects-Showcase/static/media/wrong-logo-3.fa596c86e5fde35f9af9030cd6f11223.svg",
@@ -39,7 +40,6 @@
     "static/media/wrong-logo-5.svg": "/Projects-Showcase/static/media/wrong-logo-5.6d5283fdc9ee9866f2a54187c3424aee.svg",
     "static/media/wrong-logo-4.svg": "/Projects-Showcase/static/media/wrong-logo-4.02384f59a2f4be64c75f8c899cd90cde.svg",
     "static/media/default-logo.svg": "/Projects-Showcase/static/media/default-logo.4fcd82a4b594887a3039fc8db0afa0e8.svg",
-    "static/media/aprashka-logo-blue-pink.svg": "/Projects-Showcase/static/media/aprashka-logo-blue-pink.bfe01a8fcd2a3426a65d7331e84c8ff1.svg",
     "static/media/logo_black.svg": "/Projects-Showcase/static/media/logo_black.27e42b00ced6603b5a4138f1eaf275f2.svg",
     "static/media/Folder.svg": "/Projects-Showcase/static/media/Folder.937a0df3dfbb62a2062dc5144d66c4ab.svg",
     "static/media/wrong-logo-2.svg": "/Projects-Showcase/static/media/wrong-logo-2.27db111c126748ef1922d0a611540383.svg",
@@ -50,13 +50,13 @@
     "static/media/color-interface.svg": "/Projects-Showcase/static/media/color-interface.1fe141b595e9153e0a233396c62ba272.svg",
     "index.html": "/Projects-Showcase/index.html",
     "static/media/small-logo.svg": "/Projects-Showcase/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
-    "main.f08af826.css.map": "/Projects-Showcase/static/css/main.f08af826.css.map",
-    "main.4aa77908.js.map": "/Projects-Showcase/static/js/main.4aa77908.js.map",
+    "main.e4f29b1c.css.map": "/Projects-Showcase/static/css/main.e4f29b1c.css.map",
+    "main.c9e9fbf7.js.map": "/Projects-Showcase/static/js/main.c9e9fbf7.js.map",
     "374.e0658af3.chunk.js.map": "/Projects-Showcase/static/js/374.e0658af3.chunk.js.map",
     "432.4e5a4729.chunk.js.map": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f08af826.css",
-    "static/js/main.4aa77908.js"
+    "static/css/main.e4f29b1c.css",
+    "static/js/main.c9e9fbf7.js"
   ]
 }
