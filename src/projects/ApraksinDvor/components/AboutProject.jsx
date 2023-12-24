@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 
-import { DotLottiePlayer } from '@dotlottie/react-player';
-import Footer from './tinycomp/Footer';
+import { DotLottiePlayer } from '@dotlottie/react-player'
+import Footer from './tinycomp/Footer'
 
 // #region : photos import
 import oldlog from '../media/old_logo.png'

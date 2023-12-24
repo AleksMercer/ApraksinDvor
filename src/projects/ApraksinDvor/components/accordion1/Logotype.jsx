@@ -1,10 +1,10 @@
 import React from 'react'
+import { DotLottiePlayer } from '@dotlottie/react-player'
 
-import Button from '../tinycomp/DownloadButton'
+import DownloadButton from '../tinycomp/DownloadButton'
 import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
-  import aprashkaLogoBluePink from '../../media/accordion1/logotype/aprashka-logo-blue-pink.svg'
   import defaultLogo from '../../media/accordion1/logotype/default-logo.svg'
   import horizontalLogoMinSize from '../../media/accordion1/logotype/horizontal-logo-min-size.svg'
   import horizontalLogoSafeZone from '../../media/accordion1/logotype/horizontal-logo-safe-zone.svg'
@@ -27,6 +27,9 @@ import Footer from '../tinycomp/Footer'
   import wrongLogo6 from '../../media/accordion1/logotype/wrong-logo-6.svg'
 /* Pic import end */
 
+// #region : Lottie
+
+import lottieLogo from '../../media/lottie/full to short logo.lottie'
 
 
 function Logotype() {
@@ -36,19 +39,23 @@ function Logotype() {
       <section className='logo-description'>
         <h1>Логотип</h1>
         <p>Для логотипа Апраксина двора был разработан акцидентный шрифт, в основе которого лежит план самого комплекса. Повторяющиеся прямоугольные формы стали базисом для шрифта. Такой подход позволил нам создать неразрывную связь между новым логотипом и историей этого уникального места.</p>
-        <img src={aprashkaLogoBluePink}  alt="pink-logo" />
+        <DotLottiePlayer
+          src={lottieLogo}
+          autoplay
+          loop
+        />
       </section>
 
       <section className='logo-main'>
         <h2>Основной логотип</h2>
 
-        <div className='logo-main__mid-block'>
+        <div className='logo-main__block'>
 
           <div className='gray-container'>
             <img src={defaultLogo}  alt="black-logo" />
           </div>
 
-          <div className='logo-main__mid-block-text'>
+          <div className='logo-main__block-text'>
             <p>Основной логотип используется в приоритетном порядке на всех основных коммуникационных носителях Апраксина двора.</p>
             <p>При размещении логотипа на носителе стоит учитывать, какое расположение лучше всего уравновешивает композицию. </p>
             <p>Приоритетные расположения логотипа на носителях: левый верхний угол и нижний правый угол. Допускается выравнивание логотипа по центру носителя, когда на нем необходимо сделать акцент.</p>
@@ -57,11 +64,11 @@ function Logotype() {
           </div>
         </div>
 
-        <Button picture={defaultLogo} />
+        <DownloadButton picture={defaultLogo} />
       </section>
 
       <section className='logo-build'>
-        <h3>Построение логотипа</h3>
+        <h2>Построение логотипа</h2>
         <p>Логотип построен по сетке с модулем M=4×4px и образует прямоугольник со сторонами 23M×25M. Высота букв 7M, а межстрочное расстояние 2M. Стандартное межбуквенное расстояние равно M, но в логотипе для каждой пары букв скорректирован кернинг. Все штрихи букв по ширине равны M. </p>
         <div className='logo-build__pic'>
           <img src={logoGrid}  alt="logo grid" />
@@ -101,7 +108,7 @@ function Logotype() {
           <img src={horizontalLogoMinSize}  alt="logo horizontal min size" />
         </div>
 
-        <Button picture={horizontalLogo} />
+        <DownloadButton picture={horizontalLogo} />
       </section>
 
       <section className='logo-short'>  
@@ -114,7 +121,7 @@ function Logotype() {
           <img src={smallLogoMinSize}  alt="logo small min size" />
         </div>
 
-        <Button picture={smallLogo} />
+        <DownloadButton picture={smallLogo} />
       </section>
 
       <section className='logo-partner'>

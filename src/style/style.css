@@ -851,10 +851,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
   position: absolute;
   border: solid white;
   border-width: 0 2px 2px 0;
-  left: 9.5px;
-  top: 6px;
-  width: 5px;
-  height: 10px;
+  left: 8px;
+  top: 2px;
+  width: 9px;
+  height: 15px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1159,14 +1159,14 @@ body * > img, body * > button, body h1, body h2, body h3 {
   grid-template: auto/1fr;
   row-gap: 32px;
 }
-.aprashka-main__wrapper.logotype .logo-main__mid-block {
+.aprashka-main__wrapper.logotype .logo-main__block {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
-.aprashka-main__wrapper.logotype .logo-main__mid-block-text {
+.aprashka-main__wrapper.logotype .logo-main__block-text {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;

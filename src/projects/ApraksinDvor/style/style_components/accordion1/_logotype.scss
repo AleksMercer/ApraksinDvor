@@ -11,7 +11,7 @@
   .logo-main {
     @include rows();
 
-    &__mid-block {
+    &__block {
       @include columns();
 
       &-text {

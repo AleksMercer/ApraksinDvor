@@ -118,10 +118,10 @@
             position: absolute;
             border: solid white;
             border-width: 0 2px 2px 0;
-            left: 9.5px;
-            top: 6px;
-            width: 5px;
-            height: 10px;
+            left: 8px;
+            top: 2px;
+            width: 9px;
+            height: 15px;
   
             transform: rotate(45deg);
           }
@@ -178,7 +178,7 @@
 
         div {
           @include grid_template(1fr auto / 1fr);
-         row-gap: 16px;
+          row-gap: 16px;
 
           .lottie-animation {
             background-color: $gray-0;
