@@ -259,22 +259,22 @@ body * > img, body * > button, body h1, body h2, body h3 {
 @font-face {
   font-weight: 200;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-ExtraLight.ttf");
+  src: url("../projects/apraksindvor/style/Fonts/Inter-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-weight: 400;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-Regular.ttf");
+  src: url("../projects/apraksindvor/style/Fonts/Inter-Regular.woff2") format("woff2");
 }
 @font-face {
   font-weight: 500;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-Medium.ttf");
+  src: url("../projects/apraksindvor/style/Fonts/Inter-Medium.woff2") format("woff2");
 }
 @font-face {
   font-weight: 600;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-SemiBold.ttf");
+  src: url("../projects/apraksindvor/style/Fonts/Inter-SemiBold.woff2") format("woff2");
 }
 /*==========Mixin========== Start*/
 /*==========Mixin========== End*/
@@ -1418,4 +1418,81 @@ body * > img, body * > button, body h1, body h2, body h3 {
   padding-left: 32px;
 }
 
+.aprashka-main__wrapper.typography .typography-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-grotesk {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-grotesk__block {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-grotesk__block-text {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-grotesk .download-button {
+  pointer-events: none;
+  background-color: #82C5EB;
+}
+.aprashka-main__wrapper.typography .typography-inter {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-inter p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-headers {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-headers__block {
+  display: grid;
+  grid-template: 1fr auto repeat(5, 1fr)/1fr;
+}
+.aprashka-main__wrapper.typography .typography-headers__block-row {
+  display: grid;
+  grid-template: 80px/98px 88px 157px 1fr;
+  place-items: center;
+}
+.aprashka-main__wrapper.typography .typography-headers__block-row-left {
+  justify-self: start;
+  margin-left: 24px;
+}
+.aprashka-main__wrapper.typography .typography-headers__block span {
+  border-bottom: 1px solid #738287;
+}
+.aprashka-main__wrapper.typography .typography-headers__block_gray {
+  color: #738287;
+}
+.aprashka-main__wrapper.typography .typography-interface-text {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-interface-text p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-list-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-list-description p {
+  width: 768px;
+}
 /* Accordion 2 */

@@ -46,6 +46,7 @@
   
   .logo-horizontal {
     @include rows();
+    
     p {
       @include text()
     }

@@ -1,3 +1,88 @@
 .aprashka-main__wrapper.typography {
+  .typography-description {
+    @include rows();
+    p {@include text();}
+  }
 
+  .typography-grotesk {
+    @include rows();
+
+    &__block {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+
+    .download-button {
+      pointer-events: none;
+      background-color: $blue-3;
+    }
+  }
+
+  .typography-inter {
+    @include rows();
+    p {@include text();}
+  }
+
+  .typography-headers {
+    @include rows();
+    
+    &__block {
+      @include grid_template( 1fr auto repeat(5, 1fr) / 1fr);
+
+      &-row {
+        @include grid_template(80px / 98px 88px 157px 1fr);
+        place-items: center;
+
+        &-left {
+          justify-self: start;
+          margin-left: 24px;
+        }
+      }
+
+      span {
+        border-bottom: 1px solid $gray-6; 
+      }
+
+      &_gray {
+        color: $gray-6;
+      }
+    }
+  }
+
+  .typography-main-text {
+
+  }
+
+  .typography-accent-text {
+
+  }
+
+  .typography-interface-text {
+    @include rows();
+    p {@include text();}
+  }
+  
+  .typography-center {
+
+  }
+
+  .typography-string-length {
+
+  }
+
+  .typography-indentation {
+
+  }
+
+  .typography-list-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .typography-lists {
+
+  }
 }
