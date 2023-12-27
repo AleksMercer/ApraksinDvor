@@ -584,6 +584,9 @@ body * > img, body * > button, body h1, body h2, body h3 {
   overflow-x: hidden;
   overflow-y: auto;
 }
+.aprashka-main__wrapper:not(.aboutproject) * > img {
+  pointer-events: none;
+}
 .aprashka-main__wrapper:not(.aboutproject) .gray-container {
   display: grid;
   grid-template: 1;
@@ -1455,10 +1458,26 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-inter p {
   width: 768px;
 }
-.aprashka-main__wrapper.typography .typography-headers {
+.aprashka-main__wrapper.typography .typography-headers, .aprashka-main__wrapper.typography .typography-main-text, .aprashka-main__wrapper.typography .typography-accent-text {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 32px;
+}
+.aprashka-main__wrapper.typography .typography-headers > p, .aprashka-main__wrapper.typography .typography-main-text > p, .aprashka-main__wrapper.typography .typography-accent-text > p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-headers__block-row, .aprashka-main__wrapper.typography .typography-main-text__block-row, .aprashka-main__wrapper.typography .typography-accent-text__block-row {
+  place-items: center;
+}
+.aprashka-main__wrapper.typography .typography-headers__block-row-left, .aprashka-main__wrapper.typography .typography-main-text__block-row-left, .aprashka-main__wrapper.typography .typography-accent-text__block-row-left {
+  justify-self: start;
+  margin-left: 24px;
+}
+.aprashka-main__wrapper.typography .typography-headers__block span, .aprashka-main__wrapper.typography .typography-main-text__block span, .aprashka-main__wrapper.typography .typography-accent-text__block span {
+  border-bottom: 1px solid #738287;
+}
+.aprashka-main__wrapper.typography .typography-headers__block_gray, .aprashka-main__wrapper.typography .typography-main-text__block_gray, .aprashka-main__wrapper.typography .typography-accent-text__block_gray {
+  color: #738287;
 }
 .aprashka-main__wrapper.typography .typography-headers__block {
   display: grid;
@@ -1467,32 +1486,59 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-headers__block-row {
   display: grid;
   grid-template: 80px/98px 88px 157px 1fr;
-  place-items: center;
 }
-.aprashka-main__wrapper.typography .typography-headers__block-row-left {
-  justify-self: start;
-  margin-left: 24px;
+.aprashka-main__wrapper.typography .typography-main-text__block {
+  display: grid;
+  grid-template: 1fr auto repeat(4, 1fr)/1fr;
 }
-.aprashka-main__wrapper.typography .typography-headers__block span {
-  border-bottom: 1px solid #738287;
+.aprashka-main__wrapper.typography .typography-main-text__block-row {
+  display: grid;
+  grid-template: 80px/88px 157px 163px 1fr;
 }
-.aprashka-main__wrapper.typography .typography-headers__block_gray {
-  color: #738287;
+.aprashka-main__wrapper.typography .typography-accent-text__block {
+  display: grid;
+  grid-template: 1fr auto repeat(4, 1fr)/1fr;
 }
-.aprashka-main__wrapper.typography .typography-interface-text {
+.aprashka-main__wrapper.typography .typography-accent-text__block-row {
+  display: grid;
+  grid-template: 80px/88px 157px 163px 1fr;
+}
+.aprashka-main__wrapper.typography .typography-interface {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.typography .typography-interface * {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 20px;
+}
+.aprashka-main__wrapper.typography .typography-interface * p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-list {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.typography .typography-list__description {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 32px;
 }
-.aprashka-main__wrapper.typography .typography-interface-text p {
+.aprashka-main__wrapper.typography .typography-list__description p {
   width: 768px;
 }
-.aprashka-main__wrapper.typography .typography-list-description {
+.aprashka-main__wrapper.typography .typography-list__lists {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 20px;
 }
-.aprashka-main__wrapper.typography .typography-list-description p {
-  width: 768px;
+.aprashka-main__wrapper.typography .typography-list__lists-name, .aprashka-main__wrapper.typography .typography-list__lists-text, .aprashka-main__wrapper.typography .typography-list__lists-pic {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
 }
 /* Accordion 2 */

@@ -26,14 +26,16 @@
     p {@include text();}
   }
 
-  .typography-headers {
+  // #region : Block with table
+
+  .typography-headers, .typography-main-text, .typography-accent-text {
     @include rows();
-    
+
+    & > p {@include text();}
+
     &__block {
-      @include grid_template( 1fr auto repeat(5, 1fr) / 1fr);
 
       &-row {
-        @include grid_template(80px / 98px 88px 157px 1fr);
         place-items: center;
 
         &-left {
@@ -52,37 +54,66 @@
     }
   }
 
-  .typography-main-text {
+  .typography-headers {
 
+    &__block {
+      @include grid_template( 1fr auto repeat(5, 1fr) / 1fr);
+
+      &-row {
+        @include grid_template(80px / 98px 88px 157px 1fr);
+      }
+    }
+  }
+
+  .typography-main-text {
+    &__block {
+      @include grid_template( 1fr auto repeat(4, 1fr) / 1fr);
+
+      &-row {
+        @include grid_template(80px / 88px 157px 163px 1fr);
+      }
+    }
   }
 
   .typography-accent-text {
+    &__block {
+      @include grid_template( 1fr auto repeat(4, 1fr) / 1fr);
 
+      &-row {
+        @include grid_template(80px / 88px 157px 163px 1fr);
+      }
+    }
   }
 
-  .typography-interface-text {
-    @include rows();
-    p {@include text();}
+  // #endregion
+
+  .typography-interface {
+    @include small-common-rows();
+
+    * {
+      @include small-rows();
+      p {@include text();}
+    }
   }
   
-  .typography-center {
+  .typography-list {
+    @include small-common-rows();
 
-  }
+    &__description {
+      @include rows();
+      p {@include text();}
+    }
 
-  .typography-string-length {
-
-  }
-
-  .typography-indentation {
-
-  }
-
-  .typography-list-description {
-    @include rows();
-    p {@include text();}
-  }
-
-  .typography-lists {
-
+    &__lists {
+      @include small-rows();
+      
+      &-name, &-text, &-pic {
+        @include columns();
+      }
+  
+      &__pic {
+        // height: $gray-container-big;
+      }
+    }
   }
 }

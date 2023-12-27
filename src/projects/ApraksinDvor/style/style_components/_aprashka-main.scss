@@ -239,6 +239,10 @@
       overflow-x: hidden;
       overflow-y: auto;
 
+      * > img {
+        pointer-events: none;
+      }
+      
       .gray-container {
         @include grid_center(1fr / 1fr);
         background-color: $gray-0;
