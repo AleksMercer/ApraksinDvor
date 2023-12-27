@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.e4f29b1c.css",
-    "main.js": "/Projects-Showcase/static/js/main.c9e9fbf7.js",
+    "main.css": "/Projects-Showcase/static/css/main.601a461b.css",
+    "main.js": "/Projects-Showcase/static/js/main.990fabcf.js",
     "static/js/862.bfc1e594.chunk.js": "/Projects-Showcase/static/js/862.bfc1e594.chunk.js",
     "static/js/160.743b81da.chunk.js": "/Projects-Showcase/static/js/160.743b81da.chunk.js",
     "static/js/956.5a835e54.chunk.js": "/Projects-Showcase/static/js/956.5a835e54.chunk.js",
@@ -14,12 +14,19 @@
     "static/js/374.e0658af3.chunk.js": "/Projects-Showcase/static/js/374.e0658af3.chunk.js",
     "static/js/432.4e5a4729.chunk.js": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js",
     "static/media/wrong-logo-6.svg": "/Projects-Showcase/static/media/wrong-logo-6.99eb01534d3c722bc56d51cc41fc4e61.svg",
-    "static/media/Inter-SemiBold.ttf": "/Projects-Showcase/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
-    "static/media/Inter-Medium.ttf": "/Projects-Showcase/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
-    "static/media/Inter-ExtraLight.ttf": "/Projects-Showcase/static/media/Inter-ExtraLight.fbcf1d9ad9d7bac9f6de.ttf",
-    "static/media/Inter-Regular.ttf": "/Projects-Showcase/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/indentation.svg": "/Projects-Showcase/static/media/indentation.a8ff1943f35b6b8bd964af1aabd3ad6d.svg",
+    "static/media/Inter-Fonts.rar": "/Projects-Showcase/static/media/Inter-Fonts.3ddd274a37a127f01b5b.rar",
+    "static/media/text-width.svg": "/Projects-Showcase/static/media/text-width.5512173e548ba6c43897b3a2dbfae8f9.svg",
     "static/media/old_logo.png": "/Projects-Showcase/static/media/old_logo.1119cc6920a7f8bac6f8.png",
+    "static/media/Inter-SemiBold.woff2": "/Projects-Showcase/static/media/Inter-SemiBold.d873c5ea912cb7dff6d9.woff2",
+    "static/media/Inter-Medium.woff2": "/Projects-Showcase/static/media/Inter-Medium.19e05b2238d4f2d8d3d5.woff2",
+    "static/media/inter.svg": "/Projects-Showcase/static/media/inter.ba07a12c06e32e6a05f9f6af47e7d07a.svg",
+    "static/media/Inter-ExtraLight.woff2": "/Projects-Showcase/static/media/Inter-ExtraLight.b6754bc3508663b058c6.woff2",
+    "static/media/Inter-Regular.woff2": "/Projects-Showcase/static/media/Inter-Regular.e976b84791e6a5f65646.woff2",
+    "static/media/num-list.svg": "/Projects-Showcase/static/media/num-list.5216ee1207aa7568e868d6142e5638da.svg",
+    "static/media/mark-list.svg": "/Projects-Showcase/static/media/mark-list.19f2cd848b16328a259ff9d1bdd54a90.svg",
     "static/media/logo-grid.svg": "/Projects-Showcase/static/media/logo-grid.1b2c98a431e5dd96ce5e9d07b3a45d35.svg",
+    "static/media/text-left.svg": "/Projects-Showcase/static/media/text-left.3fefc22839fbf7fed9e884dc9cba90a0.svg",
     "static/media/logo-colors.svg": "/Projects-Showcase/static/media/logo-colors.0e1cf6b6cc73e9997e61c2f7fa513136.svg",
     "static/media/logo-grid-size.svg": "/Projects-Showcase/static/media/logo-grid-size.1e6739e6dd06b7c33fb543e626c9ff72.svg",
     "static/media/logo-min-size.svg": "/Projects-Showcase/static/media/logo-min-size.518e39f87011e07d444dfa94c30f8082.svg",
@@ -33,6 +40,7 @@
     "static/media/partner-logo-2.svg": "/Projects-Showcase/static/media/partner-logo-2.60af5aaa471a717eeede56ba2b7a3d84.svg",
     "static/media/small-logo-safe-zone.svg": "/Projects-Showcase/static/media/small-logo-safe-zone.cc6bee861ef6e0150e21793377be69ff.svg",
     "static/media/full to short logo.lottie": "/Projects-Showcase/static/media/full to short logo.563ea8806bcdd7f35aa0.lottie",
+    "static/media/grotesk.svg": "/Projects-Showcase/static/media/grotesk.9d82d6982860f13e4c6c31bc66fa4e14.svg",
     "static/media/logo.lottie": "/Projects-Showcase/static/media/logo.df2c8d25989cda9a8d16.lottie",
     "static/media/logo-safe-zone.svg": "/Projects-Showcase/static/media/logo-safe-zone.5927c34e736ce977fb9de76ac3416dd5.svg",
     "static/media/wrong-logo-3.svg": "/Projects-Showcase/static/media/wrong-logo-3.fa596c86e5fde35f9af9030cd6f11223.svg",
@@ -50,13 +58,13 @@
     "static/media/color-interface.svg": "/Projects-Showcase/static/media/color-interface.1fe141b595e9153e0a233396c62ba272.svg",
     "index.html": "/Projects-Showcase/index.html",
     "static/media/small-logo.svg": "/Projects-Showcase/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
-    "main.e4f29b1c.css.map": "/Projects-Showcase/static/css/main.e4f29b1c.css.map",
-    "main.c9e9fbf7.js.map": "/Projects-Showcase/static/js/main.c9e9fbf7.js.map",
+    "main.601a461b.css.map": "/Projects-Showcase/static/css/main.601a461b.css.map",
+    "main.990fabcf.js.map": "/Projects-Showcase/static/js/main.990fabcf.js.map",
     "374.e0658af3.chunk.js.map": "/Projects-Showcase/static/js/374.e0658af3.chunk.js.map",
     "432.4e5a4729.chunk.js.map": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f29b1c.css",
-    "static/js/main.c9e9fbf7.js"
+    "static/css/main.601a461b.css",
+    "static/js/main.990fabcf.js"
   ]
 }
