@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.601a461b.css",
-    "main.js": "/Projects-Showcase/static/js/main.990fabcf.js",
+    "main.css": "/Projects-Showcase/static/css/main.228ec128.css",
+    "main.js": "/Projects-Showcase/static/js/main.40d64ad1.js",
     "static/js/862.bfc1e594.chunk.js": "/Projects-Showcase/static/js/862.bfc1e594.chunk.js",
     "static/js/160.743b81da.chunk.js": "/Projects-Showcase/static/js/160.743b81da.chunk.js",
     "static/js/956.5a835e54.chunk.js": "/Projects-Showcase/static/js/956.5a835e54.chunk.js",
@@ -28,14 +28,14 @@
     "static/media/logo-grid.svg": "/Projects-Showcase/static/media/logo-grid.1b2c98a431e5dd96ce5e9d07b3a45d35.svg",
     "static/media/text-left.svg": "/Projects-Showcase/static/media/text-left.3fefc22839fbf7fed9e884dc9cba90a0.svg",
     "static/media/logo-colors.svg": "/Projects-Showcase/static/media/logo-colors.0e1cf6b6cc73e9997e61c2f7fa513136.svg",
+    "static/media/logo-min-size.svg": "/Projects-Showcase/static/media/logo-min-size.fe2bf239e70f10ad2fc220990c6dbf97.svg",
+    "static/media/horizontal-logo-min-size.svg": "/Projects-Showcase/static/media/horizontal-logo-min-size.98604b865c8d605abcddbd31014796ce.svg",
     "static/media/logo-grid-size.svg": "/Projects-Showcase/static/media/logo-grid-size.1e6739e6dd06b7c33fb543e626c9ff72.svg",
-    "static/media/logo-min-size.svg": "/Projects-Showcase/static/media/logo-min-size.518e39f87011e07d444dfa94c30f8082.svg",
+    "static/media/small-logo-min-size.svg": "/Projects-Showcase/static/media/small-logo-min-size.00634374150928fe04ab583a1f490418.svg",
     "static/media/Anna.webp": "/Projects-Showcase/static/media/Anna.6654eee4a360c3e04076.webp",
-    "static/media/horizontal-logo-min-size.svg": "/Projects-Showcase/static/media/horizontal-logo-min-size.2853244abd5e205db91118902c653f86.svg",
     "static/media/ITMO_black-2.png": "/Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
     "static/media/Daniil.webp": "/Projects-Showcase/static/media/Daniil.62eb604504bb4707b960.webp",
     "static/media/Alex.webp": "/Projects-Showcase/static/media/Alex.4e1de489deccaed5c00f.webp",
-    "static/media/small-logo-min-size.svg": "/Projects-Showcase/static/media/small-logo-min-size.ab874520d58c9af78b4db4ea64e234e2.svg",
     "static/media/partner-logo-1.svg": "/Projects-Showcase/static/media/partner-logo-1.7aeb31d127e117d7faf74d657996ca50.svg",
     "static/media/partner-logo-2.svg": "/Projects-Showcase/static/media/partner-logo-2.60af5aaa471a717eeede56ba2b7a3d84.svg",
     "static/media/small-logo-safe-zone.svg": "/Projects-Showcase/static/media/small-logo-safe-zone.cc6bee861ef6e0150e21793377be69ff.svg",
@@ -58,13 +58,13 @@
     "static/media/color-interface.svg": "/Projects-Showcase/static/media/color-interface.1fe141b595e9153e0a233396c62ba272.svg",
     "index.html": "/Projects-Showcase/index.html",
     "static/media/small-logo.svg": "/Projects-Showcase/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
-    "main.601a461b.css.map": "/Projects-Showcase/static/css/main.601a461b.css.map",
-    "main.990fabcf.js.map": "/Projects-Showcase/static/js/main.990fabcf.js.map",
+    "main.228ec128.css.map": "/Projects-Showcase/static/css/main.228ec128.css.map",
+    "main.40d64ad1.js.map": "/Projects-Showcase/static/js/main.40d64ad1.js.map",
     "374.e0658af3.chunk.js.map": "/Projects-Showcase/static/js/374.e0658af3.chunk.js.map",
     "432.4e5a4729.chunk.js.map": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.601a461b.css",
-    "static/js/main.990fabcf.js"
+    "static/css/main.228ec128.css",
+    "static/js/main.40d64ad1.js"
   ]
 }
