@@ -78,12 +78,16 @@ $gray-container-big: 552px;
 
 @mixin rows() { //@include rows();
   @include grid_template(auto / 1fr);
-  row-gap: 32px;
+  row-gap: 24px;
+
+  h1, h2 {
+    padding-bottom: 8px;
+  }
 }   
 
 @mixin small-rows() { //@include small-rows();
   @include grid_template(auto / 1fr);
-  row-gap: 20px;
+  row-gap: 24px;
 }   
 
 @mixin columns() { //@include columns();
@@ -97,6 +101,7 @@ $gray-container-big: 552px;
 
 @mixin text-grid() { //@include text-grid();
   @include grid_template(auto / 1fr);
+  align-self: start;
   row-gap: 24px;
 }        
 

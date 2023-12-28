@@ -12,6 +12,7 @@
 
       &-text {
         @include text-grid();
+        
       }
     }
 
@@ -90,7 +91,12 @@
   .typography-interface {
     @include small-common-rows();
 
-    * {
+    &__text {
+      @include rows();
+      p {@include text();}
+    }
+
+    section:not(.typography-interface__text) {
       @include small-rows();
       p {@include text();}
     }
@@ -109,10 +115,6 @@
       
       &-name, &-text, &-pic {
         @include columns();
-      }
-  
-      &__pic {
-        // height: $gray-container-big;
       }
     }
   }

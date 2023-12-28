@@ -94,7 +94,8 @@
   }
 
   .logo-wrong {
-    @include rows();
+    @include grid_template(auto / 1fr);
+    row-gap: 32px;
 
     &__different-var {
       @include grid_template(1fr / 1fr 1fr 1fr);

@@ -88,9 +88,7 @@
       }
 
       &-text {
-        align-self: start;
-        @include grid_template(auto auto / 1fr);
-        row-gap: 24px;
+        @include text-grid();
       }
     }
   }

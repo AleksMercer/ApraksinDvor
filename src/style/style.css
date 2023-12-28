@@ -1152,7 +1152,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-description {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-description h1, .aprashka-main__wrapper.logotype .logo-description h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-description p {
   width: 768px;
@@ -1160,7 +1163,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-main {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-main h1, .aprashka-main__wrapper.logotype .logo-main h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-main__block {
   display: grid;
@@ -1172,12 +1178,16 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-main__block-text {
   display: grid;
   grid-template: auto/1fr;
+  align-self: start;
   row-gap: 24px;
 }
 .aprashka-main__wrapper.logotype .logo-build {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-build h1, .aprashka-main__wrapper.logotype .logo-build h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-build p {
   width: 768px;
@@ -1192,7 +1202,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-safeandsize {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-safeandsize h1, .aprashka-main__wrapper.logotype .logo-safeandsize h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-safeandsize__name, .aprashka-main__wrapper.logotype .logo-safeandsize__text, .aprashka-main__wrapper.logotype .logo-safeandsize__pic {
   display: grid;
@@ -1207,7 +1220,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-horizontal {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-horizontal h1, .aprashka-main__wrapper.logotype .logo-horizontal h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-horizontal p {
   width: 768px;
@@ -1221,7 +1237,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-short {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-short h1, .aprashka-main__wrapper.logotype .logo-short h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-short p {
   width: 768px;
@@ -1237,7 +1256,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-partner {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-partner h1, .aprashka-main__wrapper.logotype .logo-partner h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-partner__pics {
   display: grid;
@@ -1255,7 +1277,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.logotype .logo-colors {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.logotype .logo-colors h1, .aprashka-main__wrapper.logotype .logo-colors h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.logotype .logo-colors p {
   width: 768px;
@@ -1293,12 +1318,18 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.colorpalette .color-description, .aprashka-main__wrapper.colorpalette .color-interface, .aprashka-main__wrapper.colorpalette .color-contrast {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-description h1, .aprashka-main__wrapper.colorpalette .color-description h2, .aprashka-main__wrapper.colorpalette .color-interface h1, .aprashka-main__wrapper.colorpalette .color-interface h2, .aprashka-main__wrapper.colorpalette .color-contrast h1, .aprashka-main__wrapper.colorpalette .color-contrast h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-main, .aprashka-main__wrapper.colorpalette .color-additional {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-main h1, .aprashka-main__wrapper.colorpalette .color-main h2, .aprashka-main__wrapper.colorpalette .color-additional h1, .aprashka-main__wrapper.colorpalette .color-additional h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-main__colors, .aprashka-main__wrapper.colorpalette .color-additional__colors {
   display: grid;
@@ -1347,7 +1378,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.colorpalette .color-opacity {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-opacity h1, .aprashka-main__wrapper.colorpalette .color-opacity h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-opacity__color-grid {
   display: grid;
@@ -1363,7 +1397,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.colorpalette .color-gray {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-gray h1, .aprashka-main__wrapper.colorpalette .color-gray h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-gray__block {
   display: grid;
@@ -1384,15 +1421,18 @@ body * > img, body * > button, body h1, body h2, body h3 {
   padding-left: 32px;
 }
 .aprashka-main__wrapper.colorpalette .color-gray__block-text {
-  align-self: start;
   display: grid;
-  grid-template: auto auto/1fr;
+  grid-template: auto/1fr;
+  align-self: start;
   row-gap: 24px;
 }
 .aprashka-main__wrapper.colorpalette .color-semantic {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-semantic h1, .aprashka-main__wrapper.colorpalette .color-semantic h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-semantic__pic, .aprashka-main__wrapper.colorpalette .color-semantic__text {
   display: grid;
@@ -1407,7 +1447,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.colorpalette .color-state {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.colorpalette .color-state h1, .aprashka-main__wrapper.colorpalette .color-state h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.colorpalette .color-state__colors {
   display: grid;
@@ -1424,7 +1467,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-description {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-description h1, .aprashka-main__wrapper.typography .typography-description h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.typography .typography-description p {
   width: 768px;
@@ -1432,7 +1478,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-grotesk {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-grotesk h1, .aprashka-main__wrapper.typography .typography-grotesk h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.typography .typography-grotesk__block {
   display: grid;
@@ -1444,6 +1493,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-grotesk__block-text {
   display: grid;
   grid-template: auto/1fr;
+  align-self: start;
   row-gap: 24px;
 }
 .aprashka-main__wrapper.typography .typography-grotesk .download-button {
@@ -1453,7 +1503,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-inter {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-inter h1, .aprashka-main__wrapper.typography .typography-inter h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.typography .typography-inter p {
   width: 768px;
@@ -1461,7 +1514,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-headers, .aprashka-main__wrapper.typography .typography-main-text, .aprashka-main__wrapper.typography .typography-accent-text {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-headers h1, .aprashka-main__wrapper.typography .typography-headers h2, .aprashka-main__wrapper.typography .typography-main-text h1, .aprashka-main__wrapper.typography .typography-main-text h2, .aprashka-main__wrapper.typography .typography-accent-text h1, .aprashka-main__wrapper.typography .typography-accent-text h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.typography .typography-headers > p, .aprashka-main__wrapper.typography .typography-main-text > p, .aprashka-main__wrapper.typography .typography-accent-text > p {
   width: 768px;
@@ -1508,12 +1564,23 @@ body * > img, body * > button, body h1, body h2, body h3 {
   grid-template: auto/1fr;
   row-gap: 80px;
 }
-.aprashka-main__wrapper.typography .typography-interface * {
+.aprashka-main__wrapper.typography .typography-interface__text {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 20px;
+  row-gap: 24px;
 }
-.aprashka-main__wrapper.typography .typography-interface * p {
+.aprashka-main__wrapper.typography .typography-interface__text h1, .aprashka-main__wrapper.typography .typography-interface__text h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.typography .typography-interface__text p {
+  width: 768px;
+}
+.aprashka-main__wrapper.typography .typography-interface section:not(.typography-interface__text) {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-interface section:not(.typography-interface__text) p {
   width: 768px;
 }
 .aprashka-main__wrapper.typography .typography-list {
@@ -1524,7 +1591,10 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-list__description {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 32px;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.typography .typography-list__description h1, .aprashka-main__wrapper.typography .typography-list__description h2 {
+  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.typography .typography-list__description p {
   width: 768px;
@@ -1532,7 +1602,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.typography .typography-list__lists {
   display: grid;
   grid-template: auto/1fr;
-  row-gap: 20px;
+  row-gap: 24px;
 }
 .aprashka-main__wrapper.typography .typography-list__lists-name, .aprashka-main__wrapper.typography .typography-list__lists-text, .aprashka-main__wrapper.typography .typography-list__lists-pic {
   display: grid;
@@ -1541,4 +1611,5 @@ body * > img, body * > button, body h1, body h2, body h3 {
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
+
 /* Accordion 2 */
