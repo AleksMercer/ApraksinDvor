@@ -57,7 +57,7 @@ function AboutProject() {
 
         <div className='welcome-block__idea'>
           <div 
-            class={`checkbox ${isChecked ? 'checked' : 'unchecked'}`} 
+            class={`checkbox-comp ${isChecked ? 'checked' : 'unchecked'}`} 
             onClick={() => setIsChecked(!isChecked)}>
           </div>
           

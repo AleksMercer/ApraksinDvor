@@ -1,0 +1,68 @@
+.aprashka-main__wrapper.checkbox {
+
+  .checkbox-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .checkbox-use {
+    @include rows();
+
+    &__text {
+      @include columns();
+    }
+
+    &__checkboxes {
+      @include columns();
+
+      .gray-container {
+        height: 276px;
+      }
+
+      &-comp {
+        @include grid_template(auto / auto auto);
+        align-items: center;
+        justify-content: start;
+        column-gap: 16px;
+      }
+
+      &-container {
+        @include rows();
+      }
+    }
+
+    .checkbox-comp.checked {
+      background-color: $green-main;
+    }
+    .checkbox-comp.checked:hover {
+      background-color: $green-hover;
+    }
+  }
+
+  .checkbox-contents {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+
+  .checkbox-principles {
+    @include rows();
+    p {@include text();}
+
+    &__container {
+      @include columns();
+    }
+  }
+
+  .checkbox-state {
+    @include rows();
+  }
+}
+
+//72зч

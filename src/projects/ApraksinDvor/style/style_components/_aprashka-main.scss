@@ -250,112 +250,147 @@
     }
   }
 
-  .loadscreen { // loading effect
-    display: grid;
-    place-items: center;
+  // #region : TinyComponents start
 
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-  
-    background-color: rgb(255, 255, 255); // color of pattern
-  
-    .loading-effect{
+    .loadscreen { // loading effect
+      display: grid;
+      place-items: center;
 
-      svg {
-        animation: loading 0.75s ease infinite;
+      position: fixed;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+    
+      background-color: rgb(255, 255, 255); // color of pattern
+    
+      .loading-effect{
+
+        svg {
+          animation: loading 0.75s ease infinite;
+          
+          @keyframes loading {
+            0% {
+              transform: rotate(0deg);
+              fill: $pink-hover;
+            }
+
+            25% {
+              fill: $blue-hover;
+            }
+
+            50% {
+              fill: $green-hover;
+            }
+
+            75% {
+              fill: $yellow-2;
+            }
         
-        @keyframes loading {
-          0% {
-            transform: rotate(0deg);
-            fill: $pink-hover;
-          }
-
-          25% {
-            fill: $blue-hover;
-          }
-
-          50% {
-            fill: $green-hover;
-          }
-
-          75% {
-            fill: $yellow-2;
-          }
-      
-          100% {
-            transform: rotate(180deg);
-            fill: $orange-hover;
+            100% {
+              transform: rotate(180deg);
+              fill: $orange-hover;
+            }
           }
         }
       }
     }
-  }
-  
-  .download-button {
-    height: 64px;
-    width: 198px;
-
-    @include grid_template(1fr / auto auto);
-    align-items: center;
-    column-gap: 12px;
-
-    background-color: $blue-main;
-    color: white;
-    font-size: $default-font;
-    font-weight: $medium;
-    transition: .2s linear;
-    user-select: none;
-
-    svg {
-      justify-self: end;
-    }
     
-    &:hover {
-      background-color: $blue-hover;
-    }
-    &:active {
-      background-color: $blue-pressed;
-    }
-  }
+    .download-button {
+      height: 64px;
+      width: 198px;
 
-  .footer {
-    @include grid_align_center(1fr / repeat(3, 1fr));
-    justify-content: space-between;
-    height: 180px;
+      @include grid_template(1fr / auto auto);
+      align-items: center;
+      column-gap: 12px;
 
-    font-size: $default-font;
+      background-color: $blue-main;
+      color: white;
+      font-size: $default-font;
+      font-weight: $medium;
+      transition: .2s linear;
+      user-select: none;
 
-    div {
-      line-height: 28px; 
-    }
-
-    &__nopic {
-      @include grid_template(auto auto / 1fr);
-    }
-
-    &__pic {
-      @include grid_template(auto auto / auto 1fr);
-      column-gap: 24px;
-      img {
-        grid-row: 1 / 3;
+      svg {
+        justify-self: end;
+      }
+      
+      &:hover {
+        background-color: $blue-hover;
+      }
+      &:active {
+        background-color: $blue-pressed;
       }
     }
 
-    .fat {
-      font-weight: $medium;
+    .checkbox-comp {
+      position: relative;
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+      transition: all 0.2s linear;         
+
+      &.checked {
+        &:after {
+          content: "";
+          position: absolute;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          left: 8px;
+          top: 2px;
+          width: 9px;
+          height: 15px;
+
+          transform: rotate(45deg);
+        }
+      }
+      
+      &.unchecked {
+        border: 1.5px solid $gray-3;
+      }
+
+      &.unchecked:hover {
+        border: 1.5px solid $gray-5;
+      }
     }
 
-    .link {
-      justify-self: start;
-      color: $gray-7;
-      border-bottom: 1px solid $gray-7;
+    .footer {
+      @include grid_align_center(1fr / repeat(3, 1fr));
+      justify-content: space-between;
+      height: 180px;
+
+      font-size: $default-font;
+
+      div {
+        line-height: 28px; 
+      }
+
+      &__nopic {
+        @include grid_template(auto auto / 1fr);
+      }
+
+      &__pic {
+        @include grid_template(auto auto / auto 1fr);
+        column-gap: 24px;
+        img {
+          grid-row: 1 / 3;
+        }
+      }
+
+      .fat {
+        font-weight: $medium;
+      }
+
+      .link {
+        justify-self: start;
+        color: $gray-7;
+        border-bottom: 1px solid $gray-7;
+      }
+
+      .link:hover {
+        color: $green-main;
+      }
+
     }
 
-    .link:hover {
-      color: $green-main;
-    }
-
-  }
+  // #endregion TinyComponents end
 }

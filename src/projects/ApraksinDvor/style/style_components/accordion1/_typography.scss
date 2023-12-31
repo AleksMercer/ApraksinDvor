@@ -71,7 +71,7 @@
       @include grid_template( 1fr auto repeat(4, 1fr) / 1fr);
 
       &-row {
-        @include grid_template(80px / 88px 157px 163px 1fr);
+        @include grid_template(80px / 88px 157px 163px 222px 1fr);
       }
     }
   }
@@ -81,7 +81,7 @@
       @include grid_template( 1fr auto repeat(4, 1fr) / 1fr);
 
       &-row {
-        @include grid_template(80px / 88px 157px 163px 1fr);
+        @include grid_template(80px / 88px 157px 163px 222px 1fr);
       }
     }
   }

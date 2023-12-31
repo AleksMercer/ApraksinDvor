@@ -679,6 +679,33 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main .download-button:active {
   background-color: #0178BA;
 }
+.aprashka-main .checkbox-comp {
+  position: relative;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.aprashka-main .checkbox-comp.checked:after {
+  content: "";
+  position: absolute;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  left: 8px;
+  top: 2px;
+  width: 9px;
+  height: 15px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.aprashka-main .checkbox-comp.unchecked {
+  border: 1.5px solid #C8D2D7;
+}
+.aprashka-main .checkbox-comp.unchecked:hover {
+  border: 1.5px solid #8C9BA0;
+}
 .aprashka-main .footer {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
@@ -840,30 +867,11 @@ body * > img, body * > button, body h1, body h2, body h3 {
   margin: 0 0 20px 128px;
   width: 1128px;
 }
-.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox {
-  position: relative;
-  cursor: pointer;
-  height: 24px;
-  width: 24px;
-}
-.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.checked {
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox-comp.checked {
   background-color: #FF5F28;
 }
-.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.checked:after {
-  content: "";
-  position: absolute;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  left: 8px;
-  top: 2px;
-  width: 9px;
-  height: 15px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox.unchecked {
-  border: 1.5px solid #8C9BA0;
+.aprashka-main__wrapper.aboutproject .welcome-block__idea .checkbox-comp.checked:hover {
+  background-color: #FF7F53;
 }
 .aprashka-main__wrapper.aboutproject .welcome-block__idea p {
   line-height: 28px;
@@ -1549,7 +1557,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.typography .typography-main-text__block-row {
   display: grid;
-  grid-template: 80px/88px 157px 163px 1fr;
+  grid-template: 80px/88px 157px 163px 222px 1fr;
 }
 .aprashka-main__wrapper.typography .typography-accent-text__block {
   display: grid;
@@ -1557,7 +1565,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.typography .typography-accent-text__block-row {
   display: grid;
-  grid-template: 80px/88px 157px 163px 1fr;
+  grid-template: 80px/88px 157px 163px 222px 1fr;
 }
 .aprashka-main__wrapper.typography .typography-interface {
   display: grid;
@@ -1613,3 +1621,113 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 
 /* Accordion 2 */
+.aprashka-main__wrapper.checkbox .checkbox-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-description h1, .aprashka-main__wrapper.checkbox .checkbox-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use h1, .aprashka-main__wrapper.checkbox .checkbox-use h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__text {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes .gray-container {
+  height: 276px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-comp {
+  display: grid;
+  grid-template: auto/auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use .checkbox-comp.checked {
+  background-color: #058C50;
+}
+.aprashka-main__wrapper.checkbox .checkbox-use .checkbox-comp.checked:hover {
+  background-color: #37A373;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents h1, .aprashka-main__wrapper.checkbox .checkbox-contents h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles h1, .aprashka-main__wrapper.checkbox .checkbox-principles h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles p {
+  width: 768px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-state h1, .aprashka-main__wrapper.checkbox .checkbox-state h2 {
+  padding-bottom: 8px;
+}

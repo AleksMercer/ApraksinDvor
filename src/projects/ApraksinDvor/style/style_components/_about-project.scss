@@ -103,35 +103,14 @@
       justify-items: end;
       margin: 0 0 20px 128px;
       width: 1128px;
-
-      .checkbox {
-        position: relative;
-        cursor: pointer;
-        height: 24px;
-        width: 24px;
-
-        &.checked {
-          background-color: $orange-main;
-
-          &:after {
-            content: "";
-            position: absolute;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            left: 8px;
-            top: 2px;
-            width: 9px;
-            height: 15px;
-  
-            transform: rotate(45deg);
-          }
-        }
-    
-        &.unchecked {
-          border: 1.5px solid $gray-5;
-        }
+      
+      .checkbox-comp.checked {
+        background-color: $orange-main;
       }
 
+      .checkbox-comp.checked:hover {
+        background-color: $orange-hover;
+      }
 
       p {
         line-height: 28px;

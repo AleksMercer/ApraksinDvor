@@ -114,6 +114,7 @@ function Typography() {
             <p>Size</p>
             <p>Line-height</p>
             <p>Font-weight</p>
+            <p>Paragraphs-space</p>
             <p className='typography-headers__block-row-left'>View</p>
           </div>
 
@@ -123,6 +124,7 @@ function Typography() {
             <p>24 px</p>
             <p>32 px</p>
             <p>400</p>
+            <p>28 px</p>
             <p className='typography-headers__block-row-left' style={{fontSize: '24px', lineHeight: '32px'}}>Крупный основной текст</p>
           </div>
 
@@ -130,6 +132,7 @@ function Typography() {
             <p>20 px</p>
             <p>28 px</p>
             <p>400</p>
+            <p>24 px</p>
             <p className='typography-headers__block-row-left' style={{fontSize: '20px', lineHeight: '28px'}}>Основной текст</p>
           </div>
 
@@ -137,13 +140,15 @@ function Typography() {
             <p>16 px</p>
             <p>22 px</p>
             <p>400</p>
-            <p className='typography-headers__block-row-left' style={{fontSize: '16px', lineHeight: '22px'}}>Вспомогательный текст для второстепенной информации и компонентов</p>
+            <p>18 px</p>
+            <p className='typography-headers__block-row-left' style={{fontSize: '16px', lineHeight: '22px'}}>Вспомогательный текст для второстепенной информации</p>
           </div>
 
           <div className='typography-main-text__block-row'> 
             <p>12 px</p>
             <p>18 px</p>
             <p>400</p>
+            <p>14 px</p>
             <p className='typography-headers__block-row-left' style={{fontSize: '12px', lineHeight: '18px'}}>Вспомогательный текст для подписей и технической информации</p>
           </div>
         </div>
@@ -158,6 +163,7 @@ function Typography() {
             <p>Size</p>
             <p>Line-height</p>
             <p>Font-weight</p>
+            <p>Paragraphs-space</p>
             <p className='typography-headers__block-row-left'>View</p>
           </div>
 
@@ -167,6 +173,7 @@ function Typography() {
             <p>24 px</p>
             <p>32 px</p>
             <p>500</p>
+            <p>28 px</p>
             <p className='typography-headers__block-row-left'style={{fontSize: '24px', lineHeight: '32px'}}>Крупный основной текст</p>
           </div>
 
@@ -174,6 +181,7 @@ function Typography() {
             <p>20 px</p>
             <p>28 px</p>
             <p>500</p>
+            <p>24 px</p>
             <p className='typography-headers__block-row-left' style={{fontSize: '20px', lineHeight: '28px'}}>Основной текст</p>
           </div>
 
@@ -181,13 +189,15 @@ function Typography() {
             <p>16 px</p>
             <p>22 px</p>
             <p>500</p>
-            <p className='typography-headers__block-row-left' style={{fontSize: '16px', lineHeight: '22px'}}>Вспомогательный текст для второстепенной информации и компонентов</p>
+            <p>18 px</p>
+            <p className='typography-headers__block-row-left' style={{fontSize: '16px', lineHeight: '22px'}}>Вспомогательный текст для второстепенной информации</p>
           </div>
 
           <div className='typography-accent-text__block-row'> 
             <p>12 px</p>
             <p>18 px</p>
             <p>500</p>
+            <p>14 px</p>
             <p className='typography-headers__block-row-left' style={{fontSize: '12px', lineHeight: '18px'}}>Вспомогательный текст для подписей и технической информации</p>
           </div>
         </div>
