@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.e602d06e.css",
-    "main.js": "/Projects-Showcase/static/js/main.ddeae5de.js",
+    "main.css": "/Projects-Showcase/static/css/main.8c32ec24.css",
+    "main.js": "/Projects-Showcase/static/js/main.97839ef9.js",
     "static/js/862.bfc1e594.chunk.js": "/Projects-Showcase/static/js/862.bfc1e594.chunk.js",
     "static/js/160.743b81da.chunk.js": "/Projects-Showcase/static/js/160.743b81da.chunk.js",
     "static/js/956.5a835e54.chunk.js": "/Projects-Showcase/static/js/956.5a835e54.chunk.js",
@@ -31,13 +31,23 @@
     "static/media/principles1.svg": "/Projects-Showcase/static/media/principles1.10d5c97435cb43037e492076ec8b53b6.svg",
     "static/media/principles2.svg": "/Projects-Showcase/static/media/principles2.cea12964b9d906840cad5cf0013ee5ab.svg",
     "static/media/logo-colors.svg": "/Projects-Showcase/static/media/logo-colors.0e1cf6b6cc73e9997e61c2f7fa513136.svg",
+    "static/media/layout-12.svg": "/Projects-Showcase/static/media/layout-12.33dcafb01d6523280716b6099b98ccdc.svg",
     "static/media/logo-min-size.svg": "/Projects-Showcase/static/media/logo-min-size.fe2bf239e70f10ad2fc220990c6dbf97.svg",
+    "static/media/layout-16.svg": "/Projects-Showcase/static/media/layout-16.b6d002458def3d7d9c9eef31635ef7b5.svg",
     "static/media/checkbox-contents.svg": "/Projects-Showcase/static/media/checkbox-contents.fa3b870625958bdef65d68adf04b203d.svg",
     "static/media/horizontal-logo-min-size.svg": "/Projects-Showcase/static/media/horizontal-logo-min-size.98604b865c8d605abcddbd31014796ce.svg",
+    "static/media/1536.svg": "/Projects-Showcase/static/media/1536.1454b6493f51454e18f7fe212375d9b2.svg",
     "static/media/logo-grid-size.svg": "/Projects-Showcase/static/media/logo-grid-size.1e6739e6dd06b7c33fb543e626c9ff72.svg",
     "static/media/small-logo-min-size.svg": "/Projects-Showcase/static/media/small-logo-min-size.00634374150928fe04ab583a1f490418.svg",
+    "static/media/1920.svg": "/Projects-Showcase/static/media/1920.e232d499a190fa754d9aea470435c16f.svg",
+    "static/media/480.svg": "/Projects-Showcase/static/media/480.5a3c189e2f5459b0ed602d31d32685ab.svg",
+    "static/media/375.svg": "/Projects-Showcase/static/media/375.275cd7e8096d93260ba10dcafcb3ac37.svg",
+    "static/media/320.svg": "/Projects-Showcase/static/media/320.cae1af2fdcd66370455be39058acbc0d.svg",
     "static/media/Anna.webp": "/Projects-Showcase/static/media/Anna.6654eee4a360c3e04076.webp",
+    "static/media/768.svg": "/Projects-Showcase/static/media/768.d8a24d67a3feaad5e01afdb53137043d.svg",
+    "static/media/layout-container.svg": "/Projects-Showcase/static/media/layout-container.7f8c6fee8a7190130987444b29b20a8d.svg",
     "static/media/ITMO_black-2.png": "/Projects-Showcase/static/media/ITMO_black-2.3747b967a9a722764a4c.png",
+    "static/media/1440.svg": "/Projects-Showcase/static/media/1440.325edd12c07dd5a4aa44ef518a29cb92.svg",
     "static/media/Daniil.webp": "/Projects-Showcase/static/media/Daniil.62eb604504bb4707b960.webp",
     "static/media/Alex.webp": "/Projects-Showcase/static/media/Alex.4e1de489deccaed5c00f.webp",
     "static/media/partner-logo-1.svg": "/Projects-Showcase/static/media/partner-logo-1.7aeb31d127e117d7faf74d657996ca50.svg",
@@ -62,13 +72,13 @@
     "static/media/color-interface.svg": "/Projects-Showcase/static/media/color-interface.1fe141b595e9153e0a233396c62ba272.svg",
     "index.html": "/Projects-Showcase/index.html",
     "static/media/small-logo.svg": "/Projects-Showcase/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
-    "main.e602d06e.css.map": "/Projects-Showcase/static/css/main.e602d06e.css.map",
-    "main.ddeae5de.js.map": "/Projects-Showcase/static/js/main.ddeae5de.js.map",
+    "main.8c32ec24.css.map": "/Projects-Showcase/static/css/main.8c32ec24.css.map",
+    "main.97839ef9.js.map": "/Projects-Showcase/static/js/main.97839ef9.js.map",
     "374.e0658af3.chunk.js.map": "/Projects-Showcase/static/js/374.e0658af3.chunk.js.map",
     "432.4e5a4729.chunk.js.map": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e602d06e.css",
-    "static/js/main.ddeae5de.js"
+    "static/css/main.8c32ec24.css",
+    "static/js/main.97839ef9.js"
   ]
 }
