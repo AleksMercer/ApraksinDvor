@@ -28,7 +28,7 @@ function Sidebar() {
             onClick={() => setFirstSwitch(prev => !prev)}>
 
             <span>
-              Стиль
+              Стили
               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0859985 12.4999L5.586 6.99994L0.0859985 1.49994L1.5 0.0859375L8.414 6.99994L1.5 13.9139L0.0859985 12.4999Z" fill="#8C9BA0"/></svg>
             </span>
           </div>

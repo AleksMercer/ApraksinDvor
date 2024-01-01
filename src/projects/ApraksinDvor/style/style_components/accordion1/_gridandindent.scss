@@ -1,0 +1,203 @@
+.aprashka-main__wrapper.gridandindent { 
+
+  .gridandindent-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .gridandindent-grid {
+    @include small-common-rows();
+
+    &__description {
+      @include rows();
+      p {@include text();}
+  
+      ul {
+        display: grid;
+        row-gap: 16px;
+        @include text();
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $regular;
+
+        padding-left: 32px;
+
+        li:before {
+          content: '';
+          display: inline-block;
+          height: 9px;
+          width: 9px;
+          background-color: $green-main;
+          margin-right: 16px;
+
+          vertical-align: 10%;
+        }
+      }
+    }
+
+    &__grid-size {
+      @include rows();
+      & > p {@include text();}
+
+      &-table {
+        @include grid_template(repeat(3, auto) / 1fr);
+        row-gap: $vertical-small-gap;
+
+        margin: 12px 0 12px 0;
+
+        span {
+          border-bottom: 2px solid $gray-6; 
+        }
+
+        &-block {
+          @include grid_template(1fr / repeat(6, 1fr));
+          column-gap: $horizontal-small-gap;
+        }
+
+        &-block.size > p {
+          font-size: $biggest-than-default;
+        }
+      }
+    }
+  }
+
+  .gridandindent-layout {
+    @include small-common-rows();
+
+    &__description {
+      @include rows();
+      p {@include text();}
+    }
+    
+    &__adaptive {
+      @include rows();
+      p {@include text();}
+    }
+
+    &__container {
+      @include rows();
+
+      &-block {
+        @include columns();
+
+        &-pic {
+          @include grid_template(1fr auto / 1fr);
+          row-gap: 16px;
+          span {
+            color: $gray-6;
+            font-size: $small-font;
+            line-height: 22px;
+          }
+        }
+
+        &-text {
+          @include text-grid();
+
+          p > span {
+            color: $green-main;
+            border-bottom: 1px solid $green-main;
+          }
+        }
+      }
+    }
+  }
+
+  .gridandindent-indent {
+    @include small-common-rows();
+
+    &__description {
+      @include rows();
+      p {@include text();}
+
+      p > span {
+        color: $green-main;
+        border-bottom: 1px solid $green-main;
+      }
+    }
+    
+    &__vertical {
+      @include rows();
+      & > p {@include text();}
+
+      &-table {
+        @include grid_template(1fr / repeat(3, 1fr));
+        
+        div {
+          @include grid_center(auto / 1fr);
+          
+          /* table indent */
+          * {
+            margin: 24px 0 24px 0;
+          }
+
+          *:nth-child(1) {
+            margin: 12px 0 24px 0;
+          }
+
+          *:nth-child(2) {
+            margin: 0;
+          }
+
+          /* table indent */
+
+          span {
+            border-bottom: 1px solid $gray-7; 
+            width: 100%;
+          }
+
+          p.gray {
+            color: $gray-6;
+          }
+        }
+      }
+    }
+
+    &__horizontal {
+      @include rows();
+      & > p {@include text();}
+
+      &-table {
+        @include grid_template(1fr auto 1fr / 1fr);
+        row-gap: $vertical-small-gap;
+        margin-top: 12px;
+
+        div {
+          @include grid_center(1fr / repeat(6, 1fr));
+          row-gap: $horizontal-small-gap;
+
+          p.gray {
+            color: $gray-6;
+          }
+        }
+
+        span {
+          border-bottom: 1px solid $gray-7; 
+        }
+      }
+    }
+
+    &__container {
+      @include rows();
+      & > p {@include text();}
+      
+      &-table {
+        @include grid_template(1fr auto 1fr / 1fr);
+        row-gap: $vertical-small-gap;
+        margin-top: 12px;
+
+        div {
+          @include grid_center(1fr / repeat(4, 1fr));
+          row-gap: $horizontal-small-gap;
+
+          p.gray {
+            color: $gray-6;
+          }
+        }
+
+        span {
+          border-bottom: 1px solid $gray-7; 
+        }
+      }
+    }
+  }
+}

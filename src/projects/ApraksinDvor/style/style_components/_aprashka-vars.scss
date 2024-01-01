@@ -70,6 +70,12 @@ $gray-container-small: 360px;
 $gray-container-big: 552px;
 
 
+// gap var
+
+$vertical-small-gap: 24px;
+$horizontal-small-gap: 24px;
+
+
 /*==========Mixin========== Start*/
 @mixin small-common-rows() { //@include small-common-rows();
   @include grid_template(auto / 1fr);

@@ -99,7 +99,7 @@
 
     &__different-var {
       @include grid_template(1fr / 1fr 1fr 1fr);
-      column-gap: 24px;
+      column-gap: $horizontal-small-gap;
       
       &-example {
         @include grid_template(1fr auto / 1fr);

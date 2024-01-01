@@ -12,7 +12,7 @@
 
     &__colors {
       @include grid_template(1fr / repeat(3, 1fr));
-      column-gap: 24px;
+      column-gap: $horizontal-small-gap;
       
       div {
         height: $gray-container-small;
@@ -98,7 +98,7 @@
 
     &__pic, &__text  {
       @include grid_template(1fr / repeat(3, 1fr));
-      column-gap: 24px;
+      column-gap: $horizontal-small-gap;
     }
 
     &__pic {

@@ -234,6 +234,7 @@
     &:not(.aboutproject) {
       @include grid_template(auto / 1128px);
       row-gap: 140px;
+      align-content: start;
       padding: 80px 0px 0px 128px;
       
       overflow-x: hidden;
