@@ -1775,7 +1775,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.gridandindent .gridandindent-indent__description p {
   width: 768px;
 }
-.aprashka-main__wrapper.gridandindent .gridandindent-indent__description p > span {
+.aprashka-main__wrapper.gridandindent .gridandindent-indent__description p > a {
   color: #058C50;
   border-bottom: 1px solid #058C50;
 }

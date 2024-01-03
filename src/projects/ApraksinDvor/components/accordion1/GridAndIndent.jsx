@@ -1,4 +1,9 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { NavLink } from 'react-router-dom'
+
+import { selectSecondAccordion } from '../../aprashkaStore' // selectors import
+import { secondAccordionSwap } from '../../aprashkaStore' // reducers import
 
 import Footer from '../tinycomp/Footer'
 
@@ -19,6 +24,10 @@ import layoutContainer from '../../media/accordion1/gridandindent/layout-contain
 /* Pic import end */
 
 function GridAndIndent() {
+
+  const dispatch = useDispatch()
+  const secondAccordionState = useSelector(selectSecondAccordion)
+
   return (
     <>
       <section className='gridandindent-description'>
@@ -298,7 +307,7 @@ function GridAndIndent() {
           <h2>Отступы</h2>
           <p>Отступы между элементами интерфейса позволяют лучше организовать информацию, группировать взаимосвязанные объекты и&nbsp;разделять независимые компоненты. За&nbsp;счет чего создается смысловая иерархия и&nbsp;логическая структура в&nbsp;макете.</p>
           <p>Мы&nbsp;разработали систему отступов, чтобы избежать хаоса при разработке макетов. Использование ограниченного набора отступов поможет вам создавать структурированные макеты быстрее.</p>
-          <p>В&nbsp;нашей системе есть правила для вертикальных и&nbsp;горизонтальных отступов, а&nbsp;также <span>отступы для каждого компонента</span>. Размер отступов изменяется в&nbsp;зависимости от&nbsp;разрешения экрана, но&nbsp;при этом все отступы кратны 4&nbsp;пикселям.</p>
+          <p>В&nbsp;нашей системе есть правила для вертикальных и&nbsp;горизонтальных отступов, а&nbsp;также <NavLink to="../Breadcrumbs" onClick={() => !secondAccordionState && dispatch(secondAccordionSwap())}>отступы для каждого компонента</NavLink>. Размер отступов изменяется в&nbsp;зависимости от&nbsp;разрешения экрана, но&nbsp;при этом все отступы кратны 4&nbsp;пикселям.</p>
         </section>
 
         <section className='gridandindent-indent__vertical'>

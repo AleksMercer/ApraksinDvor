@@ -109,7 +109,7 @@
       @include rows();
       p {@include text();}
 
-      p > span {
+      p > a {
         color: $green-main;
         border-bottom: 1px solid $green-main;
       }

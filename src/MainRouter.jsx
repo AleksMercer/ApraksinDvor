@@ -44,7 +44,7 @@ function MainRouter() {
   const location = useLocation()
   const [mainClass, setMainClass] = useState('')
 
-  useEffect(() => { // swap title, favicon and className
+  useEffect(() => { // swap title, favicon and main-tag-className
 
     const defaultPath = '/Projects-Showcase'
     const path = location.pathname

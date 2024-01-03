@@ -3,9 +3,14 @@ import React, { useState, useEffect } from 'react'
 /* React Router */
 import { Outlet, useLocation } from 'react-router-dom'
 
+/* Redux Tool-Kit */
+import { Provider } from 'react-redux'
+import aprashkaStore from './aprashkaStore'
+
 /* Components */
 import Sidebar from './components/Sidebar'
 import LoadScreen from './components/tinycomp/LoadScreen'
+
 
 function Aprashka() {
   
@@ -45,8 +50,8 @@ function Aprashka() {
   // #endregion
 
   return (
-    <> {/* React Tool-Kit */}
-      
+    <Provider store={aprashkaStore}> {/* Redux Tool-Kit */}
+
       <LoadScreen />
 
       <section className='aprashka-main__sidebar'>
@@ -57,7 +62,7 @@ function Aprashka() {
         <Outlet />
       </section>
       
-    </>
+    </Provider>
   )
 }
 

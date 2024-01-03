@@ -1,12 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
 import logo from '../media/logo_black.svg'
 
+import { selectFirstAccordion, selectSecondAccordion } from '../aprashkaStore' // selectors import
+import { firstAccordionSwap, secondAccordionSwap } from '../aprashkaStore' // reducers import
+
+
 function Sidebar() {
 
-  const [firstSwitch, setFirstSwitch] = useState(false)
-  const [secondSwitch, setSecondSwitch] = useState(false)
+  const dispatch = useDispatch()
+
+  const firstAccordionState = useSelector(selectFirstAccordion)
+  const secondAccordionState = useSelector(selectSecondAccordion)
 
   return (
     <> {/* <section className='aprashka-main__sidebar'> */}
@@ -24,8 +31,8 @@ function Sidebar() {
 
         <div className='accordion accfirst'>
           <div 
-            className={`mainlink accordion__arrow ${firstSwitch ? 'arrow-open' : 'arrow-close'}`} 
-            onClick={() => setFirstSwitch(prev => !prev)}>
+            className={`mainlink accordion__arrow ${firstAccordionState ? 'arrow-open' : 'arrow-close'}`} 
+            onClick={() => dispatch(firstAccordionSwap())}>
 
             <span>
               Стили
@@ -33,7 +40,7 @@ function Sidebar() {
             </span>
           </div>
 
-          <nav className={`accordion__links ${firstSwitch ? 'menu-open' : 'menu-close'}`}>
+          <nav className={`accordion__links ${firstAccordionState ? 'menu-open' : 'menu-close'}`}>
             <NavLink to="Logotype"      className={"secondarylink"}>Логотип</NavLink>
             <NavLink to="ColorPalette"  className={"secondarylink"}>Цветовая палитра</NavLink>
             <NavLink to="Typography"    className={"secondarylink"}>Типографика</NavLink>
@@ -45,8 +52,8 @@ function Sidebar() {
 
         <div className='accordion accsecond'>
           <div 
-            className={`mainlink accordion__arrow ${secondSwitch ? 'arrow-open' : 'arrow-close'}`} 
-            onClick={() => setSecondSwitch(prev => !prev)}>
+            className={`mainlink accordion__arrow ${secondAccordionState ? 'arrow-open' : 'arrow-close'}`} 
+            onClick={() => dispatch(secondAccordionSwap())}>
               
             <span>
               Компоненты
@@ -54,7 +61,7 @@ function Sidebar() {
             </span>
           </div>
 
-          <nav className={`accordion__links ${secondSwitch ? 'menu-open' : 'menu-close'}`}>
+          <nav className={`accordion__links ${secondAccordionState ? 'menu-open' : 'menu-close'}`}>
             <NavLink to="Breadcrumbs"   className={"secondarylink"}>Breadcrumbs</NavLink>
             <NavLink to="Button"        className={"secondarylink"}>Button</NavLink>
             <NavLink to="Card"          className={"secondarylink"}>Card</NavLink>
