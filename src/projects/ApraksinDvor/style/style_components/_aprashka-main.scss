@@ -228,7 +228,12 @@
     width: 100%;
     
     &::-webkit-scrollbar {
-      width: 0px;
+      width: 0.3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: $black;
     }
 
     &:not(.aboutproject) {
@@ -391,6 +396,30 @@
         color: $green-main;
       }
 
+    }
+
+    .aprashka-error-404 {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      .green {color: $green-main;}
+      .yellow {color: $yellow-main;}
+      .blue {color: $blue-main;}
+
+      h1 {
+        letter-spacing: 3px;
+        font-size: 120px;
+      }
+
+      p {
+        margin-top: 40px;
+        font-size: 60px;
+        color: $orange-main;
+        letter-spacing: 3px;
+      }
     }
 
   // #endregion TinyComponents end

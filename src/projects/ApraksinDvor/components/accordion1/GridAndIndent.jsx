@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
@@ -27,6 +27,11 @@ function GridAndIndent() {
 
   const dispatch = useDispatch()
   const secondAccordionState = useSelector(selectSecondAccordion)
+
+  const ref = useRef(null)
+  const handleClickToScroll = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <>
@@ -293,7 +298,7 @@ function GridAndIndent() {
             </div>
 
             <div className='gridandindent-layout__container-block-text'>
-              <p>Контейнеры всегда строятся по&nbsp;основной сетке и&nbsp;имеют одинаковую структуру. Контейнер имеет внутренние отступы со&nbsp;всех сторон. Для каждого размера экрана определен <span>конкретный внутренний отступ контейнера</span>.</p>
+              <p>Контейнеры всегда строятся по&nbsp;основной сетке и&nbsp;имеют одинаковую структуру. Контейнер имеет внутренние отступы со&nbsp;всех сторон. Для каждого размера экрана определен <span onClick={handleClickToScroll}>конкретный внутренний отступ контейнера</span>.</p>
               <p>Сетка внутри контейнера может быть в&nbsp;1, 2, 4, 6&nbsp;и&nbsp;8&nbsp;колонок в&nbsp;соответствии с&nbsp;разметкой основной сетки. При этом интервал между колонками внутренней сетки контейнера должен быть равен интервалу основной сетки. При создании контейнеров следует стремиться к&nbsp;более простой структуре и&nbsp;располагать контент по&nbsp;сетке из&nbsp;1-2&nbsp;колонок.</p>
             </div>
           </div>
@@ -387,7 +392,7 @@ function GridAndIndent() {
           </div>
         </section>
 
-        <section className='gridandindent-indent__container'>
+        <section className='gridandindent-indent__container' ref={ref}>
           <h3>Отступы в контейнере</h3>
           <p>Внутренние отступы контейнера (от&nbsp;каждой из&nbsp;сторон) при адаптиве меняются по&nbsp;следующим правилам:</p>
           <div className='gridandindent-indent__container-table'>

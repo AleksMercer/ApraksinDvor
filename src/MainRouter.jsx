@@ -5,7 +5,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 /* main import */
 
   import Mainpage from './mainpage/Mainpage'
-  import Error404 from './mainpage/Error404'
+  import AprashkaError404 from './mainpage/Error404/AprashkaError404'
   import Aprashka from './projects/apraksindvor/Aprashka'
 
 /*-------------------------------------Aprashka Imports-----------------------------------------*/
@@ -73,7 +73,7 @@ function MainRouter() {
     <main className={mainClass}>
 
       <Routes>
-        <Route path='*' element={<Error404 />} />
+        <Route path='/Projects-Showcase/*' element={<AprashkaError404 />} />
         <Route path="/Projects-Showcase" element={<Mainpage />} />
 
         <Route path="/Projects-Showcase/Aprashka"  element={<Aprashka />}> 

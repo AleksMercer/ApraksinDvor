@@ -94,6 +94,7 @@
           @include text-grid();
 
           p > span {
+            cursor: pointer;
             color: $green-main;
             border-bottom: 1px solid $green-main;
           }

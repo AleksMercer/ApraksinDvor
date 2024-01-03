@@ -574,7 +574,12 @@ body * > img, body * > button, body h1, body h2, body h3 {
   width: 100%;
 }
 .aprashka-main__wrapper::-webkit-scrollbar {
-  width: 0px;
+  width: 0.3vw;
+  background-color: rgba(0, 0, 0, 0);
+}
+.aprashka-main__wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0A2832;
 }
 .aprashka-main__wrapper:not(.aboutproject) {
   display: grid;
@@ -747,6 +752,34 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main .footer .link:hover {
   color: #058C50;
+}
+.aprashka-main .aprashka-error-404 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.aprashka-main .aprashka-error-404 .green {
+  color: #058C50;
+}
+.aprashka-main .aprashka-error-404 .yellow {
+  color: #FFBE14;
+}
+.aprashka-main .aprashka-error-404 .blue {
+  color: #058CD7;
+}
+.aprashka-main .aprashka-error-404 h1 {
+  letter-spacing: 3px;
+  font-size: 120px;
+}
+.aprashka-main .aprashka-error-404 p {
+  margin-top: 40px;
+  font-size: 60px;
+  color: #FF5F28;
+  letter-spacing: 3px;
 }
 
 .aprashka-main__wrapper.aboutproject {
@@ -1756,6 +1789,7 @@ body * > img, body * > button, body h1, body h2, body h3 {
   row-gap: 24px;
 }
 .aprashka-main__wrapper.gridandindent .gridandindent-layout__container-block-text p > span {
+  cursor: pointer;
   color: #058C50;
   border-bottom: 1px solid #058C50;
 }
