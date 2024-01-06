@@ -18,6 +18,7 @@ import fonts from '../../style/Fonts/Inter-Fonts.rar'
 /* Pic import end */
 
 function Typography() {
+  
   return (
     <>
       <section className='typography-description'>

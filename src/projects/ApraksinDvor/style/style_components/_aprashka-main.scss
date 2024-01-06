@@ -232,8 +232,7 @@
       background-color: rgba(0, 0, 0, 0);
     }
     &::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      background-color: $black;
+      background-color: $gray-5;
     }
 
     &:not(.aboutproject) {
@@ -331,8 +330,8 @@
     .checkbox-comp {
       position: relative;
       cursor: pointer;
-      height: 24px;
-      width: 24px;
+      height: 22px;
+      width: 22px;
       transition: all 0.2s linear;         
 
       &.checked {
@@ -341,8 +340,8 @@
           position: absolute;
           border: solid white;
           border-width: 0 2px 2px 0;
-          left: 8px;
-          top: 2px;
+          left: 7px;
+          top: 1px;
           width: 9px;
           height: 15px;
 

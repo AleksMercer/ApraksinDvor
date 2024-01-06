@@ -29,6 +29,10 @@
       &-container {
         @include rows();
       }
+
+      &-container > p {
+        font-weight: 500;
+      }
     }
 
     .checkbox-comp.checked {
@@ -65,4 +69,4 @@
   }
 }
 
-//72зч
+//72px

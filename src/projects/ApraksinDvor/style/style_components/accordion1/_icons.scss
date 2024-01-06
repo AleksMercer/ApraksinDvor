@@ -1,0 +1,92 @@
+.aprashka-main__wrapper.icons { 
+  .icons-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .icons-pack {
+    @include rows();
+
+    &__container {
+      @include grid_template(1fr 1fr / repeat(3, 1fr));
+      gap: $vertical-small-gap;
+
+      &-block {
+        .gray-container {
+          width: 360px;
+          height: 276px;
+          margin-bottom: 16px;
+        }
+
+        h4 {
+          margin-bottom: 8px; 
+        }
+      }
+    }
+  }
+
+  .icons-size {
+    @include rows();
+    p {@include text();}
+  }
+
+  .icons-text {
+    @include rows();
+    
+    &__container {
+      @include columns();
+    }
+  }
+
+  .icons-color {
+    @include rows();
+    
+    &__container {
+      @include columns();
+
+      p > span {
+        color: $green-main;
+        border-bottom: 1px solid $green-main;
+      }
+    }
+  }
+
+  .icons-design {
+    @include small-common-rows();
+
+    &__description {
+      @include rows();
+      p {@include text();}
+    }
+
+    &__grid {
+      @include rows();
+      p {@include text();}
+    }
+
+    &__line {
+      @include rows();
+
+      &-container {
+        @include columns();
+
+        div {
+          @include text-grid();
+        }
+      }
+    }
+
+    &__rounding {
+      @include rows();
+
+      &-container {
+        @include columns();
+      }
+    }
+
+    &__associativity {
+      @include rows();
+      p {@include text();}
+    }
+  }
+}
