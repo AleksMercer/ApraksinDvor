@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projects-Showcase/static/css/main.44bb6eb2.css",
-    "main.js": "/Projects-Showcase/static/js/main.d8f349a2.js",
+    "main.css": "/Projects-Showcase/static/css/main.83a9dee3.css",
+    "main.js": "/Projects-Showcase/static/js/main.3af9231a.js",
     "static/js/862.bfc1e594.chunk.js": "/Projects-Showcase/static/js/862.bfc1e594.chunk.js",
     "static/js/160.743b81da.chunk.js": "/Projects-Showcase/static/js/160.743b81da.chunk.js",
     "static/js/956.5a835e54.chunk.js": "/Projects-Showcase/static/js/956.5a835e54.chunk.js",
@@ -16,6 +16,9 @@
     "static/media/wrong-logo-6.svg": "/Projects-Showcase/static/media/wrong-logo-6.99eb01534d3c722bc56d51cc41fc4e61.svg",
     "static/media/indentation.svg": "/Projects-Showcase/static/media/indentation.d92e0848f8b0c2b74848f0e69ac15c7d.svg",
     "static/media/Inter-Fonts.rar": "/Projects-Showcase/static/media/Inter-Fonts.3ddd274a37a127f01b5b.rar",
+    "static/media/divider-useage.svg": "/Projects-Showcase/static/media/divider-useage.5c9b4b19a4f37bb4c7ddaf6642aa9321.svg",
+    "static/media/breadcrumbs-usage.svg": "/Projects-Showcase/static/media/breadcrumbs-usage.e08e4eaee55bea98dec42cf80b7cc0cc.svg",
+    "static/media/breadcrumbs-menu.svg": "/Projects-Showcase/static/media/breadcrumbs-menu.817f15d49dfe265836165f7c17f15b0b.svg",
     "static/media/text-width.svg": "/Projects-Showcase/static/media/text-width.5512173e548ba6c43897b3a2dbfae8f9.svg",
     "static/media/old_logo.png": "/Projects-Showcase/static/media/old_logo.1119cc6920a7f8bac6f8.png",
     "static/media/Inter-SemiBold.woff2": "/Projects-Showcase/static/media/Inter-SemiBold.d873c5ea912cb7dff6d9.woff2",
@@ -31,9 +34,11 @@
     "static/media/logo-grid.svg": "/Projects-Showcase/static/media/logo-grid.1b2c98a431e5dd96ce5e9d07b3a45d35.svg",
     "static/media/text-left.svg": "/Projects-Showcase/static/media/text-left.3fefc22839fbf7fed9e884dc9cba90a0.svg",
     "static/media/icons-contrast.svg": "/Projects-Showcase/static/media/icons-contrast.22e96ff2d1619bc6376f99364ac989c8.svg",
+    "static/media/breadcrumbs-table.svg": "/Projects-Showcase/static/media/breadcrumbs-table.b14e72cf81b1391cc1c53d1401b9802b.svg",
     "static/media/principles1.svg": "/Projects-Showcase/static/media/principles1.10d5c97435cb43037e492076ec8b53b6.svg",
     "static/media/principles2.svg": "/Projects-Showcase/static/media/principles2.cea12964b9d906840cad5cf0013ee5ab.svg",
     "static/media/logo-colors.svg": "/Projects-Showcase/static/media/logo-colors.0e1cf6b6cc73e9997e61c2f7fa513136.svg",
+    "static/media/breadcrumbs-build.svg": "/Projects-Showcase/static/media/breadcrumbs-build.e382aefa65f927031c770283d9ff6205.svg",
     "static/media/icons-size.svg": "/Projects-Showcase/static/media/icons-size.9c197c82650165f0d606c239ed9b7532.svg",
     "static/media/layout-12.svg": "/Projects-Showcase/static/media/layout-12.33dcafb01d6523280716b6099b98ccdc.svg",
     "static/media/logo-min-size.svg": "/Projects-Showcase/static/media/logo-min-size.fe2bf239e70f10ad2fc220990c6dbf97.svg",
@@ -56,15 +61,11 @@
     "static/media/Alex.webp": "/Projects-Showcase/static/media/Alex.4e1de489deccaed5c00f.webp",
     "static/media/partner-logo-1.svg": "/Projects-Showcase/static/media/partner-logo-1.7aeb31d127e117d7faf74d657996ca50.svg",
     "static/media/partner-logo-2.svg": "/Projects-Showcase/static/media/partner-logo-2.60af5aaa471a717eeede56ba2b7a3d84.svg",
-    "static/media/place-icons.svg": "/Projects-Showcase/static/media/place-icons.dd4b20de31fbd29d1779e0ff16077046.svg",
     "static/media/grid-icons-1.svg": "/Projects-Showcase/static/media/grid-icons-1.37b357902e13f8f8625f60a9082ff954.svg",
-    "static/media/user-icons.svg": "/Projects-Showcase/static/media/user-icons.e2b1bb5965e2efec5c8c188d2d9b5e9c.svg",
-    "static/media/control-icons.svg": "/Projects-Showcase/static/media/control-icons.e59463bd502cf68cdae1fd9ade1cd652.svg",
+    "static/media/divider-build.svg": "/Projects-Showcase/static/media/divider-build.8bd6ae6d6fe4ede4cff12cb68fa48a74.svg",
     "static/media/small-logo-safe-zone.svg": "/Projects-Showcase/static/media/small-logo-safe-zone.cc6bee861ef6e0150e21793377be69ff.svg",
     "static/media/full to short logo.lottie": "/Projects-Showcase/static/media/full to short logo.563ea8806bcdd7f35aa0.lottie",
     "static/media/lineAndFilling.svg": "/Projects-Showcase/static/media/lineAndFilling.895ea1014f6fc067db2d6a2b21b6d106.svg",
-    "static/media/nav-icons.svg": "/Projects-Showcase/static/media/nav-icons.0d16ab717051e0b6a4ed2c115a967791.svg",
-    "static/media/commerce-icons.svg": "/Projects-Showcase/static/media/commerce-icons.783150a00aed2d7e8d5eb0b391c1597d.svg",
     "static/media/grotesk.svg": "/Projects-Showcase/static/media/grotesk.9d82d6982860f13e4c6c31bc66fa4e14.svg",
     "static/media/logo.lottie": "/Projects-Showcase/static/media/logo.df2c8d25989cda9a8d16.lottie",
     "static/media/logo-safe-zone.svg": "/Projects-Showcase/static/media/logo-safe-zone.5927c34e736ce977fb9de76ac3416dd5.svg",
@@ -85,13 +86,13 @@
     "static/media/color-interface.svg": "/Projects-Showcase/static/media/color-interface.1fe141b595e9153e0a233396c62ba272.svg",
     "index.html": "/Projects-Showcase/index.html",
     "static/media/small-logo.svg": "/Projects-Showcase/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
-    "main.44bb6eb2.css.map": "/Projects-Showcase/static/css/main.44bb6eb2.css.map",
-    "main.d8f349a2.js.map": "/Projects-Showcase/static/js/main.d8f349a2.js.map",
+    "main.83a9dee3.css.map": "/Projects-Showcase/static/css/main.83a9dee3.css.map",
+    "main.3af9231a.js.map": "/Projects-Showcase/static/js/main.3af9231a.js.map",
     "374.e0658af3.chunk.js.map": "/Projects-Showcase/static/js/374.e0658af3.chunk.js.map",
     "432.4e5a4729.chunk.js.map": "/Projects-Showcase/static/js/432.4e5a4729.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44bb6eb2.css",
-    "static/js/main.d8f349a2.js"
+    "static/css/main.83a9dee3.css",
+    "static/js/main.3af9231a.js"
   ]
 }
