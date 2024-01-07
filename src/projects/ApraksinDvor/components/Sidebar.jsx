@@ -45,8 +45,8 @@ function Sidebar() {
             <NavLink to="ColorPalette"  className={"secondarylink"}>Цветовая палитра</NavLink>
             <NavLink to="Typography"    className={"secondarylink"}>Типографика</NavLink>
             <NavLink to="GridAndIndent" className={"secondarylink"}>Сетка и отступы</NavLink>
-            <NavLink to="Graphic"       className={"secondarylink"}>Графика</NavLink>
             <NavLink to="Icons"         className={"secondarylink"}>Иконки</NavLink>
+            <NavLink to="Graphic"       className={"secondarylink"}>Графика</NavLink>
           </nav>
         </div> 
 

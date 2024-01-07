@@ -20,19 +20,19 @@ function Checkbox() {
         <p>Чекбоксы позволяют пользователю выбрать несколько пунктов из&nbsp;списка вариантов или сделать выбор между двумя состояниями или свойствами. Клик по&nbsp;тексту или чекбоксу приводит к&nbsp;выбору пункта. Повторный клик приводит к&nbsp;отмене выбора.</p>
       </section>
 
-      <section className='checkbox-use'>
+      <section className='checkbox-useage'>
         <h2>Использование</h2>
 
-        <div className='checkbox-use__text'>
+        <div className='checkbox-useage__text'>
           <p>Одиночный чекбокс используется для включения или отключения определенных функций, параметров и&nbsp;настроек, а&nbsp;также для выражение согласия или несогласия с&nbsp;каким-либо условием.</p>
           <p>Группа чекбоксов используется, когда можно выбрать любое количество вариантов. Рекомендуемое максимальное количество вариантов ответа для одной группы чекбоксов&nbsp;&mdash; не&nbsp;более&nbsp;7.</p>
         </div>
         
-        <div className='checkbox-use__checkboxes'>
+        <div className='checkbox-useage__checkboxes'>
 
           <div className='gray-container'>
 
-             <div className='checkbox-use__checkboxes-comp'>
+             <div className='checkbox-useage__checkboxes-comp'>
               <CheckboxComp />
               <p>По Пушкинской карте</p>
             </div>
@@ -40,21 +40,21 @@ function Checkbox() {
           </div>
 
           <div className='gray-container'>
-            <div className='checkbox-use__checkboxes-container'>
+            <div className='checkbox-useage__checkboxes-container'>
 
               <p>Тип мероприятия</p>
 
-              <div className='checkbox-use__checkboxes-comp'>
+              <div className='checkbox-useage__checkboxes-comp'>
                 <CheckboxComp />
                 <p>Выставки</p>
               </div>
 
-              <div className='checkbox-use__checkboxes-comp'>
+              <div className='checkbox-useage__checkboxes-comp'>
                 <CheckboxComp />
                 <p>Концерты</p>
               </div>
 
-              <div className='checkbox-use__checkboxes-comp'>
+              <div className='checkbox-useage__checkboxes-comp'>
                 <CheckboxComp />
                 <p>Лекции</p>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 /* React Router */
 import { Outlet, useLocation } from 'react-router-dom'
@@ -17,10 +17,10 @@ function Aprashka() {
   // #region : add class name to wrapper
 
   const location = useLocation()
-
+  const ref = useRef(null)
   const [className, setClassName] = useState('')
 
-  const getClassName = (pathclass) => { //get a new class name from current path
+  const getClassName = (pathclass) => { // get a new class name from current path
     const lastIndex = pathclass.lastIndexOf('/')
     const newClassName = pathclass.slice(lastIndex + 1).toLowerCase()
 
@@ -31,6 +31,7 @@ function Aprashka() {
 
     let path = location.pathname
     let newName = getClassName(path)
+    ref.current.scrollTo(0, 0) // every new page scroll to top
 
     switch (true) {
 
@@ -58,7 +59,7 @@ function Aprashka() {
         <Sidebar />
       </section>
 
-      <section className={`aprashka-main__wrapper ${className}`}>
+      <section className={`aprashka-main__wrapper ${className}`} ref={ref}>
         <Outlet />
       </section>
       

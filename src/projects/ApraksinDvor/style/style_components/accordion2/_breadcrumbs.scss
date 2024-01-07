@@ -1,0 +1,50 @@
+.aprashka-main__wrapper.breadcrumbs {
+
+  .breadcrumbs-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .breadcrumbs-useage {
+    @include rows();
+    p {@include text();}
+  }
+
+  .breadcrumbs-content {
+    @include small-common-rows();
+
+    &__link {
+      @include rows();
+      p {@include text();}
+    }
+
+    &__menu {
+      @include rows();
+
+      &-container {
+        @include columns();
+
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+  }
+
+  .breadcrumbs-build {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+
+  .breadcrumbs-state {
+    @include rows();
+    p {@include text();}
+  }
+}

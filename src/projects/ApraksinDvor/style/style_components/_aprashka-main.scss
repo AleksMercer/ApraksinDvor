@@ -421,5 +421,11 @@
       }
     }
 
+    .link-underline {
+      cursor: pointer;
+      color: $green-main;
+      border-bottom: 1px solid $green-main;
+    }
+
   // #endregion TinyComponents end
 }

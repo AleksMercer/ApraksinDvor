@@ -780,6 +780,11 @@ body * > img, body * > button, body h1, body h2, body h3 {
   color: #FF5F28;
   letter-spacing: 3px;
 }
+.aprashka-main .link-underline {
+  cursor: pointer;
+  color: #058C50;
+  border-bottom: 1px solid #058C50;
+}
 
 .aprashka-main__wrapper.aboutproject {
   display: grid;
@@ -1787,11 +1792,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
   align-self: start;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.gridandindent .gridandindent-layout__container-block-text p > span {
-  cursor: pointer;
-  color: #058C50;
-  border-bottom: 1px solid #058C50;
-}
 .aprashka-main__wrapper.gridandindent .gridandindent-indent {
   display: grid;
   grid-template: auto/1fr;
@@ -1807,10 +1807,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.gridandindent .gridandindent-indent__description p {
   width: 768px;
-}
-.aprashka-main__wrapper.gridandindent .gridandindent-indent__description p > a {
-  color: #058C50;
-  border-bottom: 1px solid #058C50;
 }
 .aprashka-main__wrapper.gridandindent .gridandindent-indent__vertical {
   display: grid;
@@ -1937,6 +1933,43 @@ body * > img, body * > button, body h1, body h2, body h3 {
   width: 360px;
   height: 276px;
   margin-bottom: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container, .aprashka-main__wrapper.icons .icons-pack__container-block .gray-container svg, .aprashka-main__wrapper.icons .icons-pack__container-block .gray-container span {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container svg {
+  fill: #0A2832;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container .arrow {
+  position: absolute;
+  display: grid;
+  grid-template: 1fr/auto 1fr;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  left: 20px;
+  bottom: 17px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container .arrow span {
+  color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 3px;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container:hover {
+  background-color: #37A373;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container:hover svg {
+  fill: #ffffff;
+}
+.aprashka-main__wrapper.icons .icons-pack__container-block .gray-container:hover span {
+  color: #ffffff;
 }
 .aprashka-main__wrapper.icons .icons-pack__container-block h4 {
   margin-bottom: 8px;
@@ -1981,10 +2014,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
-}
-.aprashka-main__wrapper.icons .icons-color__container p > span {
-  color: #058C50;
-  border-bottom: 1px solid #058C50;
 }
 .aprashka-main__wrapper.icons .icons-design {
   display: grid;
@@ -2073,32 +2102,32 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.checkbox .checkbox-description p {
   width: 768px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use {
+.aprashka-main__wrapper.checkbox .checkbox-useage {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use h1, .aprashka-main__wrapper.checkbox .checkbox-use h2 {
+.aprashka-main__wrapper.checkbox .checkbox-useage h1, .aprashka-main__wrapper.checkbox .checkbox-useage h2 {
   padding-bottom: 8px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__text {
+.aprashka-main__wrapper.checkbox .checkbox-useage__text {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes .gray-container {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes .gray-container {
   height: 276px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-comp {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-comp {
   display: grid;
   grid-template: auto/auto auto;
   -webkit-box-align: center;
@@ -2111,21 +2140,21 @@ body * > img, body * > button, body h1, body h2, body h3 {
      -moz-column-gap: 16px;
           column-gap: 16px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container h2 {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h2 {
   padding-bottom: 8px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use__checkboxes-container > p {
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container > p {
   font-weight: 500;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use .checkbox-comp.checked {
+.aprashka-main__wrapper.checkbox .checkbox-useage .checkbox-comp.checked {
   background-color: #058C50;
 }
-.aprashka-main__wrapper.checkbox .checkbox-use .checkbox-comp.checked:hover {
+.aprashka-main__wrapper.checkbox .checkbox-useage .checkbox-comp.checked:hover {
   background-color: #37A373;
 }
 .aprashka-main__wrapper.checkbox .checkbox-contents {
@@ -2174,4 +2203,140 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.checkbox .checkbox-state h1, .aprashka-main__wrapper.checkbox .checkbox-state h2 {
   padding-bottom: 8px;
+}
+
+.aprashka-main__wrapper.divider .divider-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.divider .divider-description h1, .aprashka-main__wrapper.divider .divider-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.divider .divider-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.divider .divider-useage {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.divider .divider-useage h1, .aprashka-main__wrapper.divider .divider-useage h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.divider .divider-useage p {
+  width: 768px;
+}
+.aprashka-main__wrapper.divider .divider-build {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.divider .divider-build h1, .aprashka-main__wrapper.divider .divider-build h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.divider .divider-build__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.divider .divider-build__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-description h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-useage {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-useage h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-useage h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-useage p {
+  width: 768px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__link {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__link h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__link h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__link p {
+  width: 768px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__menu {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__menu h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__menu h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__menu-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-content__menu-container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-build {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-build h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-build h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-build__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-build__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-state h1, .aprashka-main__wrapper.breadcrumbs .breadcrumbs-state h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.breadcrumbs .breadcrumbs-state p {
+  width: 768px;
 }

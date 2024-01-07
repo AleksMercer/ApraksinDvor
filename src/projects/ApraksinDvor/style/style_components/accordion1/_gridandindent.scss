@@ -92,12 +92,6 @@
 
         &-text {
           @include text-grid();
-
-          p > span {
-            cursor: pointer;
-            color: $green-main;
-            border-bottom: 1px solid $green-main;
-          }
         }
       }
     }
@@ -109,11 +103,6 @@
     &__description {
       @include rows();
       p {@include text();}
-
-      p > a {
-        color: $green-main;
-        border-bottom: 1px solid $green-main;
-      }
     }
     
     &__vertical {

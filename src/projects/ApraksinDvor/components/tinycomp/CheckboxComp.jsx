@@ -6,7 +6,7 @@ function CheckboxComp() {
 
   return (
     <div
-      class={`checkbox-comp ${isChecked ? 'checked' : 'unchecked'}`}
+      className={`checkbox-comp ${isChecked ? 'checked' : 'unchecked'}`}
       onClick={() => setIsChecked(!isChecked)}>
     </div>
   )

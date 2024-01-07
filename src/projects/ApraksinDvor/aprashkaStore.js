@@ -6,11 +6,13 @@ export const aprashkaStateStore = createSlice({
   initialState: {
     firstAccordion: false,
     secondAccordion: false,
+    scrollToContrast: 'false',
   },
   
   reducers: {
     firstAccordionSwap: (state) => { state.firstAccordion = !state.firstAccordion },
     secondAccordionSwap: (state) => { state.secondAccordion = !state.secondAccordion },
+    scrollToContrastSwap: (state, action) => { state.scrollToContrast = action.payload },
   },
 })
 
@@ -21,16 +23,18 @@ export default configureStore({
   },
 })
 
-/* selectMode - boolean value for first Accordion.     const modeState = useSelector(selectMode) */
+/* firstAccordionState - boolean value for first Accordion.     const firstAccordionState = useSelector(selectFirstAccordion) */
 const selectFirstAccordion = (state) => state.aprashkaStore.firstAccordion
-/* selectCopyTip - boolean value for second Accordion.  const copyTipState = useSelector(selectCopyTip) */
+/* secondAccordionState - boolean value for second Accordion.  const secondAccordionState = useSelector(selectSecondAccordion) */
 const selectSecondAccordion = (state) => state.aprashkaStore.secondAccordion
+/* scrollToContrastState - boolean value for scroll from icons > color to colors > contrast.  const scrollToContrastState = useSelector(selectScrollToContrast) */
+const selectScrollToContrast = (state) => state.aprashkaStore.scrollToContrast
 
 
 /* Export all selectors */
-export { selectFirstAccordion, selectSecondAccordion }
-//import { selectFirstAccordion, selectSecondAccordion } from '../aprashkaStore' // selectors import
+export { selectFirstAccordion, selectSecondAccordion, selectScrollToContrast }
+//import { selectFirstAccordion, selectSecondAccordion, scrollToContrast } from '../aprashkaStore' // selectors import
 
 /* export reducers-func */
-export const { firstAccordionSwap, secondAccordionSwap } = aprashkaStateStore.actions
-// import { firstAccordionSwap, secondAccordionSwap } from '../aprashkaStore' // reducers import
+export const { firstAccordionSwap, secondAccordionSwap,  scrollToContrastSwap} = aprashkaStateStore.actions
+// import { firstAccordionSwap, secondAccordionSwap, scrollToContrastSwap } from '../aprashkaStore' // reducers import

@@ -1,4 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+
+import { selectScrollToContrast } from '../../aprashkaStore' // selectors import
+import { scrollToContrastSwap } from '../../aprashkaStore' // reducers import
+
 import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
@@ -8,6 +13,21 @@ import colorInterface from '../../media/accordion1/colorpalette/color-interface.
 /* Pic import end */
 
 function ColorPalette() {
+
+  const ref = useRef(null)
+  const dispatch = useDispatch()
+  const scrollToContrastState = useSelector(selectScrollToContrast)
+
+  useEffect(() => { 
+
+    if (scrollToContrastState === 'true') {
+      setTimeout(() => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+        dispatch(scrollToContrastSwap('false'))
+      }, 0);
+    }
+  }, [])
+
   return (
     <>  
       <section className='color-description'>
@@ -60,7 +80,7 @@ function ColorPalette() {
         <p className='text-container'>Для основных и&nbsp;вспомогательных цветов есть 4&nbsp;уровня прозрачности. Использование этих уровней позволяет делать разработку компонентов и&nbsp;продуктов более гибкой.</p>
         <div className='color-opacity__color-grid'>
           <p style={{backgroundColor: '#058C50'}} className='white-text'><span>Opacity 100</span></p>
-          <p style={{backgroundColor: '#8ECBB0'}} c><span>Opacity 50</span></p>
+          <p style={{backgroundColor: '#8ECBB0'}}><span>Opacity 50</span></p>
           <p style={{backgroundColor: '#CDE8DC'}}><span>Opacity 30</span></p>
           <p style={{backgroundColor: '#E6F3ED'}}><span>Opacity 15</span></p>
           <p style={{backgroundColor: '#058CD7'}} className='white-text'><span>Opacity 100</span></p>
@@ -161,7 +181,7 @@ function ColorPalette() {
         <img src={colorInterface}  alt="color interface" />
       </section>
 
-      <section className='color-contrast'>
+      <section className='color-contrast' ref={ref}>
         <h2>Цветовой контраст</h2>
         <p className='text-container'>Принципы контрастности в&nbsp;нашей дизайн-системе основаны на&nbsp;стандартах WCAG 2.0. Для основного текста минимально необходим уровень&nbsp;AA, означающий, что коэффициент контрастности должен быть не&nbsp;менее 4,5. Для крупного декоративного текста, заголовков и&nbsp;решения разного уровня творческих задач допустим уровень&nbsp;AA+ с&nbsp;коэффициент контрастности не&nbsp;менее 3.0. Следуя этим рекомендациям, мы&nbsp;обеспечиваем доступность и&nbsp;качественный пользовательский опыт.</p>
       </section>

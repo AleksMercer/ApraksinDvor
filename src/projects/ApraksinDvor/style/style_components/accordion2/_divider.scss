@@ -1,0 +1,24 @@
+.aprashka-main__wrapper.divider {
+
+  .divider-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .divider-useage {
+    @include rows();
+    p {@include text();}
+  }
+
+  .divider-build {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+}
