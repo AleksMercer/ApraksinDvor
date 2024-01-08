@@ -2340,3 +2340,328 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.breadcrumbs .breadcrumbs-state p {
   width: 768px;
 }
+
+.aprashka-main__wrapper.button .buttons-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-description h1, .aprashka-main__wrapper.button .buttons-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-usage {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-usage h1, .aprashka-main__wrapper.button .buttons-usage h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-usage__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-usage__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.button .buttons-options .gray-container {
+  height: 276px;
+}
+.aprashka-main__wrapper.button .buttons-options button {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  padding: 20px 40px;
+}
+.aprashka-main__wrapper.button .buttons-options__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options__description h1, .aprashka-main__wrapper.button .buttons-options__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-options__description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-options__button {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options__button h1, .aprashka-main__wrapper.button .buttons-options__button h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-main > button {
+  color: #ffffff;
+  background-color: #058C50;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-main > button:hover {
+  background-color: #37A373;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-main > button:active {
+  background-color: #047040;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-minor > button {
+  color: #058C50;
+  border: 1.5px solid #058C50;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-minor > button:hover {
+  background-color: #E6F3ED;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-minor > button:active {
+  background-color: #CDE8DC;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-tertiary > button {
+  color: #058C50;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-tertiary > button:hover {
+  background-color: #E6F3ED;
+}
+.aprashka-main__wrapper.button .buttons-options__button-container-tertiary > button:active {
+  background-color: #CDE8DC;
+}
+.aprashka-main__wrapper.button .buttons-options__danger {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-options__danger h1, .aprashka-main__wrapper.button .buttons-options__danger h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-options__danger p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn {
+  display: grid;
+  grid-template: 1fr/repeat(3, auto);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(1) {
+  color: #ffffff;
+  background-color: #FF5F28;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(1):hover {
+  background-color: #FF7F53;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(1):active {
+  background-color: #E84A13;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(2) {
+  color: #FF5F28;
+  border: 1.5px solid #FF5F28;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(2):hover {
+  background-color: #FFEFE9;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(2):active {
+  background-color: #FFCFBF;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(3) {
+  color: #FF5F28;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(3):hover {
+  background-color: #FFEFE9;
+}
+.aprashka-main__wrapper.button .buttons-options__danger-btn button:nth-child(3):active {
+  background-color: #FFCFBF;
+}
+.aprashka-main__wrapper.button .buttons-size {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.button .buttons-size__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-size__description h1, .aprashka-main__wrapper.button .buttons-size__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-size__description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-size__button {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-size__button h1, .aprashka-main__wrapper.button .buttons-size__button h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-size__button-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.button .buttons-content__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__description h1, .aprashka-main__wrapper.button .buttons-content__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-content__description-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__description-container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__description-container-text div {
+  display: grid;
+  grid-template: auto/auto 1fr;
+  margin-left: 32px;
+}
+.aprashka-main__wrapper.button .buttons-content__description-container-text div .mark-text {
+  margin-left: 15px;
+}
+.aprashka-main__wrapper.button .buttons-content__description-container-text div .mark-text span {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.button .buttons-content__text-mark {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__text-mark h1, .aprashka-main__wrapper.button .buttons-content__text-mark h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-content__text-mark p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-content__iconmark-button {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__iconmark-button h1, .aprashka-main__wrapper.button .buttons-content__iconmark-button h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-content__iconmark-button p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-content__iconmark-button-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__icon-button {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__icon-button h1, .aprashka-main__wrapper.button .buttons-content__icon-button h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-content__icon-button-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-content__icon-button-container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-build {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.button .buttons-build__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-build__description h1, .aprashka-main__wrapper.button .buttons-build__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-build__description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.button .buttons-build__position {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-build__position-horizontal {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-build__position-horizontal h1, .aprashka-main__wrapper.button .buttons-build__position-horizontal h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-build__position-vertical {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-build__position-vertical h1, .aprashka-main__wrapper.button .buttons-build__position-vertical h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.button .buttons-state h1, .aprashka-main__wrapper.button .buttons-state h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.button .buttons-state p {
+  width: 768px;
+}
