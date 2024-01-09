@@ -384,17 +384,6 @@
       .fat {
         font-weight: $medium;
       }
-
-      .link {
-        justify-self: start;
-        color: $gray-7;
-        border-bottom: 1px solid $gray-7;
-      }
-
-      .link:hover {
-        color: $green-main;
-      }
-
     }
 
     .aprashka-error-404 {
@@ -422,9 +411,14 @@
     }
 
     .link-underline {
+      justify-self: start;
       cursor: pointer;
       color: $green-main;
-      border-bottom: 1px solid $green-main;
+      transition: all 0.1s ease-out;
+
+      &:hover {
+        border-bottom: 1.5px solid $green-main;
+      }
     }
 
   // #endregion TinyComponents end

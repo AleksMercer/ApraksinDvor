@@ -9,11 +9,11 @@ import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
 
-import contrast from '../../media/accordion1/icons/icons-contrast.svg'
-import size from '../../media/accordion1/icons/icons-size.svg'
+import contrast from '../../media/accordion1/icons/icons-contrast.webp'
+import size from '../../media/accordion1/icons/icons-size.webp'
 import lineAndFilling from '../../media/accordion1/icons/lineAndFilling.svg'
 import rounding from '../../media/accordion1/icons/rounding.svg'
-import textAndIcons from '../../media/accordion1/icons/textAndIcons.svg'
+import textAndIcons from '../../media/accordion1/icons/textAndIcons.webp'
 import grid1 from '../../media/accordion1/icons/grid-icons-1.svg'
 import grid2 from '../../media/accordion1/icons/grid-icons-2.svg'
 import grid3 from '../../media/accordion1/icons/grid-icons-3.svg'

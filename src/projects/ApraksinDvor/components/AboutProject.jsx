@@ -4,7 +4,7 @@ import { DotLottiePlayer } from '@dotlottie/react-player'
 import Footer from './tinycomp/Footer'
 
 // #region : photos import
-import oldlog from '../media/old_logo.png'
+import oldlog from '../media/old_logo.webp'
 import Daniil from '../media/Daniil.webp'
 import Anna from '../media/Anna.webp'
 import Alex from '../media/Alex.webp'

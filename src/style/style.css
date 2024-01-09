@@ -744,14 +744,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main .footer .fat {
   font-weight: 500;
 }
-.aprashka-main .footer .link {
-  justify-self: start;
-  color: #37464B;
-  border-bottom: 1px solid #37464B;
-}
-.aprashka-main .footer .link:hover {
-  color: #058C50;
-}
 .aprashka-main .aprashka-error-404 {
   position: fixed;
   top: 50%;
@@ -781,9 +773,14 @@ body * > img, body * > button, body h1, body h2, body h3 {
   letter-spacing: 3px;
 }
 .aprashka-main .link-underline {
+  justify-self: start;
   cursor: pointer;
   color: #058C50;
-  border-bottom: 1px solid #058C50;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.aprashka-main .link-underline:hover {
+  border-bottom: 1.5px solid #058C50;
 }
 
 .aprashka-main__wrapper.aboutproject {
@@ -2127,6 +2124,14 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes .gray-container {
   height: 276px;
 }
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h2 {
+  padding-bottom: 8px;
+}
 .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-comp {
   display: grid;
   grid-template: auto/auto auto;
@@ -2139,14 +2144,6 @@ body * > img, body * > button, body h1, body h2, body h3 {
   -webkit-column-gap: 16px;
      -moz-column-gap: 16px;
           column-gap: 16px;
-}
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container {
-  display: grid;
-  grid-template: auto/1fr;
-  row-gap: 24px;
-}
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h2 {
-  padding-bottom: 8px;
 }
 .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container > p {
   font-weight: 500;
@@ -2178,18 +2175,49 @@ body * > img, body * > button, body h1, body h2, body h3 {
   align-self: start;
   row-gap: 24px;
 }
+.aprashka-main__wrapper.checkbox .checkbox-contents__container-text div {
+  display: grid;
+  grid-template: auto/auto 1fr;
+  margin-left: 32px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents__container-text div .mark-text {
+  margin-left: 15px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-contents__container-text div .mark-text span {
+  font-weight: 500;
+}
 .aprashka-main__wrapper.checkbox .checkbox-principles {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles__description {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-principles h1, .aprashka-main__wrapper.checkbox .checkbox-principles h2 {
+.aprashka-main__wrapper.checkbox .checkbox-principles__description h1, .aprashka-main__wrapper.checkbox .checkbox-principles__description h2 {
   padding-bottom: 8px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-principles p {
+.aprashka-main__wrapper.checkbox .checkbox-principles__description-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles__group {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles__group h1, .aprashka-main__wrapper.checkbox .checkbox-principles__group h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.checkbox .checkbox-principles__group p {
   width: 768px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-principles__container {
+.aprashka-main__wrapper.checkbox .checkbox-principles__group-container {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
@@ -2664,4 +2692,156 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.button .buttons-state p {
   width: 768px;
+}
+
+.aprashka-main__wrapper.radiobutton .radiobutton-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-description h1, .aprashka-main__wrapper.radiobutton .radiobutton-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage h1, .aprashka-main__wrapper.radiobutton .radiobutton-useage h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container {
+  height: 276px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons h1, .aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons > p {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons label {
+  display: grid;
+  grid-template: auto/auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons label input {
+  width: 24px;
+  height: 24px;
+  accent-color: #058C50;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons label input:hover {
+  accent-color: #37A373;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-useage__container .gray-container__radiobuttons label input:active {
+  accent-color: #047040;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents h1, .aprashka-main__wrapper.radiobutton .radiobutton-contents h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container .gray-container {
+  height: 276px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container-text div {
+  display: grid;
+  grid-template: auto/auto 1fr;
+  margin-left: 32px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container-text div .mark-text {
+  margin-left: 15px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-contents__container-text div .mark-text span {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__description h1, .aprashka-main__wrapper.radiobutton .radiobutton-principles__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__description-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__group {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__group h1, .aprashka-main__wrapper.radiobutton .radiobutton-principles__group h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__group p {
+  width: 768px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-principles__group-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.radiobutton .radiobutton-state h1, .aprashka-main__wrapper.radiobutton .radiobutton-state h2 {
+  padding-bottom: 8px;
 }

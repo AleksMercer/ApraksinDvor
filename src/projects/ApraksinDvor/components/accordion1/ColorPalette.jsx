@@ -24,7 +24,7 @@ function ColorPalette() {
       setTimeout(() => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
         dispatch(scrollToContrastSwap('false'))
-      }, 0);
+      }, 100);
     }
   }, [])
 

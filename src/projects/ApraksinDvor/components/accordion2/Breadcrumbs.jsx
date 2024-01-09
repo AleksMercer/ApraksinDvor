@@ -3,10 +3,10 @@ import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
 
-import breadcrumbsUsage from '../../media/accordion2/breadcrumbs/breadcrumbs-usage.svg'
-import breadcrumbsMenu from '../../media/accordion2/breadcrumbs/breadcrumbs-menu.svg'
-import breadcrumbsBuild from '../../media/accordion2/breadcrumbs/breadcrumbs-build.svg'
-import breadcrumbsTable from '../../media/accordion2/breadcrumbs/breadcrumbs-table.svg'
+import breadcrumbsUsage from '../../media/accordion2/breadcrumbs/breadcrumbs-usage.webp'
+import breadcrumbsMenu from '../../media/accordion2/breadcrumbs/breadcrumbs-menu.webp'
+import breadcrumbsBuild from '../../media/accordion2/breadcrumbs/breadcrumbs-build.webp'
+import breadcrumbsTable from '../../media/accordion2/breadcrumbs/breadcrumbs-table.webp'
 
 /* Pic import end */
 

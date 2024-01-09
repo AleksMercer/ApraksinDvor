@@ -8,12 +8,12 @@ import fonts from '../../style/Fonts/Inter-Fonts.rar'
 /* Pic import start */
 
   import grotesk from '../../media/accordion1/typography/grotesk.svg'
-  import interFont from '../../media/accordion1/typography/inter.svg'
-  import textLeft from '../../media/accordion1/typography/text-left.svg'
-  import textWidth from '../../media/accordion1/typography/text-width.svg'
-  import indentation from '../../media/accordion1/typography/indentation.svg'
-  import markList from '../../media/accordion1/typography/mark-list.svg'
-  import numList from '../../media/accordion1/typography/num-list.svg'
+  import interFont from '../../media/accordion1/typography/inter.webp'
+  import textLeft from '../../media/accordion1/typography/text-left.webp'
+  import textWidth from '../../media/accordion1/typography/text-width.webp'
+  import indentation from '../../media/accordion1/typography/indentation.webp'
+  import markList from '../../media/accordion1/typography/mark-list.webp'
+  import numList from '../../media/accordion1/typography/num-list.webp'
 
 /* Pic import end */
 

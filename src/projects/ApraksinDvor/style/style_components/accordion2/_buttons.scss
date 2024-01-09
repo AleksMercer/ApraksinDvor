@@ -166,19 +166,7 @@
         
         &-text {
           @include text-grid();
-
-          div {
-            @include grid_template(auto / auto 1fr);
-            margin-left: 32px;
-
-            .mark-text {
-              margin-left: 15px;
-  
-              span {
-                font-weight: $medium;
-              }
-            }
-          }
+          @include mark-text();
         }
       }
     }

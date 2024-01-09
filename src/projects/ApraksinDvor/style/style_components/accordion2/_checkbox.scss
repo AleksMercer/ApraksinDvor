@@ -19,6 +19,10 @@
         height: 276px;
       }
 
+      &-container {
+        @include rows();
+      }
+
       &-comp {
         @include grid_template(auto / auto auto);
         align-items: center;
@@ -26,12 +30,8 @@
         column-gap: 16px;
       }
 
-      &-container {
-        @include rows();
-      }
-
       &-container > p {
-        font-weight: 500;
+        font-weight: $medium;
       }
     }
 
@@ -51,16 +51,29 @@
 
       &-text {
         @include text-grid();
+        @include mark-text();
       }
     }
   }
 
   .checkbox-principles {
-    @include rows();
-    p {@include text();}
+    @include small-common-rows();
 
-    &__container {
-      @include columns();
+    &__description {
+      @include rows();
+
+      &-container {
+        @include columns();
+      }
+    }
+
+    &__group {
+      @include rows();
+      p {@include text();}
+
+      &-container {
+        @include columns();
+      }
     }
   }
 
@@ -68,5 +81,3 @@
     @include rows();
   }
 }
-
-//72px

@@ -4,10 +4,11 @@ import CheckboxComp from '../tinycomp/CheckboxComp'
 
 /* Pic import start */
 
-import checkboxContents from '../../media/accordion2/checkboxes/checkbox-contents.svg'
-import principles1 from '../../media/accordion2/checkboxes/principles1.svg'
-import principles2 from '../../media/accordion2/checkboxes/principles2.svg'
-import checkboxTable from '../../media/accordion2/checkboxes/checkbox-table.svg'
+import checkboxContents from '../../media/accordion2/checkboxes/checkbox-contents.webp'
+import checkboxTable from '../../media/accordion2/checkboxes/checkbox-table.webp'
+import horizontal from '../../media/accordion2/checkboxes/group1.webp'
+import vertical from '../../media/accordion2/checkboxes/group2.webp'
+import checkboxBuild from '../../media/accordion2/checkboxes/checkbox-build.webp'
 
 /* Pic import end */
 
@@ -71,30 +72,44 @@ function Checkbox() {
           <img src={checkboxContents}  alt="checkbox contents" />
 
           <div className='checkbox-contents__container-text'>
-            <p>
-              <span>1. Заголовок списка</span><br />
-              Для большей ясности добавляйте к&nbsp;группе заголовок. Заголовок начинается с&nbsp;заглавной буквы. Заголовок должен быть сформулирован кратко.
-            </p>
-            <p>
-              <span>2. Метка чекбокса</span><br />
-              По&nbsp;умолчанию чекбокс в&nbsp;состоянии Unselected. Размер контейнера метки 24&times;24px.
-            </p>
-            <p>
-              <span>3. Лейбл чекбокса</span><br />
-              Каждый чекбокс должен справа иметь лейбл, начинающийся с&nbsp;заглавной буквы. Длина лейбла должна быть не&nbsp;более одной строки.
-            </p>
+            <p className='text'>Компонент чекбокса состоит из&nbsp;набора переключателей с&nbsp;текстовыми метками. При использовании чекбоксов в&nbsp;группе, можно добавить общий заголовок, поясняющий их&nbsp;назначение и&nbsp;связь.</p>
+            <div>
+              <p>1.</p>
+              <p className='mark-text'><span>Заголовок группы </span>(опционально). Описывает группу параметров и&nbsp;заменяет повторяющиеся слова в&nbsp;метке каждого чекбокса. Текст заголовка начинается с&nbsp;заглавной буквы.</p>
+            </div>
+            <div>
+              <p>2.</p>
+              <p className='mark-text'><span>Метка чекбокса. </span>Описывает варианты выбора. Текст метки начинается с&nbsp;заглавной буквы и&nbsp;должен четко и&nbsp;кратко описывать эффект от&nbsp;выбора чекбокса.</p>
+            </div>
+            <div>
+              <p>3.</p>
+              <p className='mark-text'><span>Переключатель чекбокса. </span>Обозначает текущее состояние компонента. Состояние по&nbsp;умолчанию&nbsp;&mdash; Unselected.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className='checkbox-principles'>
-        <h2>Принципы построения</h2>
-        <p>Группа чекбоксов может располагаться вертикально и&nbsp;горизонтально, при этом сохраняются их&nbsp;принципы построения.</p>
-        
-        <div className='checkbox-principles__container'>
-          <img src={principles1}  alt="checkbox contents" />
-          <img src={principles2}  alt="checkbox contents" />
-        </div>
+        <section className='checkbox-principles__description'>
+          <h2>Принципы построения</h2>
+
+          <div className='checkbox-principles__description-container'>
+            <img src={checkboxBuild}  alt="Принципы построения" />
+            <p>Переключатель чекбокса имеет размер 22&times;22&nbsp;px и&nbsp;помещен в&nbsp;контейнер размером 24&times;24&nbsp;px. Горизонтальный отступ от&nbsp;переключателя до&nbsp;метки составляет 16&nbsp;px.</p>
+          </div>
+        </section>
+
+        <section className='checkbox-principles__group'>
+          <h3>Группы чекбоксов</h3>
+          <p>Группа чекбоксов может располагаться вертикально и&nbsp;горизонтально.</p>
+          <p>В&nbsp;вертикальной группе расстояние между заголовком группы и&nbsp;вариантами выбора составляет 24&nbsp;px.</p>
+          <p>В&nbsp;горизонтальной группе следует соблюдать отступ 24&nbsp;px от&nbsp;заголовка группы и&nbsp;48&nbsp;px между вариантами выбора. Использовать горизонтальную группу допустимо только при 2&nbsp;вариантах выбора.</p>
+          <p>Рекомендуется соблюдать отступ от&nbsp;других элементов интерфейса не&nbsp;менее 32&nbsp;px.</p>
+          <div className='checkbox-principles__group-container'>
+            <img src={horizontal}  alt="Заголовок горизонтальной группы" />
+            <img src={vertical}  alt="Метка вертикальной группы" />
+          </div>
+        </section>
       </section>
 
       <section className='checkbox-state'>

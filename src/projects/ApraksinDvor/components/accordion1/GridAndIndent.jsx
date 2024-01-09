@@ -9,17 +9,17 @@ import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
 
-import desktop1920 from '../../media/accordion1/gridandindent/1920.svg'
-import desktop1536 from '../../media/accordion1/gridandindent/1536.svg'
-import desktop1440 from '../../media/accordion1/gridandindent/1440.svg'
-import tablet768 from '../../media/accordion1/gridandindent/768.svg'
-import mobile480 from '../../media/accordion1/gridandindent/480.svg'
-import mobile375 from '../../media/accordion1/gridandindent/375.svg'
-import mobile320 from '../../media/accordion1/gridandindent/320.svg'
+import desktop1920 from '../../media/accordion1/gridandindent/1920.webp'
+import desktop1536 from '../../media/accordion1/gridandindent/1536.webp'
+import desktop1440 from '../../media/accordion1/gridandindent/1440.webp'
+import tablet768 from '../../media/accordion1/gridandindent/768.webp'
+import mobile480 from '../../media/accordion1/gridandindent/480.webp'
+import mobile375 from '../../media/accordion1/gridandindent/375.webp'
+import mobile320 from '../../media/accordion1/gridandindent/320.webp'
 
-import layout12 from '../../media/accordion1/gridandindent/layout-12.svg'
-import layout16 from '../../media/accordion1/gridandindent/layout-16.svg'
-import layoutContainer from '../../media/accordion1/gridandindent/layout-container.svg'
+import layout12 from '../../media/accordion1/gridandindent/layout-12.webp'
+import layout16 from '../../media/accordion1/gridandindent/layout-16.webp'
+import layoutContainer from '../../media/accordion1/gridandindent/layout-container.webp'
 
 /* Pic import end */
 

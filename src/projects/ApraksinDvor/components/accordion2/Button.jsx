@@ -3,19 +3,19 @@ import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
 
-import usage from '../../media/accordion2/buttons/btn-usage.svg'
-import triangel from '../../media/accordion2/buttons/btn-triangel.svg'
-import big from '../../media/accordion2/buttons/btn-big.svg'
-import mid from '../../media/accordion2/buttons/btn-mid.svg'
-import little from '../../media/accordion2/buttons/btn-little.svg'
-import content from '../../media/accordion2/buttons/btn-content.svg'
-import textMark from '../../media/accordion2/buttons/btn-text-mark.svg'
-import icon from '../../media/accordion2/buttons/btn-icon.svg'
-import horizontal from '../../media/accordion2/buttons/btn-horizontal.svg'
-import vertical from '../../media/accordion2/buttons/btn-vertical.svg'
-import table from '../../media/accordion2/buttons/btn-table.svg'
-import left from '../../media/accordion2/buttons/btn-left.svg'
-import right from '../../media/accordion2/buttons/btn-right.svg'
+import usage from '../../media/accordion2/buttons/btn-usage.webp'
+import triangel from '../../media/accordion2/buttons/btn-triangel.webp'
+import big from '../../media/accordion2/buttons/btn-big.webp'
+import mid from '../../media/accordion2/buttons/btn-mid.webp'
+import little from '../../media/accordion2/buttons/btn-little.webp'
+import content from '../../media/accordion2/buttons/btn-content.webp'
+import textMark from '../../media/accordion2/buttons/btn-text-mark.webp'
+import icon from '../../media/accordion2/buttons/btn-icon.webp'
+import horizontal from '../../media/accordion2/buttons/btn-horizontal.webp'
+import vertical from '../../media/accordion2/buttons/btn-vertical.webp'
+import table from '../../media/accordion2/buttons/btn-table.webp'
+import left from '../../media/accordion2/buttons/btn-left.webp'
+import right from '../../media/accordion2/buttons/btn-right.webp'
 
 /* Pic import end */
 

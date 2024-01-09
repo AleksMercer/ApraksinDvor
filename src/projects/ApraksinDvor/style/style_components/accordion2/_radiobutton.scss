@@ -1,0 +1,93 @@
+.aprashka-main__wrapper.radiobutton {
+
+  .radiobutton-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .radiobutton-useage {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+      
+      .gray-container {
+        height: 276px;
+
+        &__radiobuttons {
+          @include rows();
+
+          & > p {
+            font-weight: $medium;
+          }
+
+          label {
+            @include grid_template(auto / auto auto);
+            align-items: center;
+            justify-content: start;
+            column-gap: 24px;
+    
+            input {
+              width: 24px;
+              height: 24px;
+              accent-color: $green-main;  
+              
+              &:hover {
+                accent-color: $green-hover;  
+              }
+              &:active {
+                accent-color: $green-pressed;  
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .radiobutton-contents {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      .gray-container {
+        height: 276px;
+      }
+
+      &-text {
+        @include text-grid();
+        @include mark-text();
+      }
+    }
+  }
+
+  .radiobutton-principles {
+    @include small-common-rows();
+
+    &__description {
+      @include rows();
+
+      &-container {
+        @include columns();
+      }
+    }
+
+    &__group {
+      @include rows();
+      p {@include text();}
+
+      &-container {
+        @include columns();
+      }
+    }
+  }
+
+  .radiobutton-state {
+    @include rows();
+  }
+}

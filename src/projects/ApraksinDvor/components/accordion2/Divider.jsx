@@ -3,8 +3,8 @@ import Footer from '../tinycomp/Footer'
 
 /* Pic import start */
 
-import dividerUseage from '../../media/accordion2/divider/divider-useage.svg'
-import dividerBuild from '../../media/accordion2/divider/divider-build.svg'
+import dividerUseage from '../../media/accordion2/divider/divider-useage.webp'
+import dividerBuild from '../../media/accordion2/divider/divider-build.webp'
 
 /* Pic import end */
 
