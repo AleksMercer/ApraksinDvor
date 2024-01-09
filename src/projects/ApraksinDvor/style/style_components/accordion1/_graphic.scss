@@ -1,0 +1,30 @@
+.aprashka-main__wrapper.graphic { 
+
+  .graphic-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .graphic-forms {
+    @include rows();
+    p {@include text();}
+  }
+
+  .graphic-element {
+    @include rows();
+    p {@include text();}
+  }
+
+  .graphic-nav {
+    @include rows();
+    & > p {@include text();}
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+}

@@ -1902,6 +1902,64 @@ body * > img, body * > button, body h1, body h2, body h3 {
   border-bottom: 1px solid #37464B;
 }
 
+.aprashka-main__wrapper.graphic .graphic-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.graphic .graphic-description h1, .aprashka-main__wrapper.graphic .graphic-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.graphic .graphic-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.graphic .graphic-forms {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.graphic .graphic-forms h1, .aprashka-main__wrapper.graphic .graphic-forms h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.graphic .graphic-forms p {
+  width: 768px;
+}
+.aprashka-main__wrapper.graphic .graphic-element {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.graphic .graphic-element h1, .aprashka-main__wrapper.graphic .graphic-element h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.graphic .graphic-element p {
+  width: 768px;
+}
+.aprashka-main__wrapper.graphic .graphic-nav {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.graphic .graphic-nav h1, .aprashka-main__wrapper.graphic .graphic-nav h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.graphic .graphic-nav > p {
+  width: 768px;
+}
+.aprashka-main__wrapper.graphic .graphic-nav__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.graphic .graphic-nav__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+
 .aprashka-main__wrapper.icons .icons-description {
   display: grid;
   grid-template: auto/1fr;
