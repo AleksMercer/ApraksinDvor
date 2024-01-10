@@ -82,11 +82,28 @@ $horizontal-small-gap: 24px;
   row-gap: 80px;
 }   
 
+@mixin h4-common-rows() { //@include h4-common-rows();
+  @include grid_template(auto / 1fr);
+  row-gap: 60px;
+}
+
 @mixin rows() { //@include rows();
   @include grid_template(auto / 1fr);
   row-gap: 24px;
 
   h1, h2 {
+    padding-bottom: 8px;
+  }
+}   
+
+@mixin rows-h4() { //@include rows-h4();
+  @include grid_template(auto / 1fr);
+  row-gap: 16px;
+
+  h1, h2 {
+    padding-bottom: 16px;
+  }
+  h3 {
     padding-bottom: 8px;
   }
 }   

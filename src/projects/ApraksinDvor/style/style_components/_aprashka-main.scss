@@ -115,13 +115,18 @@
           @include grid_template(auto / 1fr);
           align-content: start;
 
-          .secondarylink {
+          .secondarylink, .secondarylink-gray {
             background-color: $gray-1;
             padding: 8px 0px 8px 64px;
             font-weight: $regular;
             font-size: $small-font;
             line-height: 24px;
           }
+
+          .secondarylink-gray {
+            color: $gray-5;
+          }
+
         }
       }
 
@@ -178,14 +183,14 @@
 
           @keyframes menu-2-open {
             0% {
-              transform: translateY(-480px); //1 element = 40px
+              transform: translateY(-520px); //1 element = 40px
               height: 0px;
               color: #0a283200;
             }
 
             100% {
               transform: translateY(0px);
-              height: 480px;
+              height: 520px;
               color: $black;
             }
           }
@@ -197,12 +202,12 @@
           @keyframes menu-2-close {
             0% {
               transform: translateY(0px);
-              height: 480px;
+              height: 520px;
               color: $black;
             }
 
             100% {
-              transform: translateY(-480px);
+              transform: translateY(-520px);
               height: 0px;
               color: #0a283200;
             }

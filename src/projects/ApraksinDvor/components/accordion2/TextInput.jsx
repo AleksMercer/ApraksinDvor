@@ -1,8 +1,12 @@
 import React from 'react'
 
+import allInputPage from '../../media/accordion2/input/input.png'
+
 function TextInput() {
   return (
-    <div>TextInput</div>
+    <>
+      <img src={allInputPage}  alt="radiobutton contents" />
+    </>
   )
 }
 

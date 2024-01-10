@@ -25,16 +25,11 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 /* Accordion2 routes */
   import Breadcrumbs from './projects/apraksindvor/components/accordion2/Breadcrumbs'
   import Button from './projects/apraksindvor/components/accordion2/Button'
-  import Card from './projects/apraksindvor/components/accordion2/Card'
   import Checkbox from './projects/apraksindvor/components/accordion2/Checkbox'
   import Divider from './projects/apraksindvor/components/accordion2/Divider'
-  import Loading from './projects/apraksindvor/components/accordion2/Loading'
-  import Modal from './projects/apraksindvor/components/accordion2/Modal'
   import Link from './projects/apraksindvor/components/accordion2/Link'
   import RadioButton from './projects/apraksindvor/components/accordion2/RadioButton'
-  import SwitchButton from './projects/apraksindvor/components/accordion2/SwitchButton'
   import TextInput from './projects/apraksindvor/components/accordion2/TextInput'
-  import Search from './projects/apraksindvor/components/accordion2/Search'
 
 /*---------------------------------------------------------------------------------------------*/
 
@@ -104,16 +99,11 @@ function MainRouter() {
           {/* Accordion2 routes */}
           <Route path="Breadcrumbs"   element={ <Breadcrumbs /> }/>
           <Route path="Button"        element={ <Button /> }/>
-          <Route path="Card"          element={ <Card /> }/>
           <Route path="Checkbox"      element={ <Checkbox /> }/>
           <Route path="Divider"       element={ <Divider /> }/>
-          <Route path="Loading"       element={ <Loading /> }/>
-          <Route path="Modal"         element={ <Modal /> }/>
           <Route path="Link"          element={ <Link /> }/>
           <Route path="RadioButton"   element={ <RadioButton /> }/>
-          <Route path="SwitchButton"  element={ <SwitchButton /> }/>
           <Route path="TextInput"     element={ <TextInput /> }/>
-          <Route path="Search"        element={ <Search /> }/>
 
         </Route>
       </Routes>

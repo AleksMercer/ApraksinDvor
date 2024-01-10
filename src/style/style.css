@@ -414,12 +414,15 @@ body * > img, body * > button, body h1, body h2, body h3 {
   -ms-flex-line-pack: start;
       align-content: start;
 }
-.aprashka-main__sidebar .sidebar .accordion__links .secondarylink {
+.aprashka-main__sidebar .sidebar .accordion__links .secondarylink, .aprashka-main__sidebar .sidebar .accordion__links .secondarylink-gray {
   background-color: #E1EBF0;
   padding: 8px 0px 8px 64px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.aprashka-main__sidebar .sidebar .accordion__links .secondarylink-gray {
+  color: #8C9BA0;
 }
 .aprashka-main__sidebar .sidebar .accfirst {
   z-index: 1;
@@ -502,29 +505,29 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 @-webkit-keyframes menu-2-open {
   0% {
-    -webkit-transform: translateY(-480px);
-            transform: translateY(-480px);
+    -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
     height: 0px;
     color: rgba(10, 40, 50, 0);
   }
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    height: 480px;
+    height: 520px;
     color: #0A2832;
   }
 }
 @keyframes menu-2-open {
   0% {
-    -webkit-transform: translateY(-480px);
-            transform: translateY(-480px);
+    -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
     height: 0px;
     color: rgba(10, 40, 50, 0);
   }
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    height: 480px;
+    height: 520px;
     color: #0A2832;
   }
 }
@@ -536,12 +539,12 @@ body * > img, body * > button, body h1, body h2, body h3 {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    height: 480px;
+    height: 520px;
     color: #0A2832;
   }
   100% {
-    -webkit-transform: translateY(-480px);
-            transform: translateY(-480px);
+    -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
     height: 0px;
     color: rgba(10, 40, 50, 0);
   }
@@ -550,12 +553,12 @@ body * > img, body * > button, body h1, body h2, body h3 {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    height: 480px;
+    height: 520px;
     color: #0A2832;
   }
   100% {
-    -webkit-transform: translateY(-480px);
-            transform: translateY(-480px);
+    -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
     height: 0px;
     color: rgba(10, 40, 50, 0);
   }
@@ -1220,6 +1223,109 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.aboutproject .team-block__team div.color-orange {
   color: #FF5F28;
+}
+
+.aprashka-main__wrapper.aboutsystem .aboutsystem__description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__description h1, .aprashka-main__wrapper.aboutsystem .aboutsystem__description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__table {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__table h1, .aprashka-main__wrapper.aboutsystem .aboutsystem__table h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__table-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr)/1fr 1fr;
+  border: 1.5px solid #058CD7;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__table-grid-block {
+  display: grid;
+  grid-template: auto 1fr/1fr;
+  padding: 40px 32px;
+  row-gap: 16px;
+  height: 246px;
+  border: 1.5px solid #058CD7;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-description h1, .aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 60px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content div {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 16px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content div h1, .aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content div h2 {
+  padding-bottom: 16px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content div h3 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content div > p {
+  width: 768px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content .block div {
+  display: grid;
+  grid-template: auto/auto 1fr;
+  margin-left: 32px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content .block div .mark-text {
+  margin-left: 15px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content .block div .mark-text span {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-content .block span {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 60px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface div {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 16px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface div h1, .aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface div h2 {
+  padding-bottom: 16px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface div h3 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.aboutsystem .aboutsystem__recomendation-interface div p {
+  width: 768px;
 }
 
 /* Accordion 1 */
@@ -3051,4 +3157,8 @@ body * > img, body * > button, body h1, body h2, body h3 {
 }
 .aprashka-main__wrapper.link .link-state h1, .aprashka-main__wrapper.link .link-state h2 {
   padding-bottom: 8px;
+}
+
+.aprashka-main__wrapper.textinput img {
+  width: 1128px;
 }

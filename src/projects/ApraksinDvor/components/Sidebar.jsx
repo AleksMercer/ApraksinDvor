@@ -64,16 +64,18 @@ function Sidebar() {
           <nav className={`accordion__links ${secondAccordionState ? 'menu-open' : 'menu-close'}`}>
             <NavLink to="Breadcrumbs"   className={"secondarylink"}>Breadcrumbs</NavLink>
             <NavLink to="Button"        className={"secondarylink"}>Button</NavLink>
-            <NavLink to="Card"          className={"secondarylink"}>Card</NavLink>
+            <div className={"secondarylink-gray"}>Card</div>
             <NavLink to="Checkbox"      className={"secondarylink"}>Checkbox</NavLink>
             <NavLink to="Divider"       className={"secondarylink"}>Divider</NavLink>
             <NavLink to="Link"          className={"secondarylink"}>Link</NavLink>
-            <NavLink to="Loading"       className={"secondarylink"}>Loading</NavLink>
-            <NavLink to="Modal"         className={"secondarylink"}>Modal</NavLink>
+            <div className={"secondarylink-gray"}>Loader</div>
+            <div className={"secondarylink-gray"}>Modal</div>
             <NavLink to="RadioButton"   className={"secondarylink"}>Radio button</NavLink>
-            <NavLink to="Search"        className={"secondarylink"}>Search</NavLink>
-            <NavLink to="SwitchButton"  className={"secondarylink"}>Switch button</NavLink>
-            <NavLink to="TextInput"     className={"secondarylink"}>Text input</NavLink>
+            <div className={"secondarylink-gray"}>Search</div>
+            <div className={"secondarylink-gray"}>Switch button</div>
+            <NavLink to="TextInput"     className={"secondarylink"}>Text inputs</NavLink>
+            <div className={"secondarylink-gray"}>Tooltip</div>
+
           </nav>
         </div>
 
