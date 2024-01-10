@@ -1,0 +1,77 @@
+.aprashka-main__wrapper.link {
+
+  .link-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .link-usage {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+
+        &-list {
+          display: grid;
+          row-gap: 16px;
+        }
+
+        p > ul {
+          display: grid;
+          row-gap: 16px;
+          font-size: 20px;
+          font-weight: $regular;
+  
+          padding-left: 32px;
+  
+          li:before {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            background-color: $green-main;
+            margin-right: 16px;
+  
+            vertical-align: 10%;
+          }
+        }
+      }
+    }
+  }
+
+  .link-content {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+        @include mark-text();
+      }
+    }
+  }
+
+  .link-build {
+    @include small-common-rows();
+
+    &__include-link, &__separate-link {
+      @include rows();
+
+      &-container {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+  }
+
+  .link-state {
+    @include rows();
+  }
+}

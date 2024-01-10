@@ -67,13 +67,13 @@ function Sidebar() {
             <NavLink to="Card"          className={"secondarylink"}>Card</NavLink>
             <NavLink to="Checkbox"      className={"secondarylink"}>Checkbox</NavLink>
             <NavLink to="Divider"       className={"secondarylink"}>Divider</NavLink>
+            <NavLink to="Link"          className={"secondarylink"}>Link</NavLink>
             <NavLink to="Loading"       className={"secondarylink"}>Loading</NavLink>
             <NavLink to="Modal"         className={"secondarylink"}>Modal</NavLink>
-            <NavLink to="Tooltip"       className={"secondarylink"}>Tooltip</NavLink>
             <NavLink to="RadioButton"   className={"secondarylink"}>Radio button</NavLink>
+            <NavLink to="Search"        className={"secondarylink"}>Search</NavLink>
             <NavLink to="SwitchButton"  className={"secondarylink"}>Switch button</NavLink>
             <NavLink to="TextInput"     className={"secondarylink"}>Text input</NavLink>
-            <NavLink to="Search"        className={"secondarylink"}>Search</NavLink>
           </nav>
         </div>
 

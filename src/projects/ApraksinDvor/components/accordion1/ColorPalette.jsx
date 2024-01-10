@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { selectScrollToContrast } from '../../aprashkaStore' // selectors import
-import { scrollToContrastSwap } from '../../aprashkaStore' // reducers import
+import { selectScrollToElement } from '../../aprashkaStore' // selectors import
+import { scrollToElementSwap } from '../../aprashkaStore' // reducers import
 
 import Footer from '../tinycomp/Footer'
 
@@ -16,14 +16,14 @@ function ColorPalette() {
 
   const ref = useRef(null)
   const dispatch = useDispatch()
-  const scrollToContrastState = useSelector(selectScrollToContrast)
+  const scrollToElementState = useSelector(selectScrollToElement)
 
   useEffect(() => { 
 
-    if (scrollToContrastState === 'true') {
+    if (scrollToElementState === 'true') {
       setTimeout(() => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
-        dispatch(scrollToContrastSwap('false'))
+        dispatch(scrollToElementSwap('false'))
       }, 100);
     }
   }, [])

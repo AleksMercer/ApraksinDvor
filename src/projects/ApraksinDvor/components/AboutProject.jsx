@@ -1,4 +1,9 @@
 import React, { useState, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { NavLink } from 'react-router-dom'
+
+import { selectFirstAccordion, selectSecondAccordion } from '../aprashkaStore' // selectors import
+import { firstAccordionSwap, secondAccordionSwap } from '../aprashkaStore' // reducers import
 
 import { DotLottiePlayer } from '@dotlottie/react-player'
 import Footer from './tinycomp/Footer'
@@ -13,8 +18,12 @@ import Alex from '../media/Alex.webp'
 import lottieSquare from '../media/lottie/square.lottie'
 import lottieSwitch from '../media/lottie/switch.lottie'
 import lottieLogo from '../media/lottie/logo.lottie'
-
+// <NavLink to="../Breadcrumbs" onClick={() => !secondAccordionState && dispatch(secondAccordionSwap())} className={'link-underline'}>Рекомендации</NavLink>
 function AboutProject() {
+
+  const dispatch = useDispatch()
+  const firstAccordionState = useSelector(selectFirstAccordion)
+  const secondAccordionState = useSelector(selectSecondAccordion)
 
   const [isChecked, setIsChecked] = useState(true)
 
@@ -90,7 +99,7 @@ function AboutProject() {
             <h2>Начать работать</h2>
 
             <nav>
-              <div className='rec'>
+              <NavLink className='rec' to="./AboutSystem">
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieLogo}
@@ -99,14 +108,15 @@ function AboutProject() {
                     onMouseLeave={() => handleMouseLeave(lottieSquareRef)}
                   />
                 </div>
-                <h4 className='color-blue'>Рекомендации
+                <h4 className='color-blue'>
+                  <span>Рекомендации</span>                  
                   <svg className='color-blue' width="32" height="32" viewBox="0 0 32 32" fill="current"  xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
-              </div>
+              </NavLink>
 
-              <div className='style'>
+              <NavLink className='style' to="./Logotype" onClick={() => !firstAccordionState && dispatch(firstAccordionSwap())}>
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieSquare}
@@ -115,14 +125,15 @@ function AboutProject() {
                     onMouseLeave={() => handleMouseLeave(lottieSwitchRef)}
                   />
                 </div>
-                <h4 className='color-green'>Стили
+                <h4 className='color-green'>
+                  <span>Стили</span>                  
                   <svg className='color-green' width="32" height="32" viewBox="0 0 32 32" fill="current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
-              </div>
+              </NavLink>
 
-              <div className='comp'>
+              <NavLink className='comp' to="./Breadcrumbs" onClick={() => !secondAccordionState && dispatch(secondAccordionSwap())}>
                 <div className='lottie-animation'>
                   <DotLottiePlayer
                     src={lottieSwitch}
@@ -131,12 +142,13 @@ function AboutProject() {
                     onMouseLeave={() => handleMouseLeave(lottieLogoRef)}
                   />
                 </div>
-                <h4 className='color-orange'>Компоненты
+                <h4 className='color-orange'>
+                  <span>Компоненты</span>                  
                   <svg className='color-orange' width="32" height="32" viewBox="0 0 32 32" fill="current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.00024 14.6665H21.4482L15.4482 8.66652L17.3336 6.78119L26.5522 15.9999L17.3336 25.2185L15.4482 23.3332L21.4482 17.3332H6.00024V14.6665Z" />
                   </svg>
                 </h4>
-              </div>
+              </NavLink>
             </nav>
 
           </div>

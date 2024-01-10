@@ -8,7 +8,7 @@ function Mainpage() {
     urlpath: 'Aprashka',
     projectname: '"Apraksin dvor" design system',
     description: 'The "Apraksin Dvor" rebranding design system contains core elements including typography, components, principles, etc. to establish a new vision.',
-    date: '01.11.2023 - ...'
+    date: '01.11.2023 - 12.01.2024'
   }
   
   // #endregion

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
 import { selectFirstAccordion } from '../../aprashkaStore' // selectors import
-import { firstAccordionSwap, scrollToContrastSwap } from '../../aprashkaStore' // reducers import
+import { firstAccordionSwap, scrollToElementSwap } from '../../aprashkaStore' // reducers import
 
 import Footer from '../tinycomp/Footer'
 
@@ -170,7 +170,7 @@ function Icons() {
             <NavLink to="../ColorPalette" className={'link-underline'}
             onClick={() => {
               !firstAccordionState && dispatch(firstAccordionSwap())
-              dispatch(scrollToContrastSwap('true'))
+              dispatch(scrollToElementSwap('true'))
             }}>
               отступы для каждого компонента
             </NavLink>.

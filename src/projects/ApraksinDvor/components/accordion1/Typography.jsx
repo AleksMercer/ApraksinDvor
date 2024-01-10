@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+
+import { selectScrollToElement } from '../../aprashkaStore' // selectors import
+import { scrollToElementSwap } from '../../aprashkaStore' // reducers import
 
 import DownloadButton from '../tinycomp/DownloadButton'
 import Footer from '../tinycomp/Footer'
@@ -18,7 +22,21 @@ import fonts from '../../style/Fonts/Inter-Fonts.rar'
 /* Pic import end */
 
 function Typography() {
-  
+
+  const ref = useRef(null)
+  const dispatch = useDispatch()
+  const scrollToElementState = useSelector(selectScrollToElement)
+
+  useEffect(() => { 
+
+    if (scrollToElementState === 'true') {
+      setTimeout(() => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+        dispatch(scrollToElementSwap('false'))
+      }, 100);
+    }
+  }, [])
+
   return (
     <>
       <section className='typography-description'>
@@ -155,7 +173,7 @@ function Typography() {
         </div>
       </section>
 
-      <section className='typography-accent-text'>
+      <section className='typography-accent-text' ref={ref}>
         <h2>Акцентный текст</h2>
         <p>Чтобы выделить важные слова в&nbsp;тексте, используется начертание Medium. Такое&nbsp;же начертание следует использовать в&nbsp;выразительных компонентах, например, в&nbsp;кнопках и&nbsp;ссылках.</p> 
 

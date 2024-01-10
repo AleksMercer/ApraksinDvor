@@ -950,23 +950,23 @@ body * > img, body * > button, body h1, body h2, body h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start nav div {
+.aprashka-main__wrapper.aboutproject .work-block__start nav a {
   display: grid;
   grid-template: 1fr auto/1fr;
   row-gap: 16px;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start nav div .lottie-animation {
+.aprashka-main__wrapper.aboutproject .work-block__start nav a .lottie-animation {
   background-color: #F2F6F9;
   height: 360px;
   width: 360px;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start nav div h4 {
+.aprashka-main__wrapper.aboutproject .work-block__start nav a h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-items: center;
 }
-.aprashka-main__wrapper.aboutproject .work-block__start nav div h4 svg {
+.aprashka-main__wrapper.aboutproject .work-block__start nav a h4 svg {
   margin-left: 12px;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-blue {
@@ -975,11 +975,17 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-blue * {
   fill: #058CD7;
 }
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-blue span {
+  margin-bottom: 2px;
+}
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-green {
   color: #058C50;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-green * {
   fill: #058C50;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-green span {
+  margin-bottom: 2px;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-orange {
   color: #FF5F28;
@@ -987,11 +993,18 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-orange * {
   fill: #FF5F28;
 }
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp .color-orange span {
+  margin-bottom: 2px;
+}
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-blue {
   color: #44A9E1;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-blue * {
   fill: #44A9E1;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-blue span {
+  border-bottom: 2px solid #44A9E1;
+  margin-bottom: 0px;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-green {
   color: #37A373;
@@ -999,11 +1012,19 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-green * {
   fill: #37A373;
 }
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-green span {
+  border-bottom: 2px solid #37A373;
+  margin-bottom: 0px;
+}
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-orange {
   color: #FF7F53;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-orange * {
   fill: #FF7F53;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:hover .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:hover .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:hover .color-orange span {
+  border-bottom: 2px solid #FF7F53;
+  margin-bottom: 0px;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-blue, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-blue {
   color: #0178BA;
@@ -1011,17 +1032,26 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-blue *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-blue * {
   fill: #0178BA;
 }
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-blue span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-blue span {
+  border-bottom: 2px solid #0178BA;
+}
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-green, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-green {
   color: #047040;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-green *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-green * {
   fill: #047040;
 }
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-green span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-green span {
+  border-bottom: 2px solid #047040;
+}
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-orange, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-orange {
   color: #E84A13;
 }
 .aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-orange *, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-orange * {
   fill: #E84A13;
+}
+.aprashka-main__wrapper.aboutproject .work-block__start nav .rec:active .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .style:active .color-orange span, .aprashka-main__wrapper.aboutproject .work-block__start nav .comp:active .color-orange span {
+  border-bottom: 2px solid #E84A13;
 }
 .aprashka-main__wrapper.aboutproject .work-block__card {
   display: grid;
@@ -2157,40 +2187,40 @@ body * > img, body * > button, body h1, body h2, body h3 {
 .aprashka-main__wrapper.checkbox .checkbox-description p {
   width: 768px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage {
+.aprashka-main__wrapper.checkbox .checkbox-usage {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage h1, .aprashka-main__wrapper.checkbox .checkbox-useage h2 {
+.aprashka-main__wrapper.checkbox .checkbox-usage h1, .aprashka-main__wrapper.checkbox .checkbox-usage h2 {
   padding-bottom: 8px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__text {
+.aprashka-main__wrapper.checkbox .checkbox-usage__text {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes .gray-container {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes .gray-container {
   height: 276px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes-container {
   display: grid;
   grid-template: auto/1fr;
   row-gap: 24px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container h2 {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes-container h1, .aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes-container h2 {
   padding-bottom: 8px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-comp {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes-comp {
   display: grid;
   grid-template: auto/auto auto;
   -webkit-box-align: center;
@@ -2203,13 +2233,13 @@ body * > img, body * > button, body h1, body h2, body h3 {
      -moz-column-gap: 16px;
           column-gap: 16px;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage__checkboxes-container > p {
+.aprashka-main__wrapper.checkbox .checkbox-usage__checkboxes-container > p {
   font-weight: 500;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage .checkbox-comp.checked {
+.aprashka-main__wrapper.checkbox .checkbox-usage .checkbox-comp.checked {
   background-color: #058C50;
 }
-.aprashka-main__wrapper.checkbox .checkbox-useage .checkbox-comp.checked:hover {
+.aprashka-main__wrapper.checkbox .checkbox-usage .checkbox-comp.checked:hover {
   background-color: #37A373;
 }
 .aprashka-main__wrapper.checkbox .checkbox-contents {
@@ -2901,5 +2931,124 @@ body * > img, body * > button, body h1, body h2, body h3 {
   row-gap: 24px;
 }
 .aprashka-main__wrapper.radiobutton .radiobutton-state h1, .aprashka-main__wrapper.radiobutton .radiobutton-state h2 {
+  padding-bottom: 8px;
+}
+
+.aprashka-main__wrapper.link .link-description {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-description h1, .aprashka-main__wrapper.link .link-description h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.link .link-description p {
+  width: 768px;
+}
+.aprashka-main__wrapper.link .link-usage {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-usage h1, .aprashka-main__wrapper.link .link-usage h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.link .link-usage__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-usage__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-usage__container-text-list {
+  display: grid;
+  row-gap: 16px;
+}
+.aprashka-main__wrapper.link .link-usage__container-text p > ul {
+  display: grid;
+  row-gap: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 32px;
+}
+.aprashka-main__wrapper.link .link-usage__container-text p > ul li:before {
+  content: "";
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  background-color: #058C50;
+  margin-right: 16px;
+  vertical-align: 10%;
+}
+.aprashka-main__wrapper.link .link-content {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-content h1, .aprashka-main__wrapper.link .link-content h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.link .link-content__container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-content__container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-content__container-text div {
+  display: grid;
+  grid-template: auto/auto 1fr;
+  margin-left: 32px;
+}
+.aprashka-main__wrapper.link .link-content__container-text div .mark-text {
+  margin-left: 15px;
+}
+.aprashka-main__wrapper.link .link-content__container-text div .mark-text span {
+  font-weight: 500;
+}
+.aprashka-main__wrapper.link .link-build {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 80px;
+}
+.aprashka-main__wrapper.link .link-build__include-link, .aprashka-main__wrapper.link .link-build__separate-link {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-build__include-link h1, .aprashka-main__wrapper.link .link-build__include-link h2, .aprashka-main__wrapper.link .link-build__separate-link h1, .aprashka-main__wrapper.link .link-build__separate-link h2 {
+  padding-bottom: 8px;
+}
+.aprashka-main__wrapper.link .link-build__include-link-container, .aprashka-main__wrapper.link .link-build__separate-link-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-build__include-link-container-text, .aprashka-main__wrapper.link .link-build__separate-link-container-text {
+  display: grid;
+  grid-template: auto/1fr;
+  align-self: start;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-state {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 24px;
+}
+.aprashka-main__wrapper.link .link-state h1, .aprashka-main__wrapper.link .link-state h2 {
   padding-bottom: 8px;
 }

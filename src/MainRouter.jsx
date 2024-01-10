@@ -30,7 +30,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
   import Divider from './projects/apraksindvor/components/accordion2/Divider'
   import Loading from './projects/apraksindvor/components/accordion2/Loading'
   import Modal from './projects/apraksindvor/components/accordion2/Modal'
-  import Tooltip from './projects/apraksindvor/components/accordion2/Tooltip'
+  import Link from './projects/apraksindvor/components/accordion2/Link'
   import RadioButton from './projects/apraksindvor/components/accordion2/RadioButton'
   import SwitchButton from './projects/apraksindvor/components/accordion2/SwitchButton'
   import TextInput from './projects/apraksindvor/components/accordion2/TextInput'
@@ -109,7 +109,7 @@ function MainRouter() {
           <Route path="Divider"       element={ <Divider /> }/>
           <Route path="Loading"       element={ <Loading /> }/>
           <Route path="Modal"         element={ <Modal /> }/>
-          <Route path="Tooltip"       element={ <Tooltip /> }/>
+          <Route path="Link"          element={ <Link /> }/>
           <Route path="RadioButton"   element={ <RadioButton /> }/>
           <Route path="SwitchButton"  element={ <SwitchButton /> }/>
           <Route path="TextInput"     element={ <TextInput /> }/>
