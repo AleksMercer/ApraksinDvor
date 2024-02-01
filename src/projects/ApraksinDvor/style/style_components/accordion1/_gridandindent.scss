@@ -11,28 +11,8 @@
     &__description {
       @include rows();
       p {@include text();}
-  
-      ul {
-        display: grid;
-        row-gap: 16px;
-        @include text();
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: $regular;
 
-        padding-left: 32px;
-
-        li:before {
-          content: '';
-          display: inline-block;
-          height: 9px;
-          width: 9px;
-          background-color: $green-main;
-          margin-right: 16px;
-
-          vertical-align: 10%;
-        }
-      }
+      ul {@include text();}
     }
 
     &__grid-size {

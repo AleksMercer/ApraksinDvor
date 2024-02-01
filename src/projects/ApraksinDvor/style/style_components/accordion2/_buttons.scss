@@ -167,6 +167,7 @@
         &-text {
           @include text-grid();
           @include mark-text();
+          row-gap: 16px;
         }
       }
     }

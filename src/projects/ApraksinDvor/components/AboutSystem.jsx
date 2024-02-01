@@ -84,7 +84,7 @@ function AboutSystem() {
                 <p className='mark-text'>Используйте настоящее время, чтобы подчеркнуть актуальность.</p>
               </div>
               <div>
-                <span>3.</span>
+                <span>4.</span>
                 <p className='mark-text'>Обращайтесь напрямую к&nbsp;пользователю для большей вовлеченности. При обращении используйте местоимение &laquo;вы&raquo;.</p>
               </div>
             </div>

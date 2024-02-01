@@ -46,10 +46,10 @@ function GridAndIndent() {
         <section className='gridandindent-grid__description'>
           <h2>Сетка</h2>
           <p>Система сеток построена с&nbsp;учетом адаптива под разные устройства и&nbsp;содержит 7&nbsp;брейкпоинтов. Адаптив создается за&nbsp;счет уменьшения ширины колонки и&nbsp;межколонного интервала, а&nbsp;также сокращения количества колонок. Для удобства мы&nbsp;разделили экраны веб-устройств на&nbsp;3&nbsp;категории:</p>
-          <ul>
-            <li>Desktop&nbsp;&mdash; экраны мониторов. Используется 12-колоночная сетка.</li>
-            <li>Tablet&nbsp;&mdash; экраны планшетов. Используется 12-колоночная сетка для горизонтального положения и&nbsp;8-колоночная для вертикального.</li>
-            <li>Mobile&nbsp;&mdash; экраны смартфонов. Используется 6-колоночная сетка.</li>
+          <ul className='mark-lists'>
+            <li><span className='green-mark'></span><span>Desktop&nbsp;&mdash; экраны мониторов. Используется 12-колоночная сетка.</span></li>
+            <li><span className='green-mark'></span><span>Tablet&nbsp;&mdash; экраны планшетов. Используется 12-колоночная сетка для горизонтального положения и&nbsp;8-колоночная для вертикального.</span></li>
+            <li><span className='green-mark'></span><span>Mobile&nbsp;&mdash; экраны смартфонов. Используется 6-колоночная сетка.</span></li>
           </ul>
         </section>
 
