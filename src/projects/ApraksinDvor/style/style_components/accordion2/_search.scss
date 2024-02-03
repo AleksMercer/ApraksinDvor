@@ -1,0 +1,89 @@
+.aprashka-main__wrapper.search {
+
+  .search-description, .search-build, .search-state {
+    @include rows();
+    p {@include text();}
+  }
+
+  .search-usage {
+    @include rows();
+    p {@include text();}
+
+    &__block {
+      position: relative;
+      @include grid_template(1fr / 768px 64px);
+      
+      input {
+
+        height: 64px; 
+        padding: 20px 40px 20px 20px;
+        background-color: $gray-0;
+        color: $black;
+        font-size: 20px;
+
+        border: solid $gray-4;
+        border-width: 2px 0 2px 2px;
+      }
+
+      input.focused {
+        border: solid $green-main;
+        border-width: 2px 0 2px 2px;
+      }
+
+      span {
+        position: absolute;
+        left: 740px;
+        top: 18px;
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 9px;
+          height: 18px;
+          width: 2px;
+          background-color: $gray-6;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .search-button {
+        height: 64px; 
+        padding: 20px;
+        background-color: $green-main;
+
+        &:hover {
+          background-color: $green-hover;
+        }
+
+        &:active {
+          background-color: $green-pressed;
+        }
+      }
+    }
+  }
+
+  .search-content {
+    @include small-common-rows();
+
+    &__container {
+      @include rows();
+
+      &-text {
+        @include text-grid();
+        @include mark-text();
+        row-gap: 16px;    
+        
+        .mark-text {
+          @include text();
+        }
+      }
+    }
+  }
+}

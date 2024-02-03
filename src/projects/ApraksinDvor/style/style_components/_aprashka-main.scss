@@ -178,14 +178,14 @@
 
           @keyframes menu-2-open {
             0% {
-              transform: translateY(-520px); //1 element = 40px
+              transform: translateY(-400px); //1 element = 40px
               height: 0px;
               color: #0a283200;
             }
 
             100% {
               transform: translateY(0px);
-              height: 520px;
+              height: 400px;
               color: $black;
             }
           }
@@ -197,12 +197,12 @@
           @keyframes menu-2-close {
             0% {
               transform: translateY(0px);
-              height: 520px;
+              height: 400px;
               color: $black;
             }
 
             100% {
-              transform: translateY(-520px);
+              transform: translateY(-400px);
               height: 0px;
               color: #0a283200;
             }

@@ -1,5 +1,263 @@
 .aprashka-main__wrapper.textinput {
-  img {
-    width: 1128px;
+  .textinput-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .textinput-usage {
+    @include small-common-rows();
+
+    &-description {
+      @include rows();
+
+      &__container {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+
+    &-input {
+      @include rows();
+
+      &__container {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+
+      .gray-container {
+        height: 336px;
+        width: 552px;
+
+        @include grid_template(auto / auto);
+        row-gap: 4px;
+        align-content: center;
+        justify-content: center;
+
+        background-color: $gray-2;
+
+        .text-input {
+          @include grid_template(1fr / 1fr auto);
+          position: relative;
+
+          input {
+            height: 64px;
+            width: 384px;
+            padding: 20px 50px 0px 15px;
+            background-color: $gray-0;
+            border: solid rgba(0, 0, 0, 0);
+            border-bottom: solid $gray-4;
+            border-width: 2px;
+
+            color: $black;
+            font-family: Inter;
+            font-size: 16px;
+          }
+
+          svg {
+            position: absolute;
+            top: 20px;
+            right: 16px;
+          }
+
+          span {
+            position: absolute;
+            left: 16px;
+            color: $gray-6;
+            animation: focusedInput 0.25s ease-out forwards;
+            pointer-events: none; 
+
+            @keyframes focusedInput {
+              0% {
+                top: 12px;
+                font-size: 12px;
+              }
+  
+              100% {
+                top: 24px;
+                font-size: 16px;
+              }
+            }
+          }
+          
+          &.focused {
+            input {
+              border: 2px solid $green-main;
+            }
+          }
+
+          &.focused, &.marked {
+            span {
+              animation: unfocusedInput 0.25s ease-out forwards;
+
+              @keyframes unfocusedInput {
+                0% {
+                  top: 24px;
+                  font-size: 16px;
+                }
+    
+                100% {
+                  top: 12px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            input {
+              background-color: $gray-1;
+            }
+          }
+        }
+
+        .text-area {
+          @include grid_template(1fr / 1fr auto);
+          position: relative;
+
+          textarea {
+            resize: none;
+            width: 384px;
+            height: 160px;
+
+            padding: 30px 16px 16px 16px;
+
+            background-color: $gray-0;
+            border: solid rgba(0, 0, 0, 0);
+            border-bottom: solid $gray-4;
+            border-width: 2px;
+
+            color: $black;
+            font-family: Inter;
+            font-size: 16px;
+            word-break: break-word;
+            white-space: break-spaces;
+          }
+
+          .mark-num {
+            position: absolute;
+            top: 10px;
+            left: 16px;
+
+            @include grid_template(1fr / auto 315px);
+
+            span {
+              font-size: 12px;
+              line-height: 16px;
+  
+              color: $gray-6;
+              pointer-events: none; 
+
+              &:nth-child(2) {
+                justify-self: end;
+              }
+            }
+          }
+
+          &.focused {
+            textarea {
+              border: 2px solid $green-main;
+            }
+          }
+          
+          &:hover {
+            textarea {
+              background-color: $gray-1;
+            }
+          }
+        }
+
+        .additional-info {
+          @include grid_template(1fr / 325px auto);
+          justify-self: start;
+          span {
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray-6;
+            margin: 0 16px; 
+          }
+        }
+      }
+    }
+  }
+
+  .textinput-content {
+    @include small-common-rows();
+
+    &-components {
+      @include rows();
+
+      &__text {
+        @include text-grid();
+        @include mark-text();
+        row-gap: 16px; 
+        
+        .text {
+          @include text();
+        }
+        
+        .mark-text {
+          @include text();
+        }
+      }
+    }
+
+    &-mask {
+      @include rows();
+
+      &__container {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+  }
+
+  .textinput-build {
+    @include small-common-rows();
+
+    &-description {
+      @include rows();
+      p {@include text();}
+    }
+
+    &-vertical {
+      @include rows();
+      p {@include text();}
+
+      ul {@include text();}
+
+      &__container {
+        @include columns();
+      }
+    }
+
+    &-horizontal {
+      @include rows();
+
+      &__container {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+  }
+
+  .textinput-state {
+    @include rows();
+    p, li {@include text();}
+
+    img {
+      width: 1128px;
+    }
   }
 }

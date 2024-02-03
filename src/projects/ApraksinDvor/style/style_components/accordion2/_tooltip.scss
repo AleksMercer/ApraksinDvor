@@ -1,0 +1,28 @@
+.aprashka-main__wrapper.tooltip { 
+  .tooltip-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .tooltip-usage {
+    @include rows();
+    p {@include text();}
+  }
+
+  .tooltip-content {
+    @include rows();
+    p {@include text();}
+  }
+
+  .tooltip-build {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+      }
+    }
+  }
+}

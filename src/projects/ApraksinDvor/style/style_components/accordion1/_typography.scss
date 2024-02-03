@@ -97,7 +97,7 @@
     }
 
     section:not(.typography-interface__text) {
-      @include small-rows();
+      @include rows();
       p {@include text();}
     }
   }
@@ -111,7 +111,7 @@
     }
 
     &__lists {
-      @include small-rows();
+      @include rows();
       
       &-name, &-text, &-pic {
         @include columns();

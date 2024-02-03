@@ -106,12 +106,7 @@ $horizontal-small-gap: 24px;
   h3 {
     padding-bottom: 8px;
   }
-}   
-
-@mixin small-rows() { //@include small-rows();
-  @include grid_template(auto / 1fr);
-  row-gap: 24px;
-}   
+}    
 
 @mixin columns() { //@include columns();
   @include grid_template(1fr / 1fr 1fr);

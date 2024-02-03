@@ -1,0 +1,167 @@
+.aprashka-main__wrapper.switchbutton { 
+
+  .switchbutton-description {
+    @include rows();
+    p {@include text();}
+  }
+
+  .switchbutton-usage {      
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      .gray-container {
+        height: 276px;
+
+        &-block {
+          @include rows();
+          
+          &-weight {
+            font-weight: $medium;
+          }
+
+          .switch-block {
+            @include grid_template(1fr / auto 1fr);
+            align-items: center;
+            column-gap: 16px;
+          }
+
+          .switch-button {
+            position: relative;
+            width: 48px;
+            height: 24px;
+            padding: 2px;
+            transition: all 0.25s ease-out; 
+
+            span {
+              position: absolute;
+              width: 20px;
+              height: 20px; 
+              background-color: white;
+            }
+
+            &.checked {
+              background-color: $green-main;
+
+              span {
+                animation: switchOn 0.25s ease-out forwards;
+
+                @keyframes switchOn {
+                  0% {
+                    left: 2px;
+                  }
+      
+                  100% {
+                    left: 26px;
+                  }
+                }
+
+                left: 26px;
+                
+                &:before, &:after {
+                  content: "";
+                  position: absolute;
+                  left: 8px;
+                  top: 3px;
+                  width: 4.5px;
+                  height: 10px;
+                  
+                  border: solid $green-main;
+                  border-width: 0 1px 1px 0;
+                  transform: rotate(45deg);
+                }
+              }
+
+              &:hover {
+                background-color: $green-hover;
+                &:before, &:after {
+                  border: solid $green-hover;
+                }
+              }
+            }
+            
+            &.unchecked {
+              background-color: $gray-3;
+
+              span {
+                animation: switchOff 0.25s ease-out forwards;
+
+                @keyframes switchOff {
+                  0% {
+                    left: 26px;
+                  }
+      
+                  100% {
+                    left: 2px;
+                  }
+                }
+
+                &:before, &:after {
+                  content: "";
+                  position: absolute;
+                  top: 5px;
+                  left: 9px;
+                  height: 11px;
+                  width: 1px;
+                  background-color: $gray-3;
+                }
+  
+                &:before {
+                  transform: rotate(45deg);
+                }
+                &:after {
+                  transform: rotate(-45deg);
+                }
+              }
+
+              &:hover {
+                background-color: $gray-5;
+
+                span {
+                  &:before, &:after {
+                    background-color: $gray-5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .switchbutton-content {
+    @include rows();
+
+    &__container {
+      @include columns();
+
+      &-text {
+        @include text-grid();
+        @include mark-text();
+        row-gap: 16px;
+      }
+    }
+  }
+
+  .switchbutton-build {
+    @include small-common-rows();
+
+    &__container {
+      @include rows();
+
+      &-block {
+        @include columns();
+  
+        &-text {
+          @include text-grid();
+        }
+      }
+    }
+  }
+
+  .switchbutton-state {
+    @include rows();
+  }
+}
