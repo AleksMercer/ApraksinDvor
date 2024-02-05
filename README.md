@@ -16,7 +16,7 @@
   ### 📋 Description
   * The Apraksin Dvor design system was created by two UI designers and Frontend developer.
   * It is a structure including visual static and interactive components and recommendations on usage, etc.
-  * **Development period:** 01.11.2023 - 06.02.2024
+  * **Development period:** 01.10.2023 - 06.02.2024
   ### 📌 Features
   * Component Guidelines
   * Static and interactive components
