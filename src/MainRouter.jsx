@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 
 /* main import */
 
@@ -79,43 +79,42 @@ function MainRouter() {
   }, [location])
 
   return (
-
-    <main className={mainClass}>
-
-      <Routes>
-        <Route path='/Projects-Showcase/*' element={<AprashkaError404 />} />
-        <Route path="/Projects-Showcase" element={<Mainpage />} />
-
-        <Route path="/Projects-Showcase/Aprashka"  element={<Aprashka />}> 
-
-          <Route index element={ <AboutProject /> }/>
-          <Route path="AboutSystem"   element={ <AboutSystem /> }/>
-
-          {/* Accordion1 routes */}
-          <Route path="Logotype"      element={ <Logotype /> }/>
-          <Route path="ColorPalette"  element={ <ColorPalette /> }/>
-          <Route path="Typography"    element={ <Typography /> }/>
-          <Route path="GridAndIndent" element={ <GridAndIndent /> }/>
-          <Route path="Graphic"       element={ <Graphic /> }/>
-          <Route path="Icons"         element={ <Icons /> }/>
-
-          {/* Accordion2 routes */}
-          <Route path="Breadcrumbs"   element={ <Breadcrumbs /> }/>
-          <Route path="Button"        element={ <Button /> }/>
-          <Route path="Checkbox"      element={ <Checkbox /> }/>
-          <Route path="Divider"       element={ <Divider /> }/>
-          <Route path="Link"          element={ <Link /> }/>
-          <Route path="RadioButton"   element={ <RadioButton /> }/>
-          <Route path="TextInput"     element={ <TextInput /> }/>
-          <Route path="Search"        element={ <Search /> }/>
-          <Route path="Tooltip"       element={ <Tooltip /> }/>
-          <Route path="SwitchButton"  element={ <SwitchButton /> }/>
-
-        </Route>
-      </Routes>
-
-    </main>
-    
+    <Router>
+      <main className={mainClass}>
+  
+        <Routes>
+          <Route path='/Projects-Showcase/*' element={<AprashkaError404 />} />
+          <Route path="/Projects-Showcase" element={<Mainpage />} />
+  
+          <Route path="/Projects-Showcase/Aprashka/*"  element={<Aprashka />}> 
+  
+            <Route index element={ <AboutProject /> }/>
+            <Route path="AboutSystem"   element={ <AboutSystem /> }/>
+  
+            {/* Accordion1 routes */}
+            <Route path="Logotype"      element={ <Logotype /> }/>
+            <Route path="ColorPalette"  element={ <ColorPalette /> }/>
+            <Route path="Typography"    element={ <Typography /> }/>
+            <Route path="GridAndIndent" element={ <GridAndIndent /> }/>
+            <Route path="Graphic"       element={ <Graphic /> }/>
+            <Route path="Icons"         element={ <Icons /> }/>
+  
+            {/* Accordion2 routes */}
+            <Route path="Breadcrumbs"   element={ <Breadcrumbs /> }/>
+            <Route path="Button"        element={ <Button /> }/>
+            <Route path="Checkbox"      element={ <Checkbox /> }/>
+            <Route path="Divider"       element={ <Divider /> }/>
+            <Route path="Link"          element={ <Link /> }/>
+            <Route path="RadioButton"   element={ <RadioButton /> }/>
+            <Route path="TextInput"     element={ <TextInput /> }/>
+            <Route path="Search"        element={ <Search /> }/>
+            <Route path="Tooltip"       element={ <Tooltip /> }/>
+            <Route path="SwitchButton"  element={ <SwitchButton /> }/>
+  
+          </Route>
+        </Routes>
+      </main>
+    </Router>
   )
 }
 
