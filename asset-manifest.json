@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ApraksinDvor/static/css/main.a9cb2016.css",
-    "main.js": "/ApraksinDvor/static/js/main.f6f7a92d.js",
+    "main.js": "/ApraksinDvor/static/js/main.a1254128.js",
     "static/js/862.d3365524.chunk.js": "/ApraksinDvor/static/js/862.d3365524.chunk.js",
     "static/js/160.4b2d0f56.chunk.js": "/ApraksinDvor/static/js/160.4b2d0f56.chunk.js",
     "static/js/956.11800585.chunk.js": "/ApraksinDvor/static/js/956.11800585.chunk.js",
@@ -121,12 +121,12 @@
     "static/media/forms.svg": "/ApraksinDvor/static/media/forms.1ac8a32a3ee73a286cd27fe0bb66d3db.svg",
     "static/media/small-logo.svg": "/ApraksinDvor/static/media/small-logo.c283271628fc450537477e91ba70a11f.svg",
     "main.a9cb2016.css.map": "/ApraksinDvor/static/css/main.a9cb2016.css.map",
-    "main.f6f7a92d.js.map": "/ApraksinDvor/static/js/main.f6f7a92d.js.map",
+    "main.a1254128.js.map": "/ApraksinDvor/static/js/main.a1254128.js.map",
     "374.a9964354.chunk.js.map": "/ApraksinDvor/static/js/374.a9964354.chunk.js.map",
     "432.067bc46c.chunk.js.map": "/ApraksinDvor/static/js/432.067bc46c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9cb2016.css",
-    "static/js/main.f6f7a92d.js"
+    "static/js/main.a1254128.js"
   ]
 }
