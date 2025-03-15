@@ -1,8 +1,8 @@
 {
-  "name": "unips",
+  "name": "aprashka",
   "version": "2.0",
   "private": true,
-  "homepage": "https://github.com/Projects-Showcase/",
+  "homepage": "https://github.com/ApraksinDvor/",
   "dependencies": {
     "@dotlottie/react-player": "^1.6.6",
     "@reduxjs/toolkit": "^1.9.7",

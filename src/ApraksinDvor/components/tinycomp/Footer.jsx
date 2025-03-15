@@ -19,7 +19,7 @@ function Footer() {
       <div className='footer__pic'>
         <img src={github} alt="GitHub" />
         <span className='fat'>GitHub</span>
-        <a href='https://github.com/AleksMercer/Projects-Showcase' className='link-underline'>Репозиторий проекта</a>
+        <a href='https://github.com/AleksMercer/ApraksinDvor' className='link-underline'>Репозиторий проекта</a>
       </div>
     </section>
   )

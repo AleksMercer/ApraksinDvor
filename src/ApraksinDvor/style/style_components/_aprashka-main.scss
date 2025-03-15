@@ -125,7 +125,7 @@
         }
       }
 
-      .accfirst { //первый аккордеон
+      .accfirst { // first accordion
         z-index: 1;
         animation: menu-1 0.25s ease-out forwards;
 
@@ -166,7 +166,7 @@
         }
       }
 
-      .accsecond { //второй аккордеон
+      .accsecond { // second accordion
         z-index: 0;
 
         .accordion__links {

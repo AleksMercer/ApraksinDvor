@@ -11,7 +11,6 @@ import aprashkaStore from './aprashkaStore'
 import Sidebar from './components/Sidebar'
 import LoadScreen from './components/tinycomp/LoadScreen'
 
-
 function Aprashka() {
   
   // #region : add class name to wrapper
@@ -23,7 +22,7 @@ function Aprashka() {
   const getClassName = (pathclass) => { // get a new class name from current path
     const lastIndex = pathclass.lastIndexOf('/')
     const newClassName = pathclass.slice(lastIndex + 1).toLowerCase()
-
+    console.log(1, newClassName)
     return newClassName
   }
 
@@ -35,11 +34,11 @@ function Aprashka() {
 
     switch (true) {
 
-      case path.startsWith('/Projects-Showcase/Aprashka/'):
+      case path.startsWith('/ApraksinDvor/'):
         setClassName(newName)
         break
 
-      case path.startsWith('/Projects-Showcase/Aprashka'):
+      case path.startsWith('/ApraksinDvor'):
         setClassName('aboutproject')
         break
 
