@@ -67,7 +67,7 @@ function TextInput() {
 
               <div className={text.length === 0 ? 'text-input' : 'text-input marked'}  ref={inputFocus}>
                 <input
-                  autocomplete="off" 
+                  autoComplete="off" 
                   type='text'
                   value={text}
                   onChange={(e) => setText(e.target.value)}
@@ -98,7 +98,7 @@ function TextInput() {
 
               <div className='text-area' ref={textareaFocus}>
                 <textarea
-                  autocomplete="off" 
+                  autoComplete="off" 
                   value={areaText}
                   maxLength={120}
                   onChange={(e) => setAreaText(e.target.value)}

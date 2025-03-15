@@ -39,7 +39,7 @@ function Search() {
         <p>Поиск реализован с&nbsp;подсказками вариантов при вводе, обработкой опечаток и&nbsp;выдачей результатов по&nbsp;категориям и&nbsp;типам, а&nbsp;также с&nbsp;предложениями запросов из&nbsp;истории поиска. Это помогает быстрее найти нужные данные.</p>
         <div className='search-usage__block'>
           <input
-            autocomplete="off" 
+            autoComplete="off" 
             type='text'
             name='search'
             placeholder='Найти товары'

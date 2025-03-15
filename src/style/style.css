@@ -259,22 +259,22 @@ body * > img, body * > button, body h1, body h2, body h3 {
 @font-face {
   font-weight: 200;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-ExtraLight.woff2") format("woff2");
+  src: url("../ApraksinDvor/style/Fonts/Inter-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-weight: 400;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-Regular.woff2") format("woff2");
+  src: url("../ApraksinDvor/style/Fonts/Inter-Regular.woff2") format("woff2");
 }
 @font-face {
   font-weight: 500;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-Medium.woff2") format("woff2");
+  src: url("../ApraksinDvor/style/Fonts/Inter-Medium.woff2") format("woff2");
 }
 @font-face {
   font-weight: 600;
   font-family: Inter;
-  src: url("../projects/apraksindvor/style/Fonts/Inter-SemiBold.woff2") format("woff2");
+  src: url("../ApraksinDvor/style/Fonts/Inter-SemiBold.woff2") format("woff2");
 }
 /*==========Mixin========== Start*/
 /*==========Mixin========== End*/
