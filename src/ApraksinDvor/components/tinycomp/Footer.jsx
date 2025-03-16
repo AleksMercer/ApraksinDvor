@@ -13,7 +13,7 @@ function Footer() {
       <div className='footer__pic'>
         <img src={figma} alt="Figma" />
         <span className='fat'>Figma</span>
-        <a href='https://www.figma.com/file/cBGK6To2qWQ5d4Zw2WDkeJ/%D0%90%D0%BF%D1%80%D0%B0%D1%88%D0%BA%D0%B0-2.0?type=design&node-id=55-22&mode=design' className='link-underline'>UI Kit проекта</a>
+        <a href='https://www.figma.com/design/QASH4ZjzwkTSwooP9TKmwp/%D0%94%D0%B8%D0%B7%D0%B0%D0%B8%CC%86%D0%BD-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%90%D0%BF%D1%80%D0%B0%D0%BA%D1%81%D0%B8%D0%BD-%D0%B4%D0%B2%D0%BE%D1%80' className='link-underline'>UI Kit проекта</a>
       </div>
 
       <div className='footer__pic'>

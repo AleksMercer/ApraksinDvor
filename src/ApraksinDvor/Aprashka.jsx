@@ -32,17 +32,12 @@ function Aprashka() {
     let newName = getClassName(path)
     ref.current.scrollTo(0, 0) // every new page scroll to top
 
-    switch (true) {
-
-      case path.startsWith('/ApraksinDvor/'):
-        setClassName(newName)
-        break
-
-      case path.startsWith('/ApraksinDvor'):
-        setClassName('aboutproject')
-        break
-
-      default: console.log('default value from Aprashka switch')
+    if (/^\/ApraksinDvor\/?$/.test(path)) {
+      setClassName('aboutproject');
+    } else if (/^\/ApraksinDvor\/.+/.test(path)) {
+      setClassName(newName);
+    } else {
+      console.log('default value from Aprashka switch');
     }
 
   }, [location])
